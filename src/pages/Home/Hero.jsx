@@ -10,10 +10,10 @@ const Hero = () => {
         <Container>
           <div className="text-center text-white">
             <div className="py-30">
-              <h1 className="text-5xl font-semibold">
+              <h1 className="text-3xl md:text-5xl font-semibold">
                 BOOK YOU MAXI CAV IN SYDNEY
               </h1>
-              <p className="text-lg my-6">
+              <p className="md:text-lg my-6">
                 Welcome to Fast Maxi Cab Sydney, the most preferred choice for
                 easy and affordable taxi maxi cab rides in Sydney. Get ready to
                 make your travel experience memorable. Book your Fast Maxi Taxi
@@ -31,10 +31,10 @@ const Hero = () => {
             </div>
 
             <div>
-              <h2 className="text-4xl font-semibold">
+              <h2 className="text3xl md:text-4xl font-semibold">
                 AFFORDABLE GROUP TRAVEL WITH LARGE MAXI TAXI FOR ALL JOURNEYS
               </h2>
-              <p className="text-lg my-6">
+              <p className="md:text-lg my-6">
                 Book your Sydney Maxi Cabs Taxi in advance for a smooth,
                 affordable transportation experience with Fast Maxi Cab Sydney.
                 We take pride in being one of the most trusted names in maxi
@@ -49,6 +49,7 @@ const Hero = () => {
                 your destination with ease and satisfaction.
               </p>
 
+                {/* for tablet and laptop device */}
               <div className="grid-cols-4 pb-30 hidden md:grid">
                 <div className="flex flex-col justify-end">
                   <img src="/src/assets/Easy-Sedan.png" alt="" />
@@ -67,6 +68,7 @@ const Hero = () => {
                   <p className="text-xl lg:2xl">Kia Carnival</p>
                 </div>
               </div>
+              {/* for mobile device only */}
               <div className="md:hidden  pb-30">
                 <Carouse/>
               </div>
