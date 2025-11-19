@@ -7,7 +7,7 @@ import {FaXmark} from "react-icons/fa6";
 
 const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
   return (
-    <div className="py-2 shadow-md">
+    <div className="py-2 shadow-md bg-white">
       <Container>
         <div className="flex justify-between">
           {/* Logo */}

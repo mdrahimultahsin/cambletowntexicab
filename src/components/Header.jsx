@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0">
+    <header>
       <TopHeader />
       <MidHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>

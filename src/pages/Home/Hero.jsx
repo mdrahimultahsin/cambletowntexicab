@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "../../shared/Container";
-import { Link } from "react-router";
+import {Link} from "react-router";
 import Carouse from "../../components/Carouse";
+import { FaPhoneVolume } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -21,8 +22,11 @@ const Hero = () => {
                 punctuality.
               </p>
               <div className="flex justify-center gap-4">
-                <a href="tel:+8801615861498" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
-                  01869015353
+                <a
+                  href="tel:+61469885961"
+                  className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
+                >
+                 <FaPhoneVolume /> +61 469 885 961
                 </a>
                 <Link className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   Our Fleet
@@ -49,7 +53,7 @@ const Hero = () => {
                 your destination with ease and satisfaction.
               </p>
 
-                {/* for tablet and laptop device */}
+              {/* for tablet and laptop device */}
               <div className="grid-cols-4 pb-30 hidden md:grid">
                 <div className="flex flex-col justify-end">
                   <img src="/src/assets/Easy-Sedan.png" alt="" />
@@ -70,7 +74,7 @@ const Hero = () => {
               </div>
               {/* for mobile device only */}
               <div className="md:hidden  pb-30">
-                <Carouse/>
+                <Carouse />
               </div>
             </div>
           </div>
