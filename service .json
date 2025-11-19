@@ -1,0 +1,38 @@
+[
+  {
+    "service_id": "S001",
+    "service_name": "Web Design",
+    "description": "Professional and modern website design using responsive layouts and clean UI.",
+    "image": "https://i.ibb.co/8mHcV2L/web-design.jpg"
+  },
+  {
+    "service_id": "S002",
+    "service_name": "Full-Stack Development",
+    "description": "Complete MERN stack development including API creation, database modeling, and deployment.",
+    "image": "https://i.ibb.co/1zDZYtR/fullstack.jpg"
+  },
+  {
+    "service_id": "S003",
+    "service_name": "UI/UX Design",
+    "description": "Creative user interface and user experience design with wireframes and prototypes.",
+    "image": "https://i.ibb.co/Yt0bqpr/ui-ux.jpg"
+  },
+  {
+    "service_id": "S004",
+    "service_name": "SEO Optimization",
+    "description": "Improve website ranking on search engines with advanced SEO strategies.",
+    "image": "https://i.ibb.co/4T2nYpV/seo.jpg"
+  },
+  {
+    "service_id": "S005",
+    "service_name": "Mobile App Development",
+    "description": "Cross-platform mobile applications built with modern frameworks.",
+    "image": "https://i.ibb.co/SQh8pRw/mobile-app.jpg"
+  },
+  {
+    "service_id": "S006",
+    "service_name": "Content Writing",
+    "description": "High-quality website and blog content optimized for SEO and readability.",
+    "image": "https://i.ibb.co/bJz2dBP/content-writing.jpg"
+  }
+]
