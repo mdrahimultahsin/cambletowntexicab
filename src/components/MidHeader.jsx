@@ -1,7 +1,7 @@
-import React from "react";
+
 import Container from "../shared/Container";
 import {Link} from "react-router";
-import {FaPlane, FaShip} from "react-icons/fa";
+import {FaBusinessTime, FaCar, FaPlane, FaShip} from "react-icons/fa";
 
 const MidHeader = () => {
   return (
@@ -15,7 +15,7 @@ const MidHeader = () => {
             </Link>
           </div>
           {/* Center Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <div className="flex gap-2 items-center">
               {/* Icon */}
               <div>
@@ -47,29 +47,29 @@ const MidHeader = () => {
             <div className="flex gap-4 items-center">
               {/* Icon */}
               <div>
-                <FaShip
+                <FaCar
                   size={45}
                   className="text-primary hover:text-secondary"
                 />
               </div>
               {/* Text */}
               <div>
-                <p>Cruise Ship Transfers</p>
-                <p>Available on short notice</p>
+                <p className="font-bold text-sm">Wedding Transfers</p>
+                <p className="text-xs">No hidden charge</p>
               </div>
             </div>
             <div className="flex gap-4 items-center">
               {/* Icon */}
               <div>
-                <FaShip
+                <FaBusinessTime
                   size={45}
                   className="text-primary hover:text-secondary"
                 />
               </div>
               {/* Text */}
               <div>
-                <p>Cruise Ship Transfers</p>
-                <p>Available on short notice</p>
+                <p className="font-bold text-sm">Corporate Transfers</p>
+                <p className="text-xs">Available on short notice</p>
               </div>
             </div>
           </div>
