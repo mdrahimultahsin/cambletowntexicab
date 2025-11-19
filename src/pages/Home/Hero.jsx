@@ -24,7 +24,7 @@ const Hero = () => {
                 <a href="tel:+8801615861498" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   01869015353
                 </a>
-                <Link className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl">
+                <Link className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   Our Fleet
                 </Link>
               </div>
