@@ -9,6 +9,8 @@
   --font-playfair: "Playfair Display", serif;
   --color-primary:  #3087C9; /*#0A273E*/
   --color-secondary: #333333; /*#1f1e1e*/
+  --color-light: #F2F9FF;
+  --color-accent: #57595B;
 }
 
 body {

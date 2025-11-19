@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Suspense } from "react";
+import Hero from "./Hero";
+import Service from "./Service";
 
 const Home = () => {
-        return (
-                <div>
-                        
-                </div>
-        );
+  return (
+    <div>
+      <Hero />
+      <Service />
+    </div>
+  );
 };
 
 export default Home;
