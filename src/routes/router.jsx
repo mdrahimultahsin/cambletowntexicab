@@ -31,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/fleet",
         Component: OurFleet,
+        loader: async() => {
+          const res = await fetch('/fleet.json');
+          return res.json();
+        },
       },
       {
         path: "/contact",
