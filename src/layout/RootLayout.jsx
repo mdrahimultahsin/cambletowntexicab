@@ -1,8 +1,8 @@
-
 import Header from "../components/Header";
 import {Outlet} from "react-router";
 import Footer from "../components/Footer";
 import FloatingSidebar from "../components/FloatingSidebar";
+import CallToAction from "../shared/CallToAction";
 
 const RootLayout = () => {
   return (
@@ -12,6 +12,7 @@ const RootLayout = () => {
         <Outlet />
         <FloatingSidebar />
       </main>
+      <CallToAction />
       <Footer />
     </>
   );

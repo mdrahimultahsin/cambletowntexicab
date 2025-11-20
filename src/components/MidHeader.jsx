@@ -1,9 +1,9 @@
 import Container from "../shared/Container";
 import {Link} from "react-router";
 import {FaBusinessTime, FaCar, FaPlane, FaShip} from "react-icons/fa";
-import Button from "../shared/Button";
 import {IoMenu} from "react-icons/io5";
 import {FaXmark} from "react-icons/fa6";
+import ButtonSecondary from "../shared/ButtonSecondary";
 
 const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
   return (
@@ -76,7 +76,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Button>Online Bookings!</Button>
+            <ButtonSecondary>Online Bookings!</ButtonSecondary>
             <button className="md:hidden border border-gray-500 bg-primary text-white px-2 py-1 rounded">
               {isMenuOpen ? (
                 <FaXmark

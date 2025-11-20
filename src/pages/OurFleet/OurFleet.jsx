@@ -3,18 +3,18 @@ import { Link, useLoaderData } from "react-router";
 import Container from "../../shared/Container";
 import { IoPeopleSharp } from "react-icons/io5";
 import { GiConcreteBag } from "react-icons/gi";
-import Button from "../../shared/Button";
 import titleImg from "../../assets/fleet-header-img.png";
+import ButtonPrimary from "../../shared/ButtonPrimary";
 
 const OurFleet = () => {
   const fleetData = useLoaderData() || [];
 
   return (
     <div className="pb-30">
-      <div className="bg-gradient-to-r from-[#04A9E9] to-[#003E60]">
+      <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
-            <div className="py-15 md:py-30 flex-1 text-center md:text-left ">
+            <div className="py-15 md:py-30  flex-1 text-center md:text-left ">
               <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
                 Fleet
               </span>
@@ -36,11 +36,11 @@ const OurFleet = () => {
       <Container>
         {/* our fleet cards */}
         <div>
-          <h2 className="font-playfair text-primary font-semibold text-5xl text-center my-20 ">
+          <h2 className="font-playfair text-primary font-semibold text-5xl text-center mt-20 ">
             Our Fleet
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           {fleetData.map((singleData) => (
             <div key={singleData.id} className="bg-light p-4 md:p-8 rounded-xl shadow-lg">
               <h3 className="text-3xl font-semibold mb-10">
@@ -57,9 +57,9 @@ const OurFleet = () => {
               <p className="text-accent">{singleData.description}</p>
               <img src={singleData.image} alt="" />
               <Link to={`/fleet/${singleData.id}`}>
-                <Button className="text-xl bg-primary! hover:bg-secondary! py-4 px-8">
+                <ButtonPrimary className="text-xl  py-4 px-8">
                   Book Now
-                </Button>
+                </ButtonPrimary>
               </Link>
             </div>
           ))}

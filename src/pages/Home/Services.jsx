@@ -9,8 +9,8 @@ const Services = () => {
     <div className="py-30">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl md:text-5xl font-semibold">
-            Our Maxi Cabs Services in Sydney - Book Maxi Cab Near Me
+          <h2 className="text-3xl md:text-5xl font-semibold font-playfair text-primary">
+            Our Maxi Cabs Services in Sydney
           </h2>
           <p className="text-lg mt-6 text-accent">
             Looking for a maxi taxi sydney airport for groups, corporate
@@ -21,7 +21,7 @@ const Services = () => {
             needs!
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
 
           {serviceData && serviceData?.map((service) => (
             <div key={service.service_id} className="bg-light p-8 rounded-lg">

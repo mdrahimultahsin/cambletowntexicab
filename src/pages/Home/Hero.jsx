@@ -14,7 +14,7 @@ const Hero = () => {
         <Container>
           <div className="text-center text-white">
             <div className="py-30">
-              <h1 className="text-3xl md:text-5xl font-semibold">
+              <h1 className="text-3xl md:text-5xl font-semibold font-playfair">
                 BOOK YOU MAXI CAV IN SYDNEY
               </h1>
               <p className="md:text-lg my-6">
@@ -31,14 +31,14 @@ const Hero = () => {
                 >
                   <FaPhoneVolume /> +1300 450 428
                 </a>
-                <Link className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
+                <Link to="/fleet" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   Our Fleet
                 </Link>
               </div>
             </div>
 
             <div>
-              <h2 className="text3xl md:text-4xl font-semibold">
+              <h2 className="text3xl md:text-4xl font-semibold font-playfair">
                 AFFORDABLE GROUP TRAVEL WITH LARGE MAXI TAXI FOR ALL JOURNEYS
               </h2>
               <p className="md:text-lg my-6">
