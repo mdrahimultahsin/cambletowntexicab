@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Easy Sedan",
+    "passengerCapacity": 4,
+    "bagsCapacity": 2,
+    "description": "A comfortable and fuel-efficient sedan ideal for city rides and short trips.",
+    "image": "/src/assets/Easy-Sedan.png"
+  },
+  {
+    "id": 2,
+    "name": "Luxury Vehicle",
+    "passengerCapacity": 4,
+    "bagsCapacity": 2,
+    "description": "A premium luxury sedan offering top-tier comfort, performance, and elegance.",
+    "image": "/src/assets/Luxury-Vehicle.png"
+  },
+  {
+    "id": 3,
+    "name": "Suv or Wagon",
+    "passengerCapacity": 7,
+    "bagsCapacity": 5,
+    "description": "A spacious family-friendly SUV with smooth handling and great storage.",
+    "image": "/src/assets/Suv-Wagon.png"
+  },
+  {
+    "id": 4,
+    "name": "Kia Carnival",
+    "passengerCapacity": 7,
+    "bagsCapacity": 8,
+    "description": "A large, reliable van suitable for group tours and long-distance travel.",
+    "image": "/src/assets/Kia-Carnival.png"
+  }
+]
