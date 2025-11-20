@@ -11,6 +11,7 @@
   --color-secondary: #333333; 
   --color-light: #F2F9FF;
   --color-accent: #57595B;
+  --color-border-color: #d4d6d9;
 }
 
 body {

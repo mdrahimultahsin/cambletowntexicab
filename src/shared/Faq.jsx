@@ -38,9 +38,9 @@ const Faq = () => {
 
   return (
         
-    <div className="mt-30">
+    <section className="mt-30 mb-30">
         <Container>
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-primary">
+      <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-10 text-primary">
         Frequently Asked Questions
       </h2>
 
@@ -63,7 +63,7 @@ const Faq = () => {
         ))}
       </div>
     </Container>
-    </div>
+    </section>
   );
 };
 

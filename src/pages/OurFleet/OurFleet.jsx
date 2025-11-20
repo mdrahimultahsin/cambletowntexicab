@@ -10,7 +10,7 @@ const OurFleet = () => {
   const fleetData = useLoaderData() || [];
 
   return (
-    <div className="pb-30">
+    <section className="pb-30">
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -65,7 +65,7 @@ const OurFleet = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

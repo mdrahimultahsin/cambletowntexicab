@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FleetSection = () => {
+const Loading = () => {
         return (
                 <div>
-                        
+                        Loading...
                 </div>
         );
 };
 
-export default FleetSection;
+export default Loading;

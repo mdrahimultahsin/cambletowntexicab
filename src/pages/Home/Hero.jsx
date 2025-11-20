@@ -9,7 +9,7 @@ import carnivalImg from "../../assets/Kia-Carnival.png";
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/src/assets/herobg.jpg')] w-full bg-no-repeat bg-cover bg-fixed bg-bottom">
+    <section className="bg-[url('/src/assets/herobg.jpg')] w-full bg-no-repeat bg-cover bg-fixed bg-bottom">
       <div className="w-full h-full bg-black/60">
         <Container>
           <div className="text-center text-white">
@@ -27,11 +27,11 @@ const Hero = () => {
               <div className="flex justify-center gap-4">
                 <a
                   href="tel:+1300450428"
-                  className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
+                  className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
                 >
                   <FaPhoneVolume /> +1300 450 428
                 </a>
-                <Link to="/fleet" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
+                <Link to="/fleet" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   Our Fleet
                 </Link>
               </div>
@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 

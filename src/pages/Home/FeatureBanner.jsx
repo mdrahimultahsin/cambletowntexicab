@@ -6,7 +6,7 @@ import Button from "../../shared/ButtonSecondary";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 const FeatureBanner = () => {
   return (
-    <div className="bg-[#6D7595] text-white py-20">
+    <section className="bg-[#6D7595] text-white py-20">
       <Container>
         <div className="flex items-center flex-col md:flex-row gap-10">
           <div className="flex-1">
@@ -37,7 +37,7 @@ const FeatureBanner = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import Container from "../../shared/Container";
 
 const Reviews = () => {
   return (
-    <div className="mt-30">
+    <section className="mt-30">
       <Container>
       <h1 className="text-4xl font-bold font-playfair text-center text-primary">
         Cambeltown Taxi Cabs Reviews
@@ -11,11 +11,11 @@ const Reviews = () => {
         {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div
-          class="elfsight-app-52eaab94-deb0-45d2-ab29-8d9ba4c369d2"
+          className="elfsight-app-52eaab94-deb0-45d2-ab29-8d9ba4c369d2"
           data-elfsight-app-lazy
         ></div>
       </Container>
-    </div>
+    </section>
   );
 };
 

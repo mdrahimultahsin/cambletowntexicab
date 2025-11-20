@@ -24,9 +24,67 @@ const Navbar = ({isMenuOpen}) => {
       label: "Services",
       pathname: "/services",
       dropdowns: [
-        {id: 1, label: "Airport Transfer", pathname: "/services/airport"},
-        {id: 2, label: "City Ride", pathname: "/services/city-ride"},
-        {id: 3, label: "Hourly Booking", pathname: "/services/hourly"},
+        {
+          id: 1,
+          label: "Book Taxi Sydney Airport",
+          pathname: "/services/book-text-sydney-airport",
+        },
+        {
+          id: 2,
+          label: "Baby Seat Taxi Sydney",
+          pathname: "/services/baby-seat-texi-sydney",
+        },
+        {
+          id: 3,
+          label: "Wheelchair Accessible Taxi",
+          pathname: "/services/wheelchair-accessible-taxi",
+        },
+        {
+          id: 4,
+          label: "Corporate Transport Services",
+          pathname: "/services/corporate-transport-services",
+        },
+        {
+          id: 5,
+          label: "Cruise Terminal Transfer",
+          pathname: "/services/cruise-terminal-transfer",
+        },
+        {
+          id: 6,
+          label: "Wedding Transfer",
+          pathname: "/services/wedding-transfer",
+        },
+        {id: 7, label: "Event Transfer", pathname: "/services/event-transfer"},
+        {
+          id: 8,
+          label: "Parcel Delivery",
+          pathname: "/services/percel-transfer",
+        },
+        {
+          id: 9,
+          label: "Maxi Taxi Service",
+          pathname: "/services/airport-shuttle",
+        },
+        {
+          id: 10,
+          label: "Luxury Transfer",
+          pathname: "/services/luxury-transfer",
+        },
+        {
+          id: 11,
+          label: "Taxi Sydney Service",
+          pathname: "/services/taxi-sydney-service",
+        },
+        {
+          id: 12,
+          label: "Airport Shuttle",
+          pathname: "/services/airport-shuttle",
+        },
+        {
+          id: 13,
+          label: "Corporate Trips",
+          pathname: "/services/corporate-tips",
+        },
       ],
     },
     {
@@ -86,62 +144,60 @@ const Navbar = ({isMenuOpen}) => {
         </div>
 
         <div
-  className={`absolute right-0 w-1/2 bg-white text-black shadow z-999 transition-all duration-300 ease-in-out ${
-    isMenuOpen ? "top-0" : "-top-300"
-  }`}
->
-  <ul className="flex flex-col z-999 bg-white md:hidden gap-1 text-left">
-    {navlinks.map((navlink) => (
-      <li key={navlink.id} className="relative">
-        <div
-          className="flex items-center justify-between py-3 pl-4 pr-4 cursor-pointer"
-          onClick={() =>
-            navlink.dropdowns?.length > 0
-              ? handleDropdownToggle(navlink.id)
-              : null
-          }
+          className={`absolute right-0 w-1/2 bg-white text-black shadow z-999 transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "top-0" : "-top-300"
+          }`}
         >
-          <NavLink
-            to={navlink.pathname}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary font-medium flex-1"
-                : "font-medium text-black flex-1"
-            }
-          >
-            {navlink.label}
-          </NavLink>
-
-          {navlink.dropdowns?.length > 0 && (
-            <FaChevronDown
-              size={20}
-              className={`transition-transform ${
-                openDropdown === navlink.id ? "rotate-180" : ""
-              }`}
-            />
-          )}
-        </div>
-
-        {navlink.dropdowns && openDropdown === navlink.id && (
-          <ul className="bg-gray-100 text-black w-full shadow-inner">
-            {navlink.dropdowns.map((item) => (
-              <li key={item.id}>
-                <NavLink
-                  to={item.pathname}
-                  className="block px-6 py-2 hover:bg-primary hover:text-white"
+          <ul className="flex flex-col z-999 bg-white md:hidden gap-1 text-left">
+            {navlinks.map((navlink) => (
+              <li key={navlink.id} className="relative">
+                <div
+                  className="flex items-center justify-between py-3 pl-4 pr-4 cursor-pointer"
+                  onClick={() =>
+                    navlink.dropdowns?.length > 0
+                      ? handleDropdownToggle(navlink.id)
+                      : null
+                  }
                 >
-                  {item.label}
-                </NavLink>
+                  <NavLink
+                    to={navlink.pathname}
+                    className={({isActive}) =>
+                      isActive
+                        ? "text-primary font-medium flex-1"
+                        : "font-medium text-black flex-1"
+                    }
+                  >
+                    {navlink.label}
+                  </NavLink>
+
+                  {navlink.dropdowns?.length > 0 && (
+                    <FaChevronDown
+                      size={20}
+                      className={`transition-transform ${
+                        openDropdown === navlink.id ? "rotate-180" : ""
+                      }`}
+                    />
+                  )}
+                </div>
+
+                {navlink.dropdowns && openDropdown === navlink.id && (
+                  <ul className="bg-gray-100 text-black w-full shadow-inner">
+                    {navlink.dropdowns.map((item) => (
+                      <li key={item.id}>
+                        <NavLink
+                          to={item.pathname}
+                          className="block px-6 py-2 hover:bg-primary hover:text-white"
+                        >
+                          {item.label}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
-        )}
-      </li>
-    ))}
-  </ul>
-</div>
-
-
+        </div>
       </Container>
     </nav>
   );

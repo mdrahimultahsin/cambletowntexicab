@@ -12,7 +12,7 @@ const CallToAction = () => {
             We provide Fast Maxi Cabs Sydney bookings for more than 50+ Suburbs.
           </p>
           <Link to="/services">
-            <ButtonPrimary className={`px-2! text-sm`}>Online Booking</ButtonPrimary>
+            <ButtonPrimary className={`px-2! md:px-4! text-sm`}>Online Booking</ButtonPrimary>
           </Link>
         </div>
       </Container>
