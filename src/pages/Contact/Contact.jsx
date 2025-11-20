@@ -3,6 +3,7 @@ import Container from "../../shared/Container";
 import titleImg from "../../assets/fleet-header-img.png";
 import ConnectWithUs from "./ConnectWithUs";
 import GetInTouchForm from "./GetInTouchForm";
+import Map from "./Map";
 
 const Contact = () => {
   return (
@@ -32,6 +33,9 @@ const Contact = () => {
           <div className="flex-1 ">
                 <ConnectWithUs/>
           </div>
+        </div>
+        <div>
+                <Map/>
         </div>
       </Container>
     </div>

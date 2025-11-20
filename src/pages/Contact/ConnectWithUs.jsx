@@ -60,13 +60,13 @@ const ConnectWithUs = () => {
               {contactInfo.map((info) => (
                 <div className="flex items-center gap-2 md:gap-4 py-3" key={info.id}>
                   <info.Icon className="text-2xl text-primary " />
-                  <p className='text-xs md:text-md'>{info.label}</p>
+                  <p className='text-xs md:text-lg'>{info.label}</p>
                 </div>
               ))}
             </div>
             {/* social icon */}
             <div className="text-center pt-6">
-              <h4>Follow Us</h4>
+              <h4 className='text-2xl'>Follow Us</h4>
               <div className="flex gap-8 justify-center mt-4">
                 {socialLinks.map((link) => (
                 <div className="flex gap-4 p-2 bg-primary rounded-full " key={link.id}>
