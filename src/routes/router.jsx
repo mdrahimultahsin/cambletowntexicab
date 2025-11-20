@@ -14,7 +14,11 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: () => fetch('/service .json')
+        loader: async () => {
+          const res = await fetch("/service.json");
+          return res.json();
+        },
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/about",

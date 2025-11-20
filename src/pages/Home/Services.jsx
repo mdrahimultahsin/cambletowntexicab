@@ -1,9 +1,9 @@
 import { useLoaderData } from "react-router";
 import Container from "../../shared/Container";
 
-const Service = () => {
-  const serviceData = useLoaderData();
-  console.log(serviceData);
+const Services = () => {
+  
+  const serviceData = useLoaderData() || [];
 
   return (
     <div className="py-30">
@@ -22,7 +22,8 @@ const Service = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-          {serviceData.map((service) => (
+
+          {serviceData && serviceData?.map((service) => (
             <div key={service.service_id} className="bg-light p-8 rounded-lg">
               <img src={service.image} alt={service.title} className="w-1/3 mb-8" />
               <h3 className="text-2xl md:text-3xl font-semibold my-3">{service.title}</h3>
@@ -35,4 +36,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Services;

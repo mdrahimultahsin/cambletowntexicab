@@ -3,36 +3,36 @@
     "service_id": "S001",
     "title": "Wedding Transfer",
     "description": "Make your special day even more exciting and memorable with Fast Maxi Cabs Sydney wedding transfer service. Our maxi cabs, provide a delightful transportation experience for the bride, groom, and guests.",
-    "image": "/src/assets/icon/car.png"
+    "image": "/icons/car.png"
   },
   {
     "service_id": "S002",
     "title": "Luxury Transfer",
     "description": "FAST MAXI offers a new standard in travel with our exclusive luxury transfer service. Whether you’re heading to a corporate event, a special celebration, or simply need a relaxing ride after a long flight, we make sure your journey is smooth, elegant, and memorable.",
-    "image": "/src/assets/icon/vehicle.png"
+    "image": "/icons/vehicle.png"
   },
   {
     "service_id": "S003",
     "title": "Baby Seat Taxi",
     "description": "We provide baby seat maxi taxis such as baby capsules, booster seats, etc., providing a secure and comfortable ride for your little passengers.",
-    "image": "/src/assets/icon/baby-seat.png"
+    "image": "/icons/baby-seat.png"
   },
   {
     "service_id": "S004",
     "title": "Corporate transfer",
     "description": "IFast Maxi Taxi Sydney gives the best corporate transfer or group transfer experience with its quality maxi cab vehicles and experienced drivers. We provide a comfortable solution for your business transportation needs, ensuring punctuality and an excellent taxi experience.",
-    "image": "/src/assets/icon/bus.png"
+    "image": "/icons/bus.png"
   },
   {
     "service_id": "S005",
     "title": "Maxi Cab Sydney Airport Transfer",
     "description": "Stop waiting in lines at the airport when you choose our maxi taxi sydney airport service for your airport transfer if you book taxi maxi sydney airport with Fast Maxi Cab Sydney service At Sydney Airport, there is a way to access the priority zone.",
-    "image": "/src/assets/icon/airport.png"
+    "image": "/icons/airport.png"
   },
   {
     "service_id": "S006",
     "title": "Parcel Delivery",
     "description": "Fast Maxi Taxi Sydney gives the best Parcel Delivery experience with its quality maxi cab vehicles and experienced drivers. We provide a comfortable solution for your business transportation needs, ensuring punctuality and an excellent taxi experience.",
-    "image": "/src/assets/icon/parcel-delivery.png"
+    "image": "/icons/parcel-delivery.png"
   }
 ]

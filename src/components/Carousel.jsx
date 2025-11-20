@@ -1,12 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay, Pagination} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-const Carouse = () => {
-    return (
-    <div className="w-full" >
+import sedanCarImg from "../assets/Easy-Sedan.png";
+import luxuryVehicleImg from "../assets/Luxury-Vehicle.png";
+import suvWagonImg from "../assets/Suv-Wagon.png";
+import carnivalImg from "../assets/Kia-Carnival.png";
+
+const Carousel = () => {
+  return (
+    <div className="w-full">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={20}
@@ -19,15 +24,15 @@ const Carouse = () => {
       >
         <SwiperSlide>
           <img
-            src="/src/assets/Easy-Sedan.png"
+            src={sedanCarImg}
             className=" mx-auto"
             alt="Easy Sedan"
-            />
-            <p className="-mt-15 text-xl">Easy Sedan</p>
+          />
+          <p className="-mt-15 text-xl">Easy Sedan</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="/src/assets/Luxury-Vehicle.png"
+            src={luxuryVehicleImg}
             className="mx-auto "
             alt="Luxury Vehicle"
           />
@@ -36,7 +41,7 @@ const Carouse = () => {
 
         <SwiperSlide>
           <img
-            src="/src/assets/Suv-Wagon.png"
+            src={suvWagonImg}
             className="mx-auto "
             alt="Suv or Wagon"
           />
@@ -44,7 +49,7 @@ const Carouse = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="/src/assets/Kia-Carnival.png"
+            src={carnivalImg}
             className="mx-auto h-full "
             alt=""
           />
@@ -52,7 +57,7 @@ const Carouse = () => {
         </SwiperSlide>
       </Swiper>
     </div>
-    );
+  );
 };
 
-export default Carouse;
+export default Carousel;

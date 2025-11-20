@@ -1,12 +1,11 @@
-import React, { Suspense } from "react";
 import Hero from "./Hero";
-import Service from "./Service";
+import Services from "./Services";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Service />
+      <Services />
     </div>
   );
 };
