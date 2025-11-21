@@ -1,44 +1,42 @@
-import {FaPlane, FaCar, FaCalendarAlt, FaTaxi} from "react-icons/fa";
+import { FaPlane, FaCar, FaCalendarAlt, FaTaxi } from "react-icons/fa";
 import Container from "../../shared/Container";
 
 const FeatureCards = () => {
   return (
-        <section className="bg-secondary text-white py-16">
-                <Container>
-<div className=" flex flex-col md:flex-row items-center justify-around gap-10 md:gap-0">
-      {/* Airport */}
-      <div className="flex flex-col items-center text-center">
-        <FaPlane className="text-4xl mb-3" />
-        <p className="text-lg">Airport Transportation</p>
-      </div>
+    <section className="bg-secondary text-white py-16">
+      <Container>
+        <div className="grid grid-cols-2 md:grid-cols-4">
 
-      <div className="hidden md:block w-px h-20 bg-white/30"></div>
+          {/* Airport */}
+          <div className="flex flex-col items-center text-center py-6 
+            border-r border-b-2 border-white md:border-b-0 md:border-r-2">
+            <FaPlane className="text-4xl mb-3" />
+            <p className="text-lg">Airport Transportation</p>
+          </div>
 
-      {/* Car Service */}
-      <div className="flex flex-col items-center text-center">
-        <FaCar className="text-4xl mb-3" />
-        <p className="text-lg">Car Service</p>
-      </div>
+          {/* Car Service */}
+          <div className="flex flex-col items-center text-center py-6 
+            border-b-2 border-white md:border-b-0 md:border-r-2">
+            <FaCar className="text-4xl mb-3" />
+            <p className="text-lg">Car Service</p>
+          </div>
 
-      <div className="hidden md:block w-px h-20 bg-white/30"></div>
+          {/* Events */}
+          <div className="flex flex-col items-center text-center py-6 
+            border-r border-white md:border-r-2">
+            <FaCalendarAlt className="text-4xl mb-3" />
+            <p className="text-lg">Events</p>
+          </div>
 
-      {/* Events */}
-      <div className="flex flex-col items-center text-center">
-        <FaCalendarAlt className="text-4xl mb-3" />
-        <p className="text-lg">Events</p>
-      </div>
+          {/* Taxi */}
+          <div className="flex flex-col items-center text-center py-6">
+            <FaTaxi className="text-4xl mb-3" />
+            <p className="text-lg">Taxi Service</p>
+          </div>
 
-      <div className="hidden md:block w-px h-20 bg-white/30"></div>
-
-      {/* Taxi */}
-      <div className="flex flex-col items-center text-center">
-        <FaTaxi className="text-4xl mb-3" />
-        <p className="text-lg">Taxi Service</p>
-      </div>
-    </div>
-                </Container>
-        </section>
-    
+        </div>
+      </Container>
+    </section>
   );
 };
 
