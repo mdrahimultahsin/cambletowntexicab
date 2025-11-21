@@ -95,7 +95,7 @@ const Navbar = ({isMenuOpen}) => {
     {
       id: 5,
       label: "Area We Covered",
-      pathname: "/covered-area",
+      pathname: "/area-covered",
     },
     {
       id: 6,

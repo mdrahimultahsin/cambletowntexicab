@@ -75,10 +75,10 @@ const WhatWeDo = () => {
                 <service.Icon></service.Icon>
               </div>
               <div>
-                <h3 className="text-md md:text-xl font-semibold mb-2 text-secondary">
+                <h3 className="text-base md:text-xl font-semibold mb-2 text-secondary">
                   {service.title}
                 </h3>
-                <p className="text-accent text-xs md:text-md">{service.label}</p>
+                <p className="text-accent text-xs md:text-base">{service.label}</p>
               </div>
             </div>
           </div>

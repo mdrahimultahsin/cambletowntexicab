@@ -18,7 +18,7 @@ const OurFleet = () => {
               <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
                 Fleet
               </span>
-              <p className="mt-8 text-sm md:text-md">
+              <p className="mt-8 text-sm md:text-base">
                 At Sky Maxi Cabs, we take pride in offering a diverse and modern
                 fleet to cater to all your transportation needs in Sydney. Our
                 vehicles are meticulously maintained, ensuring a safe,
@@ -58,7 +58,7 @@ const OurFleet = () => {
               <img src={singleData.image} alt="" />
               <div className="w-full text-center md:text-left">
                 <Link to={`/fleet/${singleData.id}`}>
-                <ButtonPrimary className="text-md md:text-xl py-2 md:py-4 px-5 md:px-8">
+                <ButtonPrimary className="text-base md:text-xl py-2 md:py-4 px-5 md:px-8">
                   Book {singleData.name}
                 </ButtonPrimary>
               </Link>

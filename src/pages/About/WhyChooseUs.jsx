@@ -46,8 +46,8 @@ const WhyChooseUs = () => {
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-primary text-xl font-bold">{index + 1}</span>
               </div>
-              <h3 className="font-semibold text-secondary text-md md:text-xl mb-1 md:mb-3">{feature.title}</h3>
-              <p className="text-accent leading-relaxed text-xs md:text-md">{feature.description}</p>
+              <h3 className="font-semibold text-secondary text-base md:text-xl mb-1 md:mb-3">{feature.title}</h3>
+              <p className="text-accent leading-relaxed text-xs md:text-base">{feature.description}</p>
             </div>
           ))}
         </div>
