@@ -58,27 +58,27 @@ const services = [
 const WhatWeDo = () => {
   return (
     <div>
-      <div className="text-center mb-12">
-        <h2 className="font-playfair text-primary font-semibold text-5xl text-center">
+      <div className="text-center mb-5 md:mb-10">
+        <h2 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center">
           What We Do
         </h2>
-        <p className="text-accent max-w-3xl mx-auto mt-5 text-lg">
+        <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
           We provide door to door transport across Sydney. Our main services
           are:
         </p>
       </div>
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 gap-6">
         {services.map((service) => (
-          <div className=" p-6 rounded-lg shadow-sm hover:shadow-lg transition duration-200">
-            <div className="flex items-center">
-              <div className="bg-light p-3 rounded-lg mr-4">
+          <div className=" p-3 md:p-6 rounded-lg shadow-sm hover:shadow-lg transition duration-200">
+            <div className="md:flex items-center">
+              <div className="bg-light w-10 items-center flex justify-center h-10 rounded-lg mr-4">
                 <service.Icon></service.Icon>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                <h3 className="text-md md:text-xl font-semibold mb-2 text-secondary">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">{service.label}</p>
+                <p className="text-accent text-xs md:text-md">{service.label}</p>
               </div>
             </div>
           </div>
