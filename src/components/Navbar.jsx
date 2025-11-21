@@ -1,6 +1,11 @@
 import {NavLink} from "react-router";
 import Container from "../shared/Container";
-import {FaChevronDown} from "react-icons/fa";
+import { 
+  FaChevronDown,
+  FaPlane, FaBaby, FaWheelchair, FaBriefcase, FaShip, 
+  FaGift, FaStar, FaBox, FaUsers, FaCrown, FaCar, FaBus 
+} from "react-icons/fa";
+
 import {useState} from "react";
 
 const Navbar = ({isMenuOpen}) => {
@@ -24,68 +29,99 @@ const Navbar = ({isMenuOpen}) => {
       label: "Services",
       pathname: "/services",
       dropdowns: [
-        {
-          id: 1,
-          label: "Book Taxi Sydney Airport",
-          pathname: "/services/book-text-sydney-airport",
-        },
-        {
-          id: 2,
-          label: "Baby Seat Taxi Sydney",
-          pathname: "/services/baby-seat-texi-sydney",
-        },
-        {
-          id: 3,
-          label: "Wheelchair Accessible Taxi",
-          pathname: "/services/wheelchair-accessible-taxi",
-        },
-        {
-          id: 4,
-          label: "Corporate Transport Services",
-          pathname: "/services/corporate-transport-services",
-        },
-        {
-          id: 5,
-          label: "Cruise Terminal Transfer",
-          pathname: "/services/cruise-terminal-transfer",
-        },
-        {
-          id: 6,
-          label: "Wedding Transfer",
-          pathname: "/services/wedding-transfer",
-        },
-        {id: 7, label: "Event Transfer", pathname: "/services/event-transfer"},
-        {
-          id: 8,
-          label: "Parcel Delivery",
-          pathname: "/services/percel-transfer",
-        },
-        {
-          id: 9,
-          label: "Maxi Taxi Service",
-          pathname: "/services/airport-shuttle",
-        },
-        {
-          id: 10,
-          label: "Luxury Transfer",
-          pathname: "/services/luxury-transfer",
-        },
-        {
-          id: 11,
-          label: "Taxi Sydney Service",
-          pathname: "/services/taxi-sydney-service",
-        },
-        {
-          id: 12,
-          label: "Airport Shuttle",
-          pathname: "/services/airport-shuttle",
-        },
-        {
-          id: 13,
-          label: "Corporate Trips",
-          pathname: "/services/corporate-tips",
-        },
-      ],
+  {
+    id: 1,
+    label: "Book Taxi Sydney Airport",
+    pathname: "/services/book-text-sydney-airport",
+    icon: <FaPlane />,
+    desc: "Quick rides to Sydney airport."
+  },
+  {
+    id: 2,
+    label: "Baby Seat Taxi Sydney",
+    pathname: "/services/baby-seat-texi-sydney",
+    icon: <FaBaby />,
+    desc: "Family-friendly taxi service."
+  },
+  {
+    id: 3,
+    label: "Wheelchair Accessible Taxi",
+    pathname: "/services/wheelchair-accessible-taxi",
+    icon: <FaWheelchair />,
+    desc: "Accessible taxis for all passengers."
+  },
+  {
+    id: 4,
+    label: "Corporate Transport Services",
+    pathname: "/services/corporate-transport-services",
+    icon: <FaBriefcase />,
+    desc: "Professional transport for corporate clients."
+  },
+  {
+    id: 5,
+    label: "Cruise Terminal Transfer",
+    pathname: "/services/cruise-terminal-transfer",
+    icon: <FaShip />,
+    desc: "Timely transfers to cruise terminals."
+  },
+  {
+    id: 6,
+    label: "Wedding Transfer",
+    pathname: "/services/wedding-transfer",
+    icon: <FaGift />,
+    desc: "Comfortable wedding day transportation."
+  },
+  {
+    id: 7,
+    label: "Event Transfer",
+    pathname: "/services/event-transfer",
+    icon: <FaStar />,
+    desc: "Convenient transfers for events."
+  },
+  {
+    id: 8,
+    label: "Parcel Delivery",
+    pathname: "/services/percel-transfer",
+    icon: <FaBox />,
+    desc: "Fast parcel pickup and delivery."
+  },
+  {
+    id: 9,
+    label: "Maxi Taxi Service",
+    pathname: "/services/airport-shuttle",
+    icon: <FaUsers />,
+    desc: "Large group taxi service."
+  },
+  {
+    id: 10,
+    label: "Luxury Transfer",
+    pathname: "/services/luxury-transfer",
+    icon: <FaCrown />,
+    desc: "Premium luxury travel experience."
+  },
+  {
+    id: 11,
+    label: "Taxi Sydney Service",
+    pathname: "/services/taxi-sydney-service",
+    icon: <FaCar />,
+    desc: "Reliable taxi service across Sydney."
+  },
+  {
+    id: 12,
+    label: "Airport Shuttle",
+    pathname: "/services/airport-shuttle",
+    icon: <FaBus />,
+    desc: "Comfortable airport shuttle rides."
+  },
+  {
+    id: 13,
+    label: "Corporate Trips",
+    pathname: "/services/corporate-tips",
+    icon: <FaBriefcase />,
+    desc: "Corporate long-distance trips."
+  }
+]
+
     },
     {
       id: 4,
@@ -134,21 +170,39 @@ const Navbar = ({isMenuOpen}) => {
                   {navlink.dropdowns?.length > 0 && <FaChevronDown size={12} />}
                 </NavLink>
 
-                {/* DROPDOWN */}
-                {navlink.dropdowns && navlink.dropdowns.length > 0 && (
-                  <ul className="absolute left-0 top-full bg-white text-black w-48 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                    {navlink.dropdowns.map((item) => (
-                      <li key={item.id}>
-                        <NavLink
-                          to={item.pathname}
-                          className="block px-4 py-2 hover:bg-primary hover:text-white"
-                        >
-                          {item.label}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                {/* MEGA DROPDOWN FOR SERVICES */}
+{navlink.dropdowns && navlink.dropdowns.length > 0 && (
+  <div className="
+        absolute -left-23 top-full w-[800px] bg-white text-black shadow-lg 
+        opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+        transition-all z-50 p-6
+    ">
+    <div className="grid grid-cols-3 gap-6 
+                    max-md:grid-cols-2 
+                    border-t border-b border-gray-300 py-4">
+
+      {/* ONE SERVICE ITEM */}
+      {navlink.dropdowns.map((item) => (
+        <NavLink
+          key={item.id}
+          to={item.pathname}
+          className="flex items-start gap-3 p-2 hover:bg-gray-100 rounded-lg"
+        >
+          {/* ICON — you can map based on item.id */}
+          <div className="text-primary text-3xl">
+            {item.icon}
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-black">{item.label}</h4>
+            <p className="text-gray-500 text-sm">{item.desc}</p>
+          </div>
+        </NavLink>
+      ))}
+    </div>
+  </div>
+)}
+
               </li>
             ))}
           </ul>

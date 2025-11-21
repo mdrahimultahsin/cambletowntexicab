@@ -6,22 +6,18 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn,} from "react-icons/f
 const contactInfo = [
   {
     id: 1,
-    label: "bookings@skymaxicabs.com.au",
+    label: "silvercabscampbelltown@gmail.com",
     Icon: MdEmail,
   },
   {
     id: 2,
-    label: "support@skymaxicabs.com.au",
+    label: "+1300 450 428",
     Icon: IoCallSharp,
   },
+
   {
     id: 3,
-    label: "Chat Online",
-    Icon: MdChat,
-  },
-  {
-    id: 4,
-    label: ["Sydney", "Melbourne"],
+    label: "200 Gilchrist Drive, Campbelltown",
     Icon: MdLocationOn,
   },
 ];

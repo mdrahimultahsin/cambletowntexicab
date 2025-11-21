@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const GetInTouchForm = () => {
       const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ const GetInTouchForm = () => {
     message: "",
   });
 
-  const [status, setStatus] = useState(""); // For success/error messages
+  const [status, setStatus] = useState(""); 
 
   // Handle input changes
   const handleChange = (e) => {
@@ -20,7 +20,7 @@ const GetInTouchForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // You can replace this with your email API integration
+    
     console.log("Form Data:", formData);
 
     // Reset form

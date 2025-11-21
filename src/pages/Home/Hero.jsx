@@ -29,7 +29,7 @@ const Hero = () => {
                   href="tel:+1300450428"
                   className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
                 >
-                  <FaPhoneVolume /> +1300 450 428
+                  <FaPhoneVolume className="animate-bounce text-red-500 rotate-360" /> +1300 450 428
                 </a>
                 <Link to="/fleet" className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all">
                   Our Fleet
