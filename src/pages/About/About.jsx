@@ -4,6 +4,7 @@ import titleImg from "../../assets/fleet-header-img.png";
 import WhatWeDo from "./WhatWeDo";
 import WhoWeAre from "./WhoWeAre";
 import WhyChooseUs from "./WhyChooseUs";
+import Commitment from "./Commitment";
 
 const About = () => {
 
@@ -39,6 +40,7 @@ const About = () => {
           <WhoWeAre />
           <WhatWeDo />
           <WhyChooseUs />
+          <Commitment/>
         </Container>
       </div>
     </div>
