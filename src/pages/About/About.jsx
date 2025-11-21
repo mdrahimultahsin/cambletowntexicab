@@ -18,7 +18,7 @@ const About = () => {
               <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
                 About Us
               </span>
-              <p className="mt-8 text-sm md:text-md">
+              <p className="mt-8 text-sm md:text-base">
                 Silver Cabs is a Sydney based maxi cab service established in
                 2022. We provide affordable, reliable, and safe transport for
                 families, groups, and business travelers. Our fleet includes

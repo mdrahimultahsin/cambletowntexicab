@@ -13,7 +13,7 @@ const WhoWeAre = () => {
                       <div className="grid md:grid-cols-2  gap-8 items-center">
                         <div className="flex-col space-y-4">
                           <div className="bg-blue-50 p-3 md:p-6 rounded-lg border-l-4 border-primary">
-                            <p className="text-primary text-xs md:text-md">
+                            <p className="text-primary text-xs md:text-base">
                               Sky Maxi Cabs was started to fill a gap in the Sydney
                               transport market. Passengers wanted affordable group
                               transport with professional drivers and simple booking. We
@@ -24,13 +24,13 @@ const WhoWeAre = () => {
                             </p>
                           </div>
                           <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-primary">
-                            <p className="text-primary text-xs md:text-md">
+                            <p className="text-primary text-xs md:text-base">
                               Our mission is to provide safe, reliable, and affordable
                               maxi cab services for every customer.
                             </p>
                           </div>
                           <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-primary">
-                            <p className="text-primary text-xs md:text-md">
+                            <p className="text-primary text-xs md:text-base">
                               Our vision is to be Sydney’s most trusted name for
                               airport, cruise, and group transfers.
                             </p>

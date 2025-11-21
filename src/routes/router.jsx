@@ -5,6 +5,8 @@ import About from "../pages/About/About";
 import Blogs from "../pages/Blogs/Blogs";
 import OurFleet from "../pages/OurFleet/OurFleet";
 import Contact from "../pages/Contact/Contact";
+import AreaCovered from "../pages/AreaCovered/AreaCovered";
+import BlogDetails from "../pages/Blogs/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,20 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         Component: Blogs,
+        loader: async() => {
+          const res = await fetch('/blogs.json');
+          return res.json();
+        },
+        hydrateFallbackElement: <p>Loading....</p>,
+      },
+      {
+        path: "/blogs/:id",
+        Component: BlogDetails,
+        loader: async ({params}) => {
+          const res = await fetch('/blogs.json');
+          const data = await res.json();
+          return data.find((b) => b.id === Number(params.id))
+        }
       },
       {
         path: "/fleet",
@@ -41,6 +57,10 @@ const router = createBrowserRouter([
         path: "/contact",
         Component: Contact,
       },
+      {
+        path: "/area-covered",
+        Component: AreaCovered
+      }
     ],
   },
 ]);

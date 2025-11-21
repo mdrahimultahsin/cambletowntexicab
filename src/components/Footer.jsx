@@ -1,5 +1,4 @@
 import {Link} from "react-router";
-import footerImg from "../assets/footer.jpg";
 import Container from "../shared/Container";
 import {FaAngleDoubleRight, FaCar, FaPhone} from "react-icons/fa";
 import {MdOutlineMailOutline} from "react-icons/md";
@@ -7,11 +6,7 @@ import {MdOutlineMailOutline} from "react-icons/md";
 const Footer = () => {
   return (
     <footer
-      className="bg-cover bg-center relative text-white pt-20 pb-5"
-      style={{backgroundImage: `url(${footerImg})`}}
-    >
-      {/* Overlay */}
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/60 z-0"></div>
+      className=" text-white pt-20 pb-5 bg-linear-to-r from-[#003049] to-[#000e15]">
 
       <Container className="relative z-10">
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
@@ -103,15 +98,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" mt-10">
-          <p className="text-center">© 2025 cambletowntexicab. All Rights Reserved.</p>
-          <div className="flex justify-between items-center mt-5">
-            <Link>Terms And Conditions</Link>
-            <Link>Privacy Policy Collection Statement</Link>
-            <Link>Cancellation And Refunds</Link>
-            <Link>Collection Statement</Link>
-          </div>
+
+        <div className="border-y-1 border-primary mt-10">
+          <p className="text-justify  py-2">Disclaimer: TipTop Transport Solutions operating website www.tiptopmaxisydney.com.au is a privately owned and operated as Booking and Authorized service provider, TipTop is not associated or affiliated with the registered trademark “Maxi Taxi” owned by Cab charge Australia Limited or 13cabs Australia. To provide customer on time service, we might use vehicle from Taxi companies like 13cabs Maxi Taxi, Premier Maxi Taxi, Silver Top Maxi Taxi, GM Cabs or Any Other Authorized Taxi Cabs which is approved by local Transport Company.</p>
         </div>
+          <div className="flex justify-between items-center mt-5">
+            
+          <p className="text-center ">© 2025 cambletowntexicab. All Rights Reserved.</p>
+            <div>
+            <Link className="text-primary">Terms And Conditions</Link> <span> | </span>
+            <Link className="text-primary">Privacy Policy Collection Statement</Link> <span> | </span>
+            <Link className="text-primary">Cancellation And Refunds</Link>
+            </div>
+          </div>
       </Container>
     </footer>
   );
