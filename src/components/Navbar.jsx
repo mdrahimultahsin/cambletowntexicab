@@ -89,16 +89,27 @@ const Navbar = ({isMenuOpen}) => {
     },
     {
       id: 4,
-      label: "Blogs",
-      pathname: "/blogs",
+      label: "Book A Taxi Cab",
+      pathname: "/services",
     },
     {
       id: 5,
+      label: "Area We Covered",
+      pathname: "/covered-area",
+    },
+    {
+      id: 6,
       label: "Our Fleet",
       pathname: "/fleet",
     },
     {
-      id: 6,
+      id: 7,
+      label: "Blogs",
+      pathname: "/blogs",
+    },
+
+    {
+      id: 8,
       label: "Contact Us",
       pathname: "/contact",
     },
