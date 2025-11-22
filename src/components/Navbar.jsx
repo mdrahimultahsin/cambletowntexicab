@@ -151,7 +151,7 @@ const Navbar = ({isMenuOpen}) => {
     },
   ];
   return (
-    <nav className="bg-secondary text-white  sticky top-0 z-50">
+    <nav className="bg-secondary text-white ">
       <Container>
         <div className="">
           <ul className="hidden md:flex items-center justify-center gap-1">

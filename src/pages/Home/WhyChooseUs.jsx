@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
           <h2 className="text-4xl font-bold mb-6 font-playfair text-primary">
             Why Choose Us
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Experience comfort, reliability, and professional service for every ride. 
             Whether it's an airport transfer, a family trip, or daily travel — we deliver the perfect ride every time.
           </p>
@@ -66,17 +66,17 @@ const WhyChooseUs = () => {
               
               {/* Icon Container */}
               <div className="relative mb-6">
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-linear-to-br from-primary to-blue-600 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-linear-to-br from-primary to-blue-600 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   {feature.icon}
                 </div>
           
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-bold mb-4 relative group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-base md:text-xl font-bold mb-4 relative group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed relative">
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed relative">
                 {feature.desc}
               </p>
               

@@ -28,7 +28,7 @@ const features = [
 ];
 
 
-const WhyChooseUs = () => {
+const AboutChooseUs = () => {
   return (
     <section className="py-15">
       <div className="text-center mb-5 md:mb-10">
@@ -55,4 +55,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default AboutChooseUs;

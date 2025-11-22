@@ -3,6 +3,7 @@ import Container from "../../shared/Container";
 import { FaMapMarkerAlt, FaTaxi, FaStar, FaPhoneAlt } from "react-icons/fa";
 import { IoCarSport, IoLocation, IoTime } from "react-icons/io5";
 import titleImg from "../../assets/fleet-header-img.png";
+import QuickLinks from "./QuickLinks";
 
 const AreaCovered = () => {
   const serviceAreas = [
@@ -11,7 +12,7 @@ const AreaCovered = () => {
     "Glenfield", "Camden", "Camden south", "Oran park", "Gregory hills",
     "Eagle vale", "Elderslie", "Spring farm", "Cobbity", "Cowdor",
     "Denham court", "Edmondson park", "Austral", "Liverpool", "Picton",
-    "Thilmere", "Bargo", "Bowral", "Goulburn",
+    "Thilmere", "Bargo", "Bowral", "Goulburn","Airds","Gledswood Hills","Leppington"
   ];
 
   const serviceFeatures = [
@@ -165,6 +166,7 @@ const AreaCovered = () => {
                   </div>
                 </div>
               </div>
+              <QuickLinks/>
             </div>
           </div>
 
@@ -192,6 +194,7 @@ const AreaCovered = () => {
               </p>
             </div>
           </div>
+          
         </div>
       </Container>
     </div>

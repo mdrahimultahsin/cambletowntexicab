@@ -4,7 +4,7 @@
     "name": "Easy Sedan",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "A comfortable and fuel-efficient sedan ideal for city rides and short trips.",
+    "description": "A comfortable and fuel-efficient sedan ideal for city rides and short trips. Perfect for business travelers or couples, it offers smooth handling, modern amenities, and a quiet cabin for a relaxed ride. Ideal for airport pickups, city tours, or quick errands.",
     "image": "/fleetsImage/Easy-Sedan.png"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Luxury Vehicle",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "A premium luxury sedan offering top-tier comfort, performance, and elegance.",
+    "description": "A premium luxury sedan offering top-tier comfort, performance, and elegance. Features plush leather seating, advanced climate control, and state-of-the-art infotainment for a first-class experience. Ideal for VIP transfers, corporate clients, or special occasions.",
     "image": "/fleetsImage/Luxury-Vehicle.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Suv or Wagon",
     "passengerCapacity": 7,
     "bagsCapacity": 5,
-    "description": "A spacious family-friendly SUV with smooth handling and great storage.",
+    "description": "A spacious family-friendly SUV with smooth handling and great storage. Perfect for group outings, family trips, or airport transfers with multiple passengers. Equipped with modern safety features, comfortable seating, and ample luggage space for long journeys.",
     "image": "/fleetsImage/Suv-Wagon.png"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Kia Carnival",
     "passengerCapacity": 7,
     "bagsCapacity": 8,
-    "description": "A large, reliable van suitable for group tours and long-distance travel.",
+    "description": "A large, reliable van suitable for group tours and long-distance travel. Boasts luxurious interiors, flexible seating arrangements, and plenty of storage for luggage. Ideal for corporate trips, family vacations, or airport transfers for larger groups, ensuring comfort and convenience for all passengers.",
     "image": "/fleetsImage/Kia-Carnival.png"
   }
 ]

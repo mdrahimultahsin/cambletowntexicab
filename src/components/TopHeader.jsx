@@ -1,39 +1,54 @@
-import {
-  FaFacebook,
-  FaFacebookF,
-  FaInbox,
-  FaInstagram,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import {FaInbox, FaPhoneAlt} from "react-icons/fa";
 import Container from "../shared/Container";
-import {FaXTwitter} from "react-icons/fa6";
+import {useEffect, useState} from "react";
 
 const TopHeader = () => {
+  const [currentTime, setCurrentTime] = useState("");
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(
+        new Date().toLocaleTimeString("en-AU", {
+          timeZone: "Australia/Sydney",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        })
+      );
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className="bg-primary text-white py-3">
+    <div className="bg-primary text-white py-3 text-sm md:text-sm lg:text-base">
       <Container>
-        <div className="flex items-center justify-between ">
-          {/* Contact */}
-          <div className="flex-1 flex justify-between md:justify-start gap-6 ">
-            <p className="flex items-center gap-2 text-xs md:text-sm lg:text-base">
-              <FaInbox /> silvercabscampbelltown@gmail.com
-            </p>
-            <p className="flex items-center gap-1  text-xs md:text-sm lg:text-base">
-              <FaPhoneAlt /> +61 469 885 961
-            </p>
-          </div>
-          {/* Socials */}
-          <div className="hidden md:flex items-center gap-6 ">
-            <a className="hidden md:block hover:scale-120 duration-75" href="">
-              <FaFacebook size={22} />
+        <div className="flex flex-col items-center md:flex-row justify-between gap-2 md:gap-0">
+          {/* Email */}
+          <p className="flex items-center gap-2">
+            <FaInbox />{" "} 
+            <a
+              href="mailto:silvercabscampbelltown@gmail.com"
+              className="hover:underline"
+            >
+              silvercabscampbelltown@gmail.com
             </a>
-            <a className="hidden md:block hover:scale-120 duration-75" href="">
-              <FaInstagram size={22} />
-            </a>
-            <a className="hidden md:block hover:scale-120 duration-75" href="">
-              <FaXTwitter size={22} />
-            </a>
-          </div>
+          </p>
+          {/* Available Time — HIDDEN ON MOBILE (shown only on md and above) */}
+          <p className="hidden md:flex items-center gap-2">
+            We’re available
+            <span className="bg-green-500 w-3 h-3 rounded-full inline-block"></span>
+            <span className="font-semibold">{currentTime}</span>
+          </p>
+
+          {/* Phone */}
+
+          <a
+            className="flex items-center gap-2 cursor-pointer"
+            href="tel:+1300450428"
+          >
+            <FaPhoneAlt /> +61 469 885 961
+          </a>
         </div>
       </Container>
     </div>

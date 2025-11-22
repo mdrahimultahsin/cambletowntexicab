@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "./Container";
 import ButtonPrimary from "./ButtonPrimary";
 import {Link} from "react-router";

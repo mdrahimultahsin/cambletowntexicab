@@ -47,12 +47,6 @@ const services = [
     label: " for families and guests.",
     Icon: FaHeart,
   },
-  {
-    id: 7,
-    title: "Wheelchair Accessible",
-    label: " Taxis with ramps and extra space.",
-    Icon: FaWheelchair,
-  },
 ];
 
 const WhatWeDo = () => {
