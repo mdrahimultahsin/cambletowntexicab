@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-4 text-white">
           <div>
             <Link to="/">
-              <img className="w-25 md:w-35" src="/cambelltowntaxicabs-logo.png" alt="" />
+              <img className="w-25 md:w-40" src="/cambelltowntaxicabs-footer-logo.png" alt="" />
             </Link>
-            <h3 className="mt-4 text-lg md:text-2xl  font-playfair text-primary font-bold">About Us</h3>
-            <p className="mt-2">
+            <h3 className="mt-4 text-lg md:text-2xl  font-playfair text-primary font-bold ">About Us</h3>
+            <p className="mt-2 ">
               Our fleet of professional drivers provides Maxi/Taxi Cab services
               in Sydney, Sydney Airport transfers, Taxi Cabs with car seats, and
               Maxi Cabs equipped with wheelchair access.
