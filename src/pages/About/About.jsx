@@ -39,13 +39,16 @@ const About = () => {
       <div>
         <Container>
           <WhoWeAre />
+        </Container>
+          
           <WhatWeDo />
+        <Container>
         
           <AboutChooseUs/>
         
+        </Container>
 
           <Commitment/>
-        </Container>
       </div>
     </div>
   );

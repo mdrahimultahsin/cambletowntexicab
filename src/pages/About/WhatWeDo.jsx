@@ -1,239 +1,123 @@
 import React from "react";
+import { Link } from "react-router";
 import {
   FaPlane,
-  FaShip,
-  FaUsers,
-  FaBriefcase,
   FaBaby,
-  FaHeart,
   FaWheelchair,
+  FaBriefcase,
+  FaShip,
+  FaGift,
+  FaStar,
+  FaBox,
+  FaUsers,
 } from "react-icons/fa";
+import Container from "../../shared/Container";
 
 const services = [
   {
     id: 1,
-    title: "Sydney Airport Transfers",
-    label: "both international and domestic terminals.",
-    Icon: FaPlane,
+    label: "Book Taxi Sydney Airport",
+    pathname: "/services/book-text-sydney-airport",
+    icon: <FaPlane />,
+    desc: "Quick rides to Sydney airport.",
   },
   {
     id: 2,
-    title: "Cruise Transfer",
-    label: "to White Bay and Circular Quay.",
-    Icon: FaShip,
+    label: "Baby Seat Taxi Sydney",
+    pathname: "/services/baby-seat-texi-sydney",
+    icon: <FaBaby />,
+    desc: "Family-friendly taxi service.",
   },
   {
     id: 3,
-    title: "Group Transfers",
-    label: " for events, concerts, sports, and social trips.",
-    Icon: FaUsers,
+    label: "Wheelchair Accessible Taxi",
+    pathname: "/services/wheelchair-accessible-taxi",
+    icon: <FaWheelchair />,
+    desc: "Accessible taxis for all passengers.",
   },
   {
     id: 4,
-    title: "Corporate Transfers",
-    label: " for meetings, conferences, and business events.",
-    Icon: FaBriefcase,
+    label: "Corporate Transport Services",
+    pathname: "/services/corporate-transport-services",
+    icon: <FaBriefcase />,
+    desc: "Professional transport for corporate clients.",
   },
   {
     id: 5,
-    title: "Baby Seat",
-    label:
-      " Taxis with rear facing capsules, forward facing seats, and boosters.",
-    Icon: FaBaby,
+    label: "Cruise Terminal Transfer",
+    pathname: "/services/cruise-terminal-transfer",
+    icon: <FaShip />,
+    desc: "Timely transfers to cruise terminals.",
   },
   {
     id: 6,
-    title: "Wedding and Event Transfers",
-    label: " for families and guests.",
-    Icon: FaHeart,
+    label: "Wedding Transfer",
+    pathname: "/services/wedding-transfer",
+    icon: <FaGift />,
+    desc: "Comfortable wedding day transportation.",
+  },
+  {
+    id: 7,
+    label: "Event Transfer",
+    pathname: "/services/event-transfer",
+    icon: <FaStar />,
+    desc: "Convenient transfers for events.",
+  },
+  {
+    id: 8,
+    label: "Parcel Delivery",
+    pathname: "/services/percel-transfer",
+    icon: <FaBox />,
+    desc: "Fast parcel pickup and delivery.",
+  },
+  {
+    id: 9,
+    label: "Maxi Taxi Service",
+    pathname: "/services/airport-shuttle",
+    icon: <FaUsers />,
+    desc: "Large group taxi service.",
   },
 ];
 
 const WhatWeDo = () => {
   return (
-    <div>
-      <div className="text-center mb-5 md:mb-10">
-        <h2 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center">
-          What We Do
-        </h2>
-        <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
-          We provide door to door transport across Sydney. Our main services
-          are:
-        </p>
-      </div>
-      <div className="grid lg:grid-cols-2 gap-6">
-        {services.map((service) => (
-          <div className=" p-3 md:p-6 rounded-lg shadow-sm hover:shadow-lg transition duration-200">
-            <div className="md:flex items-center">
-              <div className="bg-light w-10 items-center flex justify-center h-10 rounded-lg mr-4">
-                <service.Icon></service.Icon>
-              </div>
-              <div>
-                <h3 className="text-base md:text-xl font-semibold mb-2 text-secondary">
-                  {service.title}
-                </h3>
-                <p className="text-accent text-xs md:text-base">{service.label}</p>
+    <section className="py-16 bg-secondary text-white">
+      <Container>
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="font-playfair text-primary font-bold text-4xl md:text-5xl">
+            What We Do
+          </h2>
+          <p className="text-accent mt-4 max-w-2xl mx-auto text-sm md:text-lg">
+            We provide reliable, safe, and comfortable transportation across Sydney.
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((item) => (
+            <div
+              key={item.id}
+              className="bg-white group p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary"
+            >
+              <div className="flex items-start gap-4">
+                <div className="text-primary text-3xl bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition">
+                  {item.icon}
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition">
+                    {item.label}
+                  </h3>
+                  <p className="text-gray-600 mt-1 text-sm">{item.desc}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 };
 
 export default WhatWeDo;
-
-<section className="py-15">
-  <div className="max-w-6xl mx-auto">
-    <div className="grid lg:grid-cols-2 gap-8">
-      {/* Services List */}
-      <div className="space-y-6">
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">✈️</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Sydney Airport Transfers
-              </h3>
-              <p className="text-gray-600">
-                Both international and domestic terminals
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">🚢</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Cruise Transfers
-              </h3>
-              <p className="text-gray-600">To White Bay and Circular Quay</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">👥</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Group Transfers
-              </h3>
-              <p className="text-gray-600">
-                For events, concerts, sports, and social trips
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">💼</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Corporate Transfers
-              </h3>
-              <p className="text-gray-600">
-                For meetings, conferences, and business events
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">👶</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Baby Seat Taxis
-              </h3>
-              <p className="text-gray-600">
-                With rear facing capsules, forward facing seats, and boosters
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">💒</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Wedding and Event Transfers
-              </h3>
-              <p className="text-gray-600">For families and guests</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-3 rounded-lg mr-4">
-              <span className="text-2xl">♿</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Wheelchair Accessible Taxis
-              </h3>
-              <p className="text-gray-600">With ramps and extra space</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Features & Benefits */}
-      <div className="space-y-6">
-        <div className="bg-linear-to-br from-blue-600 to-blue-800 text-white p-8 rounded-2xl">
-          <h3 className="text-2xl font-bold mb-4">Our Service Features</h3>
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white">✓</span>
-              </div>
-              <span className="font-medium">24/7 Operation</span>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white">✓</span>
-              </div>
-              <span className="font-medium">Door to Door Service</span>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white">✓</span>
-              </div>
-              <span className="font-medium">Fixed Fare System</span>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white">✓</span>
-              </div>
-              <span className="font-medium">Includes Tolls & GST</span>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white">✓</span>
-              </div>
-              <span className="font-medium">Price Known Before Travel</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>;
