@@ -32,7 +32,7 @@ const Navbar = ({isMenuOpen}) => {
   {
     id: 1,
     label: "Book Taxi Sydney Airport",
-    pathname: "/services/book-text-sydney-airport",
+    pathname: "/services/book-texi-sydney-airport",
     icon: <FaPlane />,
     desc: "Quick rides to Sydney airport."
   },

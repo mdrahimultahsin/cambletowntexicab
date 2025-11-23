@@ -1,19 +1,28 @@
-import { Link } from "react-router";
+import {Link} from "react-router";
 import Container from "../shared/Container";
-import { FaAngleDoubleRight, FaCar, FaPhone } from "react-icons/fa";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { useEffect, useState } from "react";
-import { IoLocation, IoLogoWhatsapp } from "react-icons/io5";
-import { FaMapLocationDot } from "react-icons/fa6";
+import {FaAngleDoubleRight, FaCar, FaPhone} from "react-icons/fa";
+import {MdOutlineMailOutline, MdOutlineMessage} from "react-icons/md";
+import {useEffect, useState} from "react";
+import {IoLogoWhatsapp} from "react-icons/io5";
+import {FaLocationDot, FaMapLocationDot} from "react-icons/fa6";
+import Loading from "../shared/Loading";
 
 const Footer = () => {
-  const [service, setService] = useState([]);
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLoading(true);
     fetch("/service.json")
       .then((res) => res.json())
-      .then((data) => setService(data));
+      .then((data) => {
+        setLoading(false);
+        setServices(data);
+      })
+      .catch(() => {
+        setLoading(false);
+      });
   }, []);
-
   const serviceAreas = [
     "Campbelltown",
     "Macarthur",
@@ -76,17 +85,24 @@ const Footer = () => {
             </h2>
             <div>
               <ul className="mt-5 space-y-2">
-                {service
-                  .map((singleService) => (
-                    <li
-                      key={singleService.service_id}
-                      className="flex items-center gap-2"
-                    >
-                      <FaAngleDoubleRight className="text-primary" size={20} />
-                      {singleService.title}
-                    </li>
-                  ))
-                  .slice(0, 7)}
+                {loading ? (
+                  <Loading />
+                ) : (
+                  services
+                    .map((singleService) => (
+                      <Link to={`${singleService.pathname}`}
+                        key={singleService.service_id}
+                        className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2"
+                      >
+                        <FaAngleDoubleRight
+                          className="text-primary"
+                          size={20}
+                        />
+                        {singleService.title}
+                      </Link>
+                    ))
+                    .slice(0, 7)
+                )}
               </ul>
             </div>
           </div>
@@ -98,14 +114,13 @@ const Footer = () => {
             </h2>
             <div className="grid grid-cols-2 gap-1">
               {serviceAreas.slice(0, 16).map((area, index) => (
-                <div key={index} className="flex items-center gap-2 ">
+                <Link to="area-covered" key={index} className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2">
                   <FaAngleDoubleRight className="text-primary" />
                   <span className="text-sm md:text-base">{area}</span>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
-
 
           {/* contact information */}
           <div>
@@ -113,23 +128,44 @@ const Footer = () => {
               <FaPhone /> Contact
             </h2>
             <div>
-              <ul className="mt-5 space-y-2">
+              <ul className="mt-5 space-y-3">
                 <li className="flex items-center gap-2">
-                  <MdOutlineMailOutline className="text-primary" size={20} />
-                  silvercabscampbelltown@gmail.com
+              <FaLocationDot className="text-primary" size={20}/> 1 Hurley St, Campbelltown, Australia
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="mailto:silvercabscampbelltown@gmail.com"
+                    className="hover:underline flex items-center gap-2"
+                  >
+                    <MdOutlineMailOutline className="text-primary" size={20} />
+                    silvercabscampbelltown@gmail.com
+                  </a>
                 </li>
                 <li>
                   <a href="tel:+1300450428" className="flex items-center gap-2">
-                    <FaPhone className="text-primary" size={20} /> +61 469 885
-                    961
+                    <FaPhone className="text-primary" size={20} /> +1300450428
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/01865775514" className="flex items-center gap-2" target="blank">
-                  <IoLogoWhatsapp className="text-primary" size={20} /> +1300 450 428
+                  <a
+                    href="https://wa.me/61423963380"
+                    className="flex items-center gap-2"
+                    target="blank"
+                  >
+                    <IoLogoWhatsapp className="text-primary" size={20} /> +61423963380
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="sms:+61423963380"
+                    className="flex items-center gap-2"
+                    target="blank"
+                  >
+                    <MdOutlineMessage  className="text-primary" size={20} /> Send Message
                   </a>
                 </li>
               </ul>
+              
             </div>
           </div>
         </div>
@@ -147,15 +183,15 @@ const Footer = () => {
             approved local taxi operators.
           </p>
         </div>
-        <div className="flex flex-col-reverse md:flex-row justify-between md:items-center mt-5">
-          <p className="text-center mt-6 md:mt-0">
+        <div className="flex flex-col-reverse  md:flex-row md:justify-between md:items-center mt-5">
+          <p className="text-center mt-3  md:mt-0">
             © 2025 cambletowntexicab. All Rights Reserved.
           </p>
-          <div>
+          <div >
             <Link className="text-primary">Terms And Conditions</Link>
             <span> | </span>
             <Link className="text-primary">
-              Privacy Policy Collection Statement
+              Privacy Policy
             </Link>
             <span> | </span>
             <Link className="text-primary">Cancellation And Refunds</Link>

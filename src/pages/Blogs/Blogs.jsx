@@ -1,11 +1,10 @@
-import React from "react";
+
 import titleImg from "../../assets/fleet-header-img.png";
 import Container from "../../shared/Container";
 import {
   FaCarSide,
   FaUserAlt,
   FaRegCalendarAlt,
-  FaArrowRight,
   FaRegClock,
   FaHandPointer,
 } from "react-icons/fa";
@@ -16,12 +15,12 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 const Blogs = () => {
   const BlogsData = useLoaderData() || [];
   return (
-    <div className="pb-30">
+    <div >
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
             <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
+              <span className="text-3xl md:text-5xl font-bold font-playfair py-3 px-8 bg-black/50 text-white rounded-xl">
                 Blogs
               </span>
               <p className="mt-8 text-sm md:text-base">
@@ -63,7 +62,7 @@ const Blogs = () => {
           {/* Section Header */}
           <div className="text-center mb-5 md:mb-10">
             <h2 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center">
-              Latest Blog & Articles
+              Latest Blog and Articles
             </h2>
             <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
               Stay informed with our latest insights, tips, and news about the

@@ -3,54 +3,63 @@
     "service_id": "S001",
     "title": "Wedding Transfer",
     "description": "Make your special day even more exciting and memorable with Fast Maxi Cabs Sydney wedding transfer service. Our maxi cabs provide a delightful transportation experience for the bride, groom, and guests.",
-    "image": "/icons/car.png"
+    "image": "/icons/car.png",
+    "pathname": "/services/wedding-transfer"
   },
   {
     "service_id": "S002",
     "title": "Luxury Transfer",
     "description": "FAST MAXI offers a new standard in travel with our exclusive luxury transfer service. Whether you’re heading to a corporate event, a special celebration, or simply need a relaxing ride after a long flight, we make sure your journey is smooth, elegant, and memorable.",
-    "image": "/icons/vehicle.png"
+    "image": "/icons/vehicle.png",
+    "pathname": "/services/luxury-transfer"
   },
   {
     "service_id": "S003",
     "title": "Baby Seat Taxi Sydney",
     "description": "We provide baby seat maxi taxis such as baby capsules, booster seats, etc., providing a secure and comfortable ride for your little passengers.",
-    "image": "/icons/baby-seat.png"
+    "image": "/icons/baby-seat.png",
+    "pathname": "/services/baby-seat-texi-sydney"
   },
   {
     "service_id": "S004",
     "title": "Corporate Transport Services",
     "description": "IFast Maxi Taxi Sydney gives the best corporate transfer experience with quality maxi cab vehicles and experienced drivers. We provide comfortable transportation solutions for your business needs, ensuring punctuality and excellence.",
-    "image": "/icons/corporate.png"
+    "image": "/icons/corporate.png",
+    "pathname": "/services/corporate-transport-services"
   },
   {
     "service_id": "S005",
     "title": "Cruise Terminal Transfer",
     "description": "Timely and reliable transfers to cruise terminals, making your journey smooth and stress-free with our professional maxi cab service.",
-    "image": "/icons/ship.png"
+    "image": "/icons/ship.png",
+    "pathname": "/services/cruise-terminal-transfer"
   },
   {
     "service_id": "S006",
     "title": "Event Transfer",
     "description": "Convenient and comfortable transfers for all types of events, ensuring that your guests arrive on time and in style.",
-    "image": "/icons/event.png"
+    "image": "/icons/event.png",
+    "pathname": "/services/event-transfer"
   },
   {
     "service_id": "S007",
     "title": "Maxi Taxi Service",
     "description": "Reliable large group taxi service for Sydney, ensuring everyone travels together comfortably and safely in our spacious maxi cabs.",
-    "image": "/icons/users.png"
+    "image": "/icons/users.png",
+    "pathname": "/services/airport-shuttle"
   },
   {
     "service_id": "S008",
     "title": "Taxi Sydney Service",
     "description": "Reliable taxi service across Sydney with professional drivers, providing quick, safe, and comfortable rides wherever you need to go.",
-    "image": "/icons/car.png"
+    "image": "/icons/car.png",
+    "pathname": "/services/taxi-sydney-service"
   },
   {
     "service_id": "S009",
     "title": "Corporate Trips",
     "description": "Professional long-distance corporate trips with Fast Maxi Taxi Sydney, providing comfort, safety, and timely arrivals for business purposes.",
-    "image": "/icons/briefcase.png"
+    "image": "/icons/briefcase.png",
+    "pathname": "/services/corporate-tips"
   }
 ]

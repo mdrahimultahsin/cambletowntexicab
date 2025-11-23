@@ -1,16 +1,9 @@
 import React from "react";
 import titleImg from "../../assets/fleet-header-img.png";
-import { useLoaderData, Link } from "react-router";
+import {useLoaderData, Link} from "react-router";
 import Container from "../../shared/Container";
-import {
-  FaUserAlt,
-  FaRegCalendarAlt,
-  FaCarSide,
-  FaArrowLeft,
-  FaShare,
-  FaBookmark,
-  FaClock,
-} from "react-icons/fa";
+import {FaCarSide, FaArrowLeft} from "react-icons/fa";
+import ButtonSecondary from "../../shared/ButtonSecondary";
 
 const BlogDetails = () => {
   const blog = useLoaderData();
@@ -24,8 +17,8 @@ const BlogDetails = () => {
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
-            <div className="py-15 md:py-30  flex-1 text-center md:text-left ">
-              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
+            <div className="py-15 md:py-20  flex-1 text-center md:text-left ">
+              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                 Blog Details
               </span>
               <p className="mt-8 text-sm md:text-base">
@@ -37,6 +30,9 @@ const BlogDetails = () => {
                 airport transfers, cruise transfers, corporate trips, and baby
                 seat taxis.
               </p>
+              <Link to="/book-a-taxi" className="mt-4 inline-block">
+                <ButtonSecondary>Book A Taxi Cab</ButtonSecondary>
+              </Link>
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
               <img src={titleImg} alt="" />
@@ -90,11 +86,11 @@ const BlogDetails = () => {
 
               {/* Creative Image Container */}
               <div className=" flex-1">
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                    className="relative w-full h-40 md:h-80 object-cover rounded-xl shadow-lg"
-                  />
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="relative w-full h-40 md:h-80 object-cover rounded-xl shadow-lg"
+                />
               </div>
             </div>
 
@@ -103,7 +99,9 @@ const BlogDetails = () => {
               <div className="space-y-8">
                 {/* Content with Creative Elements */}
                 <div className="space-y-6 text-accent leading-relaxed">
-                  <p className="text-base md:text-lg text-center">{blog.description}</p>
+                  <p className="text-base md:text-lg text-center">
+                    {blog.description}
+                  </p>
 
                   {/* Creative Section Divider */}
                   <div className="relative my-4 md:my-8">
@@ -122,7 +120,6 @@ const BlogDetails = () => {
                   <p className="text-sm md:text-base text-justify md:text-left">
                     {blog.content}
                   </p>
-
                 </div>
 
                 {/* Creative Back Button */}

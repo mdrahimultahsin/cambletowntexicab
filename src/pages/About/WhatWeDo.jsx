@@ -88,31 +88,43 @@ const WhatWeDo = () => {
           <h2 className="font-playfair text-primary font-bold text-4xl md:text-5xl">
             What We Do
           </h2>
-          <p className="text-accent mt-4 max-w-2xl mx-auto text-sm md:text-lg">
+          <p className="mt-4 max-w-2xl mx-auto text-sm md:text-lg">
             We provide reliable, safe, and comfortable transportation across Sydney.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white group p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary"
+          {services.map((service,index) => (
+            <div 
+              key={index} 
+              className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/10 transition-all duration-500 border border-white/10 hover:border-primary/30 hover:-translate-y-2"
             >
-              <div className="flex items-start gap-4">
-                <div className="text-primary text-3xl bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition">
-                  {item.icon}
+              {/* Hover Effect Background */}
+              <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+              
+              {/* Icon Container */}
+              <div className="relative mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 text-2xl bg-linear-to-br from-primary to-blue-600 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  {service.icon}
                 </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition">
-                    {item.label}
-                  </h3>
-                  <p className="text-gray-600 mt-1 text-sm">{item.desc}</p>
-                </div>
+          
               </div>
+              
+              {/* Content */}
+              <h3 className="text-base md:text-xl font-bold mb-4 relative group-hover:text-primary transition-colors duration-300">
+                {service.label}
+              </h3>
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed relative">
+                {service.desc}
+              </p>
+              
+              {/* Bottom Accent */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-linear-to-br from-primary to-blue-500 group-hover:w-3/4 transition-all duration-500 rounded-t-full"></div>
             </div>
+            
+              
+           
           ))}
         </div>
       </Container>

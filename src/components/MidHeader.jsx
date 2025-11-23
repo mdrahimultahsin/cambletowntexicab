@@ -13,7 +13,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
           {/* Logo */}
           <div>
             <Link>
-              <img className="w-25 md:w-35" src="/cambelltowntaxicabs-logo.png" alt="" />
+              <img className="w-25 md:w-40" src="/cambelltowntaxicabs-logo.png" alt="" />
             </Link>
           </div>
           {/* Center Icons */}

@@ -4,13 +4,10 @@ import titleImg from "../../assets/fleet-header-img.png";
 import WhatWeDo from "./WhatWeDo";
 import WhoWeAre from "./WhoWeAre";
 import Commitment from "./Commitment";
-import WhyChooseUs from "../Home/WhyChooseUs";
-import AboutChooseUs from "./AboutChooseUs";
 import { Link } from "react-router";
 import { IoCallSharp } from "react-icons/io5";
 import { FaHandPointer } from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import ButtonPrimary from "../../shared/ButtonPrimary";
 
 const About = () => {
   return (
@@ -20,7 +17,7 @@ const About = () => {
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
             <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
+              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                 About Us
               </span>
               <p className="mt-8 text-sm md:text-base">
@@ -63,10 +60,12 @@ const About = () => {
 
         <WhatWeDo />
         <Container>
-          <AboutChooseUs />
+        
+          {/* <AboutChooseUs/> */}
+        
+          <Commitment/>
         </Container>
 
-        <Commitment />
       </div>
     </div>
   );
