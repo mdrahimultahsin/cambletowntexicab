@@ -5,7 +5,7 @@ import {Link} from "react-router";
 
 const CallToAction = () => {
   return (
-    <div className="bg-[url('/src/assets/ctabg.jpg')] w-full  bg-no-repeat bg-cover bg-fixed bg-bottom text-white py-10">
+    <div className="mt-15 bg-[url('/src/assets/ctabg.jpg')] w-full  bg-no-repeat bg-cover bg-fixed bg-bottom text-white py-10">
       <Container>
         <div className="flex items-center justify-center gap-4  md:gap-15">
           <p className="font-playfair font-semibold text-base md:text-lg lg:text-2xl">

@@ -11,12 +11,12 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 
 const Contact = () => {
   return (
-    <section className="pb-30">
+    <section>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
             <div className="py-10 md:py-20 flex-1 text-center md:text-left ">
-              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl">
+              <span className="text-3xl md:text-5xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                 Contact Us
               </span>
               <p className="mt-8 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, magni ipsa, saepe officiis fugit maiores ratione, quo asperiores dolorem sapiente rem libero iure cumque nam. Fuga eos aspernatur quae culpa?</p>

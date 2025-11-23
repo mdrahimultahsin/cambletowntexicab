@@ -1,7 +1,7 @@
 import {useLoaderData} from "react-router";
 import Container from "../../shared/Container";
 
-const Services = () => {
+const ServicesSection = () => {
   const serviceData = useLoaderData() || [];
   return (
     <section className="pt-30 mb-30">
@@ -43,4 +43,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

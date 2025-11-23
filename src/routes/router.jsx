@@ -9,6 +9,7 @@ import AreaCovered from "../pages/AreaCovered/AreaCovered";
 import BlogDetails from "../pages/Blogs/BlogDetails";
 import Loading from "../shared/Loading";
 import BookATaxi from "../pages/BookATaxi/BookATaxi";
+import Services from "../pages/Services/Services";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,19 @@ const router = createBrowserRouter([
       {
         path: "/about",
         Component: About,
+      },
+      {
+        path: "/services/:servicetype",
+        Component: Services,
+        
+      },
+      {
+        path: "/book-a-taxi",
+        Component: BookATaxi,
+      },
+      {
+        path: "/area-covered",
+        Component: AreaCovered,
       },
       {
         path: "/blogs",
@@ -60,14 +74,6 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         Component: Contact,
-      },
-      {
-        path: "/area-covered",
-        Component: AreaCovered,
-      },
-      {
-        path: "/book-a-taxi",
-        Component: BookATaxi,
       },
     ],
   },

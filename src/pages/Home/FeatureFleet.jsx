@@ -1,21 +1,41 @@
-import React, { use } from "react";
-import { Link } from "react-router";
+import  { useEffect, useState} from "react";
+import {Link} from "react-router";
 import Container from "../../shared/Container";
-import { IoPeopleSharp } from "react-icons/io5";
-import { GiConcreteBag } from "react-icons/gi";
+import {IoPeopleSharp} from "react-icons/io5";
+import {GiConcreteBag} from "react-icons/gi";
 import ButtonPrimary from "../../shared/ButtonPrimary";
+import Loading from "../../shared/Loading";
 
-const FeatureFleet = ({ fleetData }) => {
-  const fleets = use(fleetData);
-  const colors = ["bg-amber-300", "bg-blue-300", "bg-green-300",  "bg-purple-400"];
+const FeatureFleet = () => {
+  const [fleets, setFleets] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLoading(true);
+    fetch("/fleet.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setFleets(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  }, []);
+  const colors = [
+    "bg-amber-300",
+    "bg-blue-300",
+    "bg-green-300",
+    "bg-purple-400",
+  ];
   return (
-    <section>
+    <section className="mt-30">
       <Container>
         <h2 className="text-center text-primary text-4xl font-playfair font-bold">
           Our Fleets
         </h2>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-          {fleets?.map((fleet, idx) => (
+          {loading?<Loading/>:fleets?.map((fleet, idx) => (
             <div
               key={fleet.id}
               className="bg-light rounded-xl shadow-md flex flex-col h-full relative overflow-hidden"

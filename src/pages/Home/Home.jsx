@@ -6,29 +6,24 @@ import FeatureCards from "./FeatureCards";
 import FeatureFleet from "./FeatureFleet";
 import Hero from "./Hero";
 import Reviews from "./Reviews";
-import Services from "./Services";
-import Loading from "../../shared/Loading";
 import WhyChooseUs from "./WhyChooseUs";
+import ServicesSection from "./ServicesSection";
 
-const fleetPromise = async () => {
-  const res = await fetch("/fleet.json");
-  return await res.json();
-};
+
 const Home = () => {
-  const fleetData = fleetPromise();
 
   return (
     <div>
       <Hero />
       <BookingForm />
       <FeatureCards />
-      <Services />
+      <ServicesSection />
       <FeatureBanner />
       <WhyChooseUs />
       <Reviews />
-      <Suspense fallback={Loading}>
-        <FeatureFleet fleetData={fleetData} />
-      </Suspense>
+      
+        <FeatureFleet />
+    
       <Faq />
     </div>
   );

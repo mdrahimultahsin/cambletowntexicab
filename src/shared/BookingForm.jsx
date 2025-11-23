@@ -2,7 +2,7 @@ import Container from "./Container";
 import ButtonPrimary from "./ButtonPrimary";
 import {useState} from "react";
 
-const BookingForm = () => {
+const BookingForm = ({className, params}) => {
   const [formData, setFormData] = useState({
     pickupType: "anywhere",
     name: "",
@@ -37,11 +37,11 @@ const BookingForm = () => {
   };
 
   return (
-    <section className="-mt-15 z-55 mb-16">
+    <section className={`-mt-15 z-55 mb-16 ${className}`}>
       <Container>
         <div className="bg-gray-color text-black pt-10 pb-6 rounded-md">
-          <h1 className="text-2xl md:text-4xl font-playfair font-bold text-center text-primary px-2">
-            Taxi Booking Services in CambellTown
+          <h1 className="text-2xl md:text-4xl font-playfair font-bold text-center text-primary px-2 capitalize">
+            {params ? params : "Taxi Booking Services in CampbellTown"}
           </h1>
           <form onSubmit={handleSubmit} className=" px-8 pt-6">
             {/* Pickup Options */}
@@ -289,14 +289,54 @@ const BookingForm = () => {
                 </div>
               </>
             )}
-            {/* Airport Form */}
-{formData.pickupType === "airport" && (
+            {formData.pickupType === "airport" && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                {/* Name & Contact */}
                 <input
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Name"
+                  className="input-class"
+                  required
+                />
+                <input
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Phone Number"
+                  className="input-class"
+                  required
+                />
+                <input
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="E-mail"
+                  className="input-class"
+                  required
+                />
+
+                {/* Terminal Dropdown */}
+                <select
                   name="airportPickupLocation"
                   value={formData.airportPickupLocation}
                   onChange={handleInputChange}
-                  placeholder="Pickup Location (e.g., Sydney Airport Terminal 1)"
+                  className="input-class"
+                  required
+                >
+                  <option value="">Select Pickup Terminal</option>
+                  <option value="international">International Terminal</option>
+                  <option value="domestic">Domestic Terminal</option>
+                </select>
+
+                {/* Flight No & Dropoff */}
+                <input
+                  name="flightNo"
+                  value={formData.flightNo || ""}
+                  onChange={handleInputChange}
+                  placeholder="Flight Number"
                   className="input-class"
                   required
                 />
@@ -304,10 +344,14 @@ const BookingForm = () => {
                   name="airportDropoffLocation"
                   value={formData.airportDropoffLocation}
                   onChange={handleInputChange}
-                  placeholder="Drop Off Location"
+                  placeholder="Drop Off Address"
                   className="input-class"
                   required
                 />
+                <h2 className="col-span-full text-center font-bold text-lg">
+                  Date & Time
+                </h2>
+                {/* Date & Time of Landing */}
                 <input
                   name="airportPickupDate"
                   type="date"
@@ -324,28 +368,64 @@ const BookingForm = () => {
                   className="input-class"
                   required
                 />
+
+                {/* Number of Passengers */}
+                <select
+                  name="passengers"
+                  value={formData.passengers}
+                  onChange={handleInputChange}
+                  className="input-class"
+                  required
+                >
+                  <option value="">No. of Passengers</option>
+                  {[1, 2, 3, 4, 5, "6+"].map((n) => (
+                    <option key={n} value={n}>
+                      {n} {n === 1 ? "Passenger" : "Passengers"}
+                    </option>
+                  ))}
+                </select>
+
+                {/* Vehicle Type */}
+                <select
+                  name="vehicleType"
+                  value={formData.vehicleType}
+                  onChange={handleInputChange}
+                  className="input-class"
+                  required
+                >
+                  <option value="">Vehicle Type</option>
+                  <option value="easy-sedan">Easy Sedan</option>
+                  <option value="luxury-vehicle">Luxury Vehicle</option>
+                  <option value="suv-wagon">SUV or Wagon</option>
+                  <option value="kia-carnival">Kia Carnival</option>
+                </select>
+
+                {/* Payment Mode */}
+                <select
+                  name="paymentMode"
+                  value={formData.paymentMode}
+                  onChange={handleInputChange}
+                  className="input-class"
+                  required
+                >
+                  <option value="cash">Payment Mode: Cash</option>
+                  <option value="bank-card">Payment Mode: Bank Card</option>
+                  <option value="cabcharge">Payment Mode: CabCharge</option>
+                  <option value="ttss">Payment Mode: TTSS</option>
+                </select>
+
+                {/* Special Instructions */}
                 <textarea
                   name="specialInstructions"
                   value={formData.specialInstructions}
                   onChange={handleInputChange}
                   placeholder="Special instructions"
                   className="input-class"
-                  rows={4}
+                  rows={2}
                 />
-                <select
-                  name="paymentMode"
-                  value={formData.paymentMode}
-                  onChange={handleInputChange}
-                  className="input-class"
-                >
-                  {["card", "bank-card", "cabcharge", "ttss"].map((mode) => (
-                    <option key={mode} value={mode}>
-                      Payment Mode: {mode.toUpperCase()}
-                    </option>
-                  ))}
-                </select>
               </div>
             )}
+
             {/* Submit Button */}
             <div className="flex justify-center">
               <ButtonPrimary type="submit" className="">

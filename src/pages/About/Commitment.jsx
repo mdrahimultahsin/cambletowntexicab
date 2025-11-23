@@ -18,22 +18,7 @@ const Commitment = () => {
           make every trip smooth from booking to drop off.
         </p>
       </div>
-      <div className="flex flex-wrap md:justify-center gap-2 md:gap-4">
-        <div className="flex items-center gap-2 bg-blue-50 px-3 py-2 rounded">
-          <FaCheck className="text-primary" />
-          <span className="text-sm">SMS or email confirmations</span>
-        </div>
-        <div className="flex items-center gap-2 bg-blue-50 px-3 py-2 rounded">
-          <FaCheck className="text-primary" />
-          <span className="text-sm">Flight tracking for adjusted pickups</span>
-        </div>
-        <div className="flex items-center gap-2 bg-blue-50 px-3 py-2 rounded">
-          <FaCheck className="text-primary" />
-          <span className="text-sm">
-            Simple payments: card, Apple Pay, Google Pay, and cash
-          </span>
-        </div>
-      </div>
+     
 
       {/* Policies */}
 <div className="bg-light p-8 md:p-12 rounded-2xl my-12 border border-blue-200 relative overflow-hidden">
@@ -47,7 +32,7 @@ const Commitment = () => {
           <div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center">
             <FaCheck className="text-white text-xl" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold bg-linear-to-r from-gray-800 to-blue-700 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary">
             Fair & Flexible Policies
           </h2>
         </div>
