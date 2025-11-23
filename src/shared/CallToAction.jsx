@@ -9,7 +9,7 @@ const CallToAction = () => {
       <Container>
         <div className="flex items-center justify-center gap-4  md:gap-15">
           <p className="font-playfair font-semibold text-base md:text-lg lg:text-2xl">
-            We provide Fast Maxi Cabs Sydney bookings for more than 50+ Suburbs.
+            We provide CambellTown Taxi Cabs Sydney bookings for more than 50+ Suburbs.
           </p>
           <Link to="/services">
             <ButtonPrimary className={`px-2! md:px-4! text-sm`}>Online Booking</ButtonPrimary>

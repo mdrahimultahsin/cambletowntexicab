@@ -15,10 +15,10 @@ const Hero = () => {
           <div className="text-center text-white">
             <div className="py-30">
               <h1 className="text-3xl md:text-5xl font-semibold font-playfair">
-                BOOK YOU MAXI CAV IN SYDNEY
+                BOOK YOU TAXI CAV IN SYDNEY
               </h1>
               <p className="md:text-lg my-6">
-                Welcome to Fast Maxi Cab Sydney, the most preferred choice for
+                Welcome to Cambelltown Taxi Cabs, the most preferred choice for
                 easy and affordable taxi maxi cab rides in Sydney. Get ready to
                 make your travel experience memorable. Book your Fast Maxi Taxi
                 ride today, where every trip combines speed, reliability and
@@ -43,7 +43,7 @@ const Hero = () => {
               </h2>
               <p className="md:text-lg my-6">
                 Book your Sydney Maxi Cabs Taxi in advance for a smooth,
-                affordable transportation experience with Fast Maxi Cab Sydney.
+                affordable transportation experience with Cambelltown Taxi Cab Sydney.
                 We take pride in being one of the most trusted names in maxi
                 taxi sydney services in Sydney, offering 1-11 seat maxi cabs
                 equipped with air-conditioning and clean, spacious interiors at

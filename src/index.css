@@ -12,6 +12,7 @@
   --color-light: #F2F9FF;
   --color-accent: #57595B;
   --color-border-color: #d4d6d9;
+  --color-gray-color: #DDDDDD;
 }
 
 body {
@@ -22,4 +23,10 @@ body {
 html, body {
   height: 100%;
   overflow-y: auto;
+}
+
+@layer utilities {
+  .input-class{
+    @apply w-full border border-[#ccc] bg-white py-2 px-3 placeholder:font-bold rounded focus:outline-none focus:border-blue-500 font-bold
+  }
 }

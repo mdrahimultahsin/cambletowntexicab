@@ -3,9 +3,8 @@ import Container from "../../shared/Container";
 
 const Services = () => {
   const serviceData = useLoaderData() || [];
-  console.log(serviceData);
   return (
-    <section className="py-30">
+    <section className="pt-30 mb-30">
       <Container>
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-semibold font-playfair text-primary">

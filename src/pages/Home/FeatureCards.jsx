@@ -3,7 +3,7 @@ import Container from "../../shared/Container";
 
 const FeatureCards = () => {
   return (
-    <section className="bg-secondary text-white py-16">
+    <section className="mt-20 bg-secondary text-white py-16">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4">
 

@@ -44,11 +44,11 @@ const About = () => {
           <WhatWeDo />
         <Container>
         
-          <AboutChooseUs/>
+          {/* <AboutChooseUs/> */}
         
+          <Commitment/>
         </Container>
 
-          <Commitment/>
       </div>
     </div>
   );
