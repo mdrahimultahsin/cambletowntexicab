@@ -126,7 +126,7 @@ const Navbar = ({isMenuOpen}) => {
     {
       id: 4,
       label: "Book A Taxi Cab",
-      pathname: "/services",
+      pathname: "/book-a-taxi",
     },
     {
       id: 5,

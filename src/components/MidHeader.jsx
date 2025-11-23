@@ -1,6 +1,6 @@
 import Container from "../shared/Container";
 import {Link} from "react-router";
-import {FaBusinessTime, FaCar, FaPlane, FaShip} from "react-icons/fa";
+import {FaBusinessTime, FaCar, FaPlane,  FaUsers} from "react-icons/fa";
 import {IoMenu} from "react-icons/io5";
 import {FaXmark} from "react-icons/fa6";
 import ButtonSecondary from "../shared/ButtonSecondary";
@@ -21,14 +21,14 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
             <div className="flex gap-2 items-center">
               {/* Icon */}
               <div>
-                <FaShip
+                <FaUsers
                   size={45}
                   className="text-primary hover:text-secondary"
                 />
               </div>
               {/* Text */}
               <div>
-                <p className="font-bold text-sm">Cruise Ship Transfers</p>
+                <p className="font-bold text-sm">Accessible Taxis</p>
                 <p className="text-xs">Available on notice</p>
               </div>
             </div>
