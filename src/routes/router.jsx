@@ -8,6 +8,7 @@ import Contact from "../pages/Contact/Contact";
 import AreaCovered from "../pages/AreaCovered/AreaCovered";
 import BlogDetails from "../pages/Blogs/BlogDetails";
 import Loading from "../shared/Loading";
+import BookATaxi from "../pages/BookATaxi/BookATaxi";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/area-covered",
         Component: AreaCovered,
+      },
+      {
+        path: "/book-a-taxi",
+        Component: BookATaxi,
       },
     ],
   },
