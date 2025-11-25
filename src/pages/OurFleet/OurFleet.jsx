@@ -1,18 +1,21 @@
-
-import { Link, useLoaderData } from "react-router";
+import {Link, useLoaderData} from "react-router";
 import Container from "../../shared/Container";
-import { IoCallSharp, IoPeopleSharp } from "react-icons/io5";
-import { GiConcreteBag } from "react-icons/gi";
+import {IoCallSharp, IoPeopleSharp} from "react-icons/io5";
+import {GiConcreteBag} from "react-icons/gi";
 import titleImg from "../../assets/fleet-header-img.png";
 import ButtonPrimary from "../../shared/ButtonPrimary";
-import { FaHandPointer } from "react-icons/fa";
+import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
+import {Helmet} from "react-helmet-async";
 
 const OurFleet = () => {
   const fleetData = useLoaderData() || [];
 
   return (
     <section className="pb-30">
+      <Helmet>
+        <title>Campbelltown Taxi Cabs - Our Fleet</title>
+      </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -35,12 +38,9 @@ const OurFleet = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a
-                  href="tel:+1300450428"
-                  className=""
-                >
+                <a href="tel:+1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
-                    <IoCallSharp className="" /> +1300 450 428
+                    <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
                 </a>
               </div>
@@ -60,7 +60,10 @@ const OurFleet = () => {
         </div>
         <div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           {fleetData.map((singleData) => (
-            <div key={singleData.id} className="bg-light p-4 md:p-8 rounded-xl shadow-lg">
+            <div
+              key={singleData.id}
+              className="bg-light p-4 md:p-8 rounded-xl shadow-lg"
+            >
               <h3 className="text-2xl md:text-3xl font-semibold mb-5 md:mb-10">
                 {singleData.name}
               </h3>
@@ -76,10 +79,10 @@ const OurFleet = () => {
               <img src={singleData.image} alt="" />
               <div className="w-full text-center md:text-left">
                 <Link to={`/fleet/${singleData.id}`}>
-                <ButtonPrimary className="text-base md:text-xl py-2 md:py-4 px-5 md:px-8">
-                  Book {singleData.name}
-                </ButtonPrimary>
-              </Link>
+                  <ButtonPrimary className="text-base md:text-xl py-2 md:py-4 px-5 md:px-8">
+                    Book {singleData.name}
+                  </ButtonPrimary>
+                </Link>
               </div>
             </div>
           ))}

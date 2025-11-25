@@ -4,7 +4,7 @@
     "name": "Easy Sedan",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "A comfortable and fuel-efficient sedan ideal for city rides and short trips. Perfect for business travelers or couples, it offers smooth handling, modern amenities, and a quiet cabin for a relaxed ride. Ideal for airport pickups, city tours, or quick errands.",
+    "description": "Ideal for quick trips and business travel, the Easy Sedan offers smooth handling, a quiet cabin, and a fuel-efficient ride. Perfect for airport pickups, city tours, or errands, it's an affordable way to experience luxury at its finest.",
     "image": "/fleetsImage/Easy-Sedan.png"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Luxury Vehicle",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "A premium luxury sedan offering top-tier comfort, performance, and elegance. Features plush leather seating, advanced climate control, and state-of-the-art infotainment for a first-class experience. Ideal for VIP transfers, corporate clients, or special occasions.",
+    "description": "For those who demand premium service, our Luxury Vehicle is the epitome of elegance and comfort. Featuring plush leather seating, top-tier climate control, and state-of-the-art technology, it’s ideal for corporate clients or VIP transfers. Experience first-class service at an affordable price.",
     "image": "/fleetsImage/Luxury-Vehicle.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Suv or Wagon",
     "passengerCapacity": 7,
     "bagsCapacity": 5,
-    "description": "A spacious family-friendly SUV with smooth handling and great storage. Perfect for group outings, family trips, or airport transfers with multiple passengers. Equipped with modern safety features, comfortable seating, and ample luggage space for long journeys.",
+    "description": "Traveling with family or a group? Our spacious SUV or Wagon offers ample room for passengers and luggage, ensuring comfort and convenience. With luxury interiors and modern safety features, this vehicle is perfect for long trips, family vacations, or airport transfers.",
     "image": "/fleetsImage/Suv-Wagon.png"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Kia Carnival",
     "passengerCapacity": 7,
     "bagsCapacity": 8,
-    "description": "A large, reliable van suitable for group tours and long-distance travel. Boasts luxurious interiors, flexible seating arrangements, and plenty of storage for luggage. Ideal for corporate trips, family vacations, or airport transfers for larger groups, ensuring comfort and convenience for all passengers.",
+    "description": "The Kia Carnival is designed for larger groups, offering seating for up to seven passengers with plenty of luggage space. Whether you’re heading to an event or going on a family vacation, this affordable, reliable van ensures a smooth, comfortable ride for all.",
     "image": "/fleetsImage/Kia-Carnival.png"
   }
 ]

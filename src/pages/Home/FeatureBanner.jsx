@@ -10,24 +10,24 @@ const FeatureBanner = () => {
       <Container>
         <div className="flex items-center flex-col md:flex-row gap-10">
           <div className="flex-1">
-            <h2 className="text-4xl font-playfair font-bold">
-              FAST MAXI: MAXI FOR SYDNEY AIRPORT
+            <h2 className="text-2xl md:text-4xl font-playfair font-bold">
+              Reliable and Stress-Free Sydney Airport Transfers with
+              Campbelltown Taxi Cabs
             </h2>
             <p className="mt-4 ">
-              Fast Maxi offers the most reliable and efficient Maxi Cab Sydney
-              Airport Taxi services. At Fast Maxi Cab Sydney, we take pride in
-              providing a smooth airport transfer experience and ensuring that
-              you reach Sydney Airport on time and depart without worry. Our
-              commitment is to provide you with satisfaction, and every ride in
-              our Maxi/Taxi to Sydney Airport aims to make our maxi/taxi sydney
-              airport customers happy. We try everything possible to deliver the
-              best Maxi Cab Sydney service in Sydney, all while keeping costs
-              reasonable. For a secure and convenient travel experience, book a
-              Maxi Cab near you anytime and let Fast Maxi take care of your
-              transportation needs throughout Sydney.
+              When it comes to airport transfers, Campbelltown Taxi Cabs is your
+              trusted partner for a smooth, on-time ride. Whether you're
+              catching an early flight or returning after a long journey, our
+              airport Taxi and Maxi service in Sydney ensures your airport
+              experience is hassle-free. Our professional drivers monitor flight
+              schedules and will be there waiting for you, so you never have to
+              worry about a delay. We offer luxury and comfort at an affordable
+              price, ensuring your journey is both premium and economical. No
+              matter where you're coming from, you can count on us to get you to
+              Sydney Airport on time, in comfort, and with peace of mind.
             </p>
             <div className="mt-4">
-              <Link to={`/`}>
+              <Link to={`/book-a-text`}>
                 <ButtonPrimary>Book Now!</ButtonPrimary>
               </Link>
             </div>

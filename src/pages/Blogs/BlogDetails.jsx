@@ -64,23 +64,7 @@ const BlogDetails = () => {
                     {blog.description}
                   </p>
 
-                  {/* Creative Author & Date */}
-                  <div className="flex items-center gap-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-linear-to-r from-[#04A9E9] to-[#003E60] rounded-full flex items-center justify-center text-white font-semibold">
-                        {blog.author
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
-                      </div>
-                      <div>
-                        <div className="font-semibold text-secondary">
-                          {blog.author}
-                        </div>
-                        <div className="text-accent text-sm">{blog.date}</div>
-                      </div>
-                    </div>
-                  </div>
+                
                 </div>
               </div>
 

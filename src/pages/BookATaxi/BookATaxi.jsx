@@ -7,10 +7,14 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import BookingForm from "../../shared/BookingForm";
 import Faq from "../../shared/Faq";
 import FeatureFleet from "../Home/FeatureFleet";
+import { Helmet } from "react-helmet-async";
 
 const BookATaxi = () => {
   return (
     <div >
+       <Helmet>
+              <title>Campbelltown Taxi Cabs - Book A Taxi</title>
+            </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -40,7 +44,7 @@ const BookATaxi = () => {
                   className=""
                 >
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
-                    <IoCallSharp className="" /> +1300 450 428
+                    <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
                 </a>
               </div>
@@ -82,7 +86,7 @@ const BookATaxi = () => {
 
                 <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
-                    <FaCar className="text-primary" />
+                    <FaCar className="text-primary" size={24}/>
                     Looking to book a taxi in Campbelltown?
                   </h3>
                   <p className="text-gray-700">

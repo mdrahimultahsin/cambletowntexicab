@@ -14,7 +14,7 @@ const Commitment = () => {
           Our Commitment
         </h1>
         <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
-          CambellTown Taxi Cabs is committed to reliability and affordability. We aim to
+          Campbelltown Taxi Cabs is committed to reliability and affordability. We aim to
           make every trip smooth from booking to drop off.
         </p>
       </div>

@@ -21,7 +21,7 @@ const GetInTouchForm = () => {
     e.preventDefault();
 
     
-    console.log("Form Data:", formData);
+   
 
     // Reset form
     setFormData({ name: "", email: "", number: "", message: "" });

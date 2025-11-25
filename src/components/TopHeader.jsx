@@ -21,7 +21,7 @@ const TopHeader = () => {
   }, []);
 
   return (
-    <div className="bg-primary text-white py-3 text-sm md:text-sm lg:text-base">
+    <div className=" bg-primary text-white py-3 text-sm md:text-sm lg:text-base">
       <Container>
         <div className="flex flex-col items-center md:flex-row justify-between gap-2 md:gap-0">
           {/* Email */}
@@ -47,7 +47,7 @@ const TopHeader = () => {
             className="flex items-center gap-2 cursor-pointer"
             href="tel:+1300450428"
           >
-            <FaPhoneAlt /> +1300450428
+            <FaPhoneAlt /> 1300 450 428
           </a>
         </div>
       </Container>

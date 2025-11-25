@@ -24,7 +24,7 @@ const services = [
   {
     id: 2,
     label: "Baby Seat Taxi Sydney",
-    pathname: "/services/baby-seat-texi-sydney",
+    pathname: "/services/baby-seat-taxi-sydney",
     icon: <FaBaby />,
     desc: "Family-friendly taxi service.",
   },

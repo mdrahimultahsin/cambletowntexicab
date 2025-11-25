@@ -8,20 +8,19 @@ const ServicesSection = () => {
       <Container>
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-semibold font-playfair text-primary">
-            Our Maxi Cabs Services in Sydney
+            Our Taxi and Maxi Services in Campbelltown
           </h2>
-          <p className="text-lg mt-6 text-accent">
-            Looking for a maxi taxi sydney airport for groups, corporate
-            transfers, group transfers, and large families going to, or coming
-            from, Sydney airport, cruise maxi transfers, wheelchair taxi maxi
-            Sydney, airport transfers, or any other events? Get a maxi cab price
-            or make an online reservation—we are here to help with all your
-            needs!
+          <p className="mt-4 text-base text-accent md:text-xl text-center max-w-6xl mx-auto leading-relaxed">
+            At Campbelltown Taxi Cabs, we offer reliable and efficient taxi and
+            maxi services for all your travel needs in Campbelltown and the
+            surrounding areas. Whether you need a quick ride to Sydney Airport,
+            a comfortable maxi taxi for group travel, or a special luxury
+            transfer, we've got you covered.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {serviceData &&
-            serviceData?.map((service) => (
+            serviceData.map((service) => (
               <div
                 key={service.service_id}
                 className="bg-light px-8 py-5 rounded-xl border-b-10 border-primary"

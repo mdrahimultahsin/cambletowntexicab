@@ -45,11 +45,7 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         Component: Blogs,
-        loader: async () => {
-          const res = await fetch("/blogs.json");
-          return res.json();
-        },
-        hydrateFallbackElement: <Loading />,
+     
       },
       {
         path: "/blogs/:id",

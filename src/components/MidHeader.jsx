@@ -1,11 +1,12 @@
 import Container from "../shared/Container";
-import {Link} from "react-router";
+import {Link, useNavigate} from "react-router";
 import {FaBusinessTime, FaCar, FaPlane,  FaUsers} from "react-icons/fa";
 import {IoMenu} from "react-icons/io5";
 import {FaXmark} from "react-icons/fa6";
 import ButtonSecondary from "../shared/ButtonSecondary";
 
 const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
+  const navigate = useNavigate()
   return (
     <div className="py-2 shadow-md bg-white">
       <Container>
@@ -13,7 +14,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
           {/* Logo */}
           <div>
             <Link>
-              <img className="w-25 md:w-40" src="/cambelltowntaxicabs-logo.png" alt="" />
+              <img className="w-28 md:w-40" src="/campbelltowntaxicabs-logo.png" alt="" />
             </Link>
           </div>
           {/* Center Icons */}
@@ -76,7 +77,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <ButtonSecondary>Online Bookings!</ButtonSecondary>
+            <ButtonSecondary onClick={()=>navigate("/book-a-taxi")} className={"text-sm! md:text-base"}>Online Bookings!</ButtonSecondary>
             <button className="md:hidden border border-gray-500 bg-primary text-white px-2 py-1 rounded">
               {isMenuOpen ? (
                 <FaXmark

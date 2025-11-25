@@ -3,17 +3,23 @@ import {Outlet} from "react-router";
 import Footer from "../components/Footer";
 import FloatingSidebar from "../components/FloatingSidebar";
 import CallToAction from "../shared/CallToAction";
+import ScrollToTop from "../utils/ScrollToTop";
+import TopHeader from "../components/TopHeader";
+
 
 const RootLayout = () => {
   return (
     <>
-      <Header />
-      <main className="relative">
-        <Outlet />
-        <FloatingSidebar />
-      </main>
-      <CallToAction />
-      <Footer />
+    <TopHeader />
+        <ScrollToTop />
+        <Header />
+        <main className="relative">
+          <Outlet />
+          <FloatingSidebar />
+        </main>
+        <CallToAction />
+        <Footer />
+  
     </>
   );
 };

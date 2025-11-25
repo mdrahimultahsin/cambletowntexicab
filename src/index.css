@@ -7,26 +7,34 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-playfair: "Playfair Display", serif;
-  --color-primary:  #3087C9; 
+  --color-primary: #3087c9;
   --color-secondary: #000000; /*#333333*/
-  --color-light: #F2F9FF;
-  --color-accent: #57595B;
+  --color-light: #f2f9ff;
+  --color-accent: #57595b;
   --color-border-color: #d4d6d9;
-  --color-gray-color: #DDDDDD;
+  --color-gray-color: #dddddd;
 }
 
+html,
 body {
-  @apply font-inter;
-}
-
-
-html, body {
   height: 100%;
   overflow-y: auto;
 }
+body {
+  @apply font-inter min-h-screen overflow-y-auto;
+}
+
+button,
+a {
+  @apply cursor-pointer;
+}
 
 @layer utilities {
-  .input-class{
-    @apply w-full border border-[#ccc] bg-white py-2 px-3 placeholder:font-bold rounded focus:outline-none focus:border-blue-500 font-bold
+  .section-title {
+    @apply text-xl md:text-4xl font-playfair font-bold text-center text-primary px-2 capitalize;
+  }
+  .input-class {
+    @apply w-full border border-[#ccc] bg-white py-2 px-3 text-sm md:text-base placeholder:font-bold rounded focus:outline-none focus:border-blue-500 font-bold;
   }
 }
+
