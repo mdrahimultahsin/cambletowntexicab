@@ -2,10 +2,10 @@ import Container from "../../shared/Container";
 import {Link} from "react-router";
 import {FaPhoneVolume} from "react-icons/fa";
 import Carousel from "../../components/Carousel";
-import sedanCarImg from "../../assets/campbelltown-easy-sedan.png";
-import luxuryVehicleImg from "../../assets/campbelltown-luxury-taxi.png";
-import suvWagonImg from "../../assets/campbelltown-suv-wagon.png";
-import carnivalImg from "../../assets/campbelltown-kia-taxi.png";
+import sedanCarImg from "/fleetsImage/campbelltown-easy-sedan-img.png";
+import luxuryVehicleImg from "/fleetsImage/campbelltown-luxury-vehicle.png";
+import suvWagonImg from "/fleetsImage/campbelltown-suv-wagon.png";
+import carnivalImg from "/fleetsImage/campbelltown-kia-carnival-img.png";
 
 const Hero = () => {
   return (

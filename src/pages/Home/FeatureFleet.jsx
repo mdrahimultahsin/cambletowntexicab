@@ -34,7 +34,7 @@ const FeatureFleet = () => {
         <h2 className="text-center text-primary text-2xl md:text-4xl font-playfair font-bold">
           Our Premium Fleet: Travel in Comfort and Style
         </h2>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {loading ? (
             <Loading />
           ) : (
@@ -42,18 +42,20 @@ const FeatureFleet = () => {
             fleets.map((fleet, idx) => (
               <div
                 key={fleet.id}
-                className="bg-light rounded-xl shadow-md flex flex-col h-full relative overflow-hidden"
+                className="bg-light rounded-xl shadow-md flex flex-col h-full min-h-[460px] relative overflow-hidden py-2"
               >
                 <div
-                  className={` absolute w-full left-0 top-0 h-30  ${
+                  className={`absolute w-full left-0 top-0 h-20 ${
                     colors[idx % colors.length]
                   }`}
                 ></div>
+
                 <img
-                  className="max-w-50 z-10 mx-auto"
+                  className="w-80 mt-0 z-10 mx-auto object-contain h-[150px] "
                   src={fleet.image}
                   alt=""
                 />
+
                 <h3
                   className={`text-xl font-semibold py-1 ${
                     colors[idx % colors.length]
@@ -61,7 +63,8 @@ const FeatureFleet = () => {
                 >
                   {fleet.name}
                 </h3>
-                <div className="flex flex-col h-full z-10  p-3 md:p-6 ">
+
+                <div className="flex flex-col h-full z-10 p-3 md:p-6">
                   <div className="flex items-center gap-3 text-primary text-lg mb-4">
                     <IoPeopleSharp />
                     <p>{fleet.passengerCapacity} Passengers</p>
@@ -71,11 +74,11 @@ const FeatureFleet = () => {
                     <GiConcreteBag />
                     <p>{fleet.bagsCapacity} Bags</p>
                   </div>
+
                   <p className="text-accent text-xs md:text-base mb-4">
                     {fleet.description}
                   </p>
 
-                  {/* Push button to bottom */}
                   <div className="mt-auto">
                     <Link to={`/book-a-taxi`}>
                       <ButtonPrimary className="text-base md:text-lg py-2 md:py-4 px-4 w-full">

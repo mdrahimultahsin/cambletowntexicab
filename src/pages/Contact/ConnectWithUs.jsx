@@ -15,7 +15,7 @@ const contactInfo = [
 
   {
     id: 2,
-    label: "200 Gilchrist Drive, Campbelltown",
+    label: "1 Hurley St, Campbelltown NSW 2560, Australia",
     Icon: MdLocationOn,
     href: "https://share.google/K9uIHai7caaEaFuBf",
   },

@@ -70,7 +70,7 @@ const Reviews = () => {
       </h1>
       <p className="mt-4 text-gray-600 text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">
         Hear from our satisfied customers who trust us for reliable and
-        comfortable taxi services across Melbourne. Your feedback motivates us
+        comfortable taxi services across Sydney. Your feedback motivates us
         to provide the best experience every time.
       </p>
     </div>
@@ -144,14 +144,14 @@ const Reviews = () => {
             {/* Custom navigation buttons */}
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="absolute -left-5 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 md:p-3 rounded-full shadow-lg z-10"
+              className="absolute -left-3 md:-left-5 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 md:p-3 rounded-full shadow-lg z-10"
             >
               <FaChevronLeft />
             </button>
 
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="absolute -right-5 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 md:p-3 rounded-full shadow-lg z-10"
+              className="absolute -right-3 md:-right-5 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 md:p-3 rounded-full shadow-lg z-10"
             >
               <FaChevronRight />
             </button>

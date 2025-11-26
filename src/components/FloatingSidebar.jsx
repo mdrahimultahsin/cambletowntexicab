@@ -35,7 +35,7 @@ const FloatingSidebar = () => {
 
       {/* Car / Services Page */}
       <div
-        onClick={() => navigate("/services")}
+        onClick={() => navigate("/book-a-taxi")}
         className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-br-md bg-primary text-white cursor-pointer transition-all duration-300 hover:w-16 hover:rounded-r-md"
       >
         <FaCar size={20} />

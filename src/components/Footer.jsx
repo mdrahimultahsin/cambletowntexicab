@@ -144,7 +144,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="tel:+1300450428" className="flex items-center gap-2">
-                    <FaPhone className="text-primary" size={20} /> 1300450428
+                    <FaPhone className="text-primary" size={20} /> 1300 450 428
                   </a>
                 </li>
                 <li>
@@ -153,7 +153,7 @@ const Footer = () => {
                     className="flex items-center gap-2"
                     target="blank"
                   >
-                    <IoLogoWhatsapp className="text-primary" size={20} /> +61423963380
+                    <IoLogoWhatsapp className="text-primary" size={20} /> +61 423 963 380
                   </a>
                 </li>
                 <li>
@@ -189,13 +189,13 @@ const Footer = () => {
             © 2025 Campbelltown Taxi Cabs. All Rights Reserved.
           </p>
           <div className="text-center">
-            <Link className="text-primary">Terms And Conditions</Link>
+            <Link to={`/terms-and-condition`} className="text-primary">Terms And Conditions</Link>
             <span> | </span>
-            <Link className="text-primary">
+            <Link to={`privacy-policy`} className="text-primary">
               Privacy Policy
             </Link>
             <span> | </span>
-            <Link className="text-primary">Cancellation And Refunds</Link>
+            <Link to={`cancellation-and-refunds`} className="text-primary">Cancellation And Refunds</Link>
           </div>
         </div>
       </Container>

@@ -76,9 +76,9 @@ const OurFleet = () => {
                 <p>{singleData.bagsCapacity} Bags</p>
               </div>
               <p className="text-accent">{singleData.description}</p>
-              <img src={singleData.image} alt="" />
+              <img className="mt-4" src={singleData.image} alt="" />
               <div className="w-full text-center md:text-left">
-                <Link to={`/fleet/${singleData.id}`}>
+                <Link to={`/book-a-taxi`}>
                   <ButtonPrimary className="text-base md:text-xl py-2 md:py-4 px-5 md:px-8">
                     Book {singleData.name}
                   </ButtonPrimary>

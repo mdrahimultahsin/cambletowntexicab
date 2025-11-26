@@ -44,18 +44,18 @@ const BookingForm = ({className, params}) => {
 
     // Build message string
     let message = `
-Customer Name: ${formData.name}
-Phone: +${formData.phone}
-Email: ${formData.email}
-Pickup Address: ${formData.pickupAddress}
-Dropoff Address: ${formData.dropoffAddress}
-Passengers: ${formData.passengers}
-Vehicle Type: ${formData.vehicleType}
-PickupTime Date: ${formData.pickupDate}
-PickupTime: ${formData.pickupTime}
-Return Trip: ${formData.returnTrip}
-Special Instructions: ${formData.specialInstructions}
-Payment Mode: ${formData.paymentMode}
+  <b style="font-weight:bold; font-size:24px">Customer Name:</b> ${formData.name} <br/>
+  <b style="font-weight:bold; font-size:24px">Phone:</b> +${formData.phone} <br/>
+  <b style="font-weight:bold; font-size:24px">Email:</b> ${formData.email} <br/>
+  <b style="font-weight:bold; font-size:24px">Pickup Address:</b> ${formData.pickupAddress} <br/>
+  <b style="font-weight:bold; font-size:24px">Dropoff Address:</b> ${formData.dropoffAddress} <br/>
+  <b style="font-weight:bold; font-size:24px">Passengers:</b> ${formData.passengers} <br/>
+  <b style="font-weight:bold; font-size:24px">Vehicle Type:</b> ${formData.vehicleType} <br/>
+  <b style="font-weight:bold; font-size:24px">Pickup Date:</b> ${formData.pickupDate} <br/>
+  <b style="font-weight:bold; font-size:24px">Pickup Time:</b> ${formData.pickupTime} <br/>
+  <b style="font-weight:bold; font-size:24px">Return Trip:</b> ${formData.returnTrip} <br/>
+  <b style="font-weight:bold; font-size:24px">Special Instructions:</b> ${formData.specialInstructions} <br/>
+  <b style="font-weight:bold; font-size:24px">Payment Mode:</b> ${formData.paymentMode}
 `;
 
     // Add airport details only if pickupType is airport
@@ -72,15 +72,15 @@ Flight No: ${formData.flightNo || ""}
     // Prepare template params
     const templateParams = {
       name: formData.name,
-      message, // send the dynamically built message
+      message,
     };
 
     emailjs
       .send(
-        "service_5fohjds",
-        "template_qwck88f",
+        "service_h0wuall",
+        "template_kjhxlz8",
         templateParams,
-        "AVv9maXtFcxEnegt1"
+        "4MSsEGESDo8OwNYY2"
       )
       .then(
         () => {
@@ -173,6 +173,14 @@ Flight No: ${formData.flightNo || ""}
                       placeholder="Enter phone number"
                       containerClass="w-full"
                       inputClass="input-class w-full! py-5! "
+                      countryCodeEditable={true}
+                      enableLongNumbers={true}
+                      formatOnInit={false}
+                      masks={{
+                        au: "................................................................",
+                        us: "..................................",
+                        bd: "..................................",
+                      }}
                       required
                     />
                   </div>
@@ -274,9 +282,21 @@ Flight No: ${formData.flightNo || ""}
                       </option>
                       <option
                         className="text-gray-600 font-bold"
+                        value="maxi-taxi"
+                      >
+                       Maxi Taxi
+                      </option>
+                      <option
+                        className="text-gray-600 font-bold"
                         value="kia-carnival"
                       >
                         Kia Carnival
+                      </option>
+                      <option
+                        className="text-gray-600 font-bold"
+                        value="kia-carnival"
+                      >
+                        Wheelchair Taxi Service
                       </option>
                     </select>
                   </div>

@@ -290,10 +290,11 @@ const AreaCovered = () => {
                   </button>
                 </div>
                 <p className="text-sm mt-4 text-white">
-                  Average wait time: 8 minutes • No surge pricing
+                  Average wait time: 8 minutes • No hidden Charge
                 </p>
               </div>
             </div>
+            
           </div>
         </Container>
       </div>

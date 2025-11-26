@@ -1,4 +1,3 @@
-
 import BookingForm from "../../shared/BookingForm";
 import titleImg from "../../assets/fleet-header-img.png";
 import Container from "../../shared/Container";
@@ -10,7 +9,7 @@ import FeatureFleet from "../Home/FeatureFleet";
 import Faq from "../../shared/Faq";
 import serviceBgImage from "../../assets/footer.jpg";
 import {serviceDetails} from "./ServiceDetailsSection";
-import { FaLocationDot } from "react-icons/fa6";
+import {FaLocationDot} from "react-icons/fa6";
 import {Helmet} from "react-helmet-async";
 const features = [
   "Safe and dependable taxi service with baby & child car seats.",
@@ -24,8 +23,12 @@ const features = [
 ];
 const serviceAreas = [
   "Campbelltown",
+  "Ambarvale",
+  "Appin",
+  "Currans Hills",
+  "Claymore",
   "Macarthur",
-  "Menangle",
+  "Menangle Park",
   "Leumeah",
   "Raby",
   "St Andrew's",
@@ -39,22 +42,30 @@ const serviceAreas = [
   "Oran park",
   "Gregory hills",
   "Eagle vale",
+  "Douglas Park",
   "Elderslie",
+  "Wilton",
   "Spring farm",
   "Cobbity",
+  "Mount Annan",
+  "Phesant Nest",
   "Cowdor",
   "Denham court",
   "Edmondson park",
   "Austral",
+  "Razorback",
   "Liverpool",
   "Picton",
   "Thilmere",
   "Bargo",
   "Bowral",
+  "Kearns",
   "Goulburn",
+  "Rosemeadow",
   "Airds",
   "Gledswood Hills",
   "Leppington",
+  "Smeaton Grange",
 ];
 const Services = () => {
   const params = useParams();
@@ -62,7 +73,7 @@ const Services = () => {
   const selectedService = serviceDetails[servicetype];
   return (
     <div>
-        <Helmet>
+      <Helmet>
         <title>Campbelltown Taxi Cabs - Services</title>
       </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
@@ -261,56 +272,55 @@ const Services = () => {
       {/* SECTION: Coverage Area */}
 
       <section className="py-16 bg-linear-to-br from-slate-50 to-blue-50 relative overflow-hidden">
- 
-  
-  <Container>
-    <div className="text-center mb-8">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-playfair text-primary">
-        Areas We Cover
-      </h2>
-     
-      <p className="text-gray-600 md:text-lg max-w-2xl mx-auto">
-        Serving Campbelltown and surrounding regions with reliable taxi and maxi cab services
-      </p>
-    </div>
+        <Container>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-playfair text-primary">
+              Areas We Cover
+            </h2>
 
-    <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {serviceAreas.map((serviceArea, idx) => (
-          <div 
-            key={idx} 
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group cursor-pointer"
-          >
-            <FaLocationDot size={18} className="text-primary"/> 
-            <span className="text-gray-700 font-medium group-hover:text-primary transition-colors duration-300">
-              {serviceArea}
-            </span>
+            <p className="text-gray-600 md:text-lg max-w-2xl mx-auto">
+              Serving Campbelltown and surrounding regions with reliable taxi
+              and maxi cab services
+            </p>
           </div>
-        ))}
-      </div>
-      
-      {/* Trust Badges */}
-      <div className="flex flex-wrap justify-center gap-6 mt-12 pt-8 border-t border-gray-200">
-        <div className="text-center">
-          <div className="text-2xl font-bold text-primary">24/7</div>
-          <div className="text-sm text-gray-600">Service</div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-primary">Quick</div>
-          <div className="text-sm text-gray-600">Response</div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-primary">30+</div>
-          <div className="text-sm text-gray-600">Areas</div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-primary">100%</div>
-          <div className="text-sm text-gray-600">Reliable</div>
-        </div>
-      </div>
-    </div>
-  </Container>
-</section>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {serviceAreas.map((serviceArea, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col md:flex-row text-center md:text-left items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group cursor-pointer"
+                >
+                  <FaLocationDot size={20} className="text-primary" />
+                  <span className="text-gray-700 font-medium group-hover:text-primary transition-colors duration-300">
+                    {serviceArea}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Trust Badges */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-0 md:gap-4 mt-8 pt-8 border-t border-gray-200">
+              <div className="text-center border-b md:border-b-0 py-4 border-border-color border-r md:border-r-2 ">
+                <div className="text-2xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-gray-600">Service</div>
+              </div>
+              <div className="text-center border-b py-4 border-border-color md:border-b-0 md:border-r-2">
+                <div className="text-2xl font-bold text-primary">Quick</div>
+                <div className="text-sm text-gray-600">Response</div>
+              </div>
+              <div className="text-center py-4 border-r md:border-r-2 border-border-color">
+                <div className="text-2xl font-bold text-primary">50+</div>
+                <div className="text-sm text-gray-600">Areas</div>
+              </div>
+              <div className="text-center py-4">
+                <div className="text-2xl font-bold text-primary">100%</div>
+                <div className="text-sm text-gray-600">Reliable</div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
 
       {/* Call to Action */}
       <section className="mt-30 text-center">
@@ -333,7 +343,7 @@ const Services = () => {
               </button>
             </div>
             <p className="text-sm mt-4 text-white">
-              Average wait time: 8 minutes • No surge pricing
+              Average wait time: 8 minutes • No hidden charge
             </p>
           </div>
         </Container>

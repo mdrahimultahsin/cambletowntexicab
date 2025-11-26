@@ -4,10 +4,10 @@ import {Autoplay, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import sedanCarImg from "../assets/campbelltown-easy-sedan.png";
-import luxuryVehicleImg from "../assets/campbelltown-luxury-taxi.png";
-import suvWagonImg from "../assets/campbelltown-suv-wagon.png";
-import carnivalImg from "../assets/campbelltown-kia-taxi.png";
+import sedanCarImg from "/fleetsImage/campbelltown-easy-sedan-img.png";
+import luxuryVehicleImg from "/fleetsImage/campbelltown-luxury-vehicle.png";
+import suvWagonImg from "/fleetsImage/campbelltown-suv-wagon.png";
+import carnivalImg from "/fleetsImage/campbelltown-kia-carnival-img.png";
 
 const Carousel = () => {
   return (
