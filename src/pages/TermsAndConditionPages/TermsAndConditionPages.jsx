@@ -39,7 +39,10 @@ const TermsAndCondition = () => {
               </div>
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
-              <img src={titleImg} alt="Campbelltown Taxi Cabs Terms & Conditons Img" />
+              <img
+                src={titleImg}
+                alt="Campbelltown Taxi Cabs Terms & Conditons Img"
+              />
             </div>
           </div>
         </Container>

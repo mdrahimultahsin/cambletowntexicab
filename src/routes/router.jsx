@@ -10,9 +10,10 @@ import BlogDetails from "../pages/Blogs/BlogDetails";
 import Loading from "../shared/Loading";
 import BookATaxi from "../pages/BookATaxi/BookATaxi";
 import Services from "../pages/Services/Services";
-import TermsAndCondition from "../pages/termsAndCondition/TermsAndCondition";
+
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import CancellationAndRefunds from "../pages/CancellationAndRefunds/CancellationAndRefunds";
+import TermsAndConditionPages from "../pages/TermsAndConditionPages/TermsAndConditionPages";
 
 const router = createBrowserRouter([
   {
@@ -72,7 +73,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/terms-and-condition",
-        Component: TermsAndCondition,
+        Component: TermsAndConditionPages,
       },
       {
         path: "/privacy-policy",
