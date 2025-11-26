@@ -5,7 +5,7 @@
     "passengerCapacity": 4,
     "bagsCapacity": 2,
     "description": "Ideal for quick trips and business travel, the Easy Sedan offers smooth handling, a quiet cabin, and a fuel-efficient ride. Perfect for airport pickups, city tours, or errands, it's an affordable way to experience luxury at its finest.",
-    "image": "/fleetsImage/campbelltown-easy-sedan-img.png"
+    "image": "/campbelltown-easy-sedan-img.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "passengerCapacity": 4,
     "bagsCapacity": 2,
     "description": "For those who demand premium service, our Luxury Vehicle is the epitome of elegance and comfort. Featuring plush leather seating, top-tier climate control, and state-of-the-art technology, it’s ideal for corporate clients or VIP transfers. Experience first-class service at an affordable price.",
-    "image": "/fleetsImage/campbelltown-luxury-vehicle.png"
+    "image": "/campbelltown-luxury-vehicle.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "passengerCapacity": 7,
     "bagsCapacity": 5,
     "description": "Traveling with family or a group? Our spacious SUV or Wagon offers ample room for passengers and luggage, ensuring comfort and convenience. With luxury interiors and modern safety features, this vehicle is perfect for long trips, family vacations, or airport transfers.",
-    "image": "/fleetsImage/campbelltown-suv-wagon.png"
+    "image": "/campbelltown-suv-wagon.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "passengerCapacity": 7,
     "bagsCapacity": 8,
     "description": "The Kia Carnival is designed for larger groups, offering seating for up to seven passengers with plenty of luggage space. Whether you’re heading to an event or going on a family vacation, this affordable, reliable van ensures a smooth, comfortable ride for all.",
-    "image": "/fleetsImage/campbelltown-kia-carnival-img.png"
+    "image": "/campbelltown-kia-carnival-img.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "passengerCapacity": 11,
     "bagsCapacity": 8,
     "description": "11 seater maxi cabs, perfect for larger group travel in Sydney. Our vehicles provide ample room for extra luggage and are equipped with baby seats to ensure a safe and comfortable ride for all passengers. Whether you're heading to a corporate event, a family outing, or the airport, trust Campbelltown Taxi Cabs for reliable and convenient transportation.",
-     "image": "/fleetsImage/campbelltown-maxi-taxi.png"
+    "image": "/campbelltown-maxi-taxi.png"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "passengerCapacity": 7,
     "bagsCapacity": 8,
     "description": "Campbelltown Taxi Cabs offers reliable wheelchair-accessible taxi services for passengers who need safe and comfortable transportation. Our fleet includes wheelchair taxis, disabled taxis, maxi cabs, and spacious vans designed for easy access and smooth travel.",
-    "image": "/fleetsImage/campbelltown-maxi-taxi.png"
+    "image": "/campbelltown-maxi-taxi.png"
   }
 ]

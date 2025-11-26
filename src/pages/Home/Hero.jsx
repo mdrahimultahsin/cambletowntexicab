@@ -2,10 +2,10 @@ import Container from "../../shared/Container";
 import {Link} from "react-router";
 import {FaPhoneVolume} from "react-icons/fa";
 import Carousel from "../../components/Carousel";
-import sedanCarImg from "/fleetsImage/campbelltown-easy-sedan-img.png";
-import luxuryVehicleImg from "/fleetsImage/campbelltown-luxury-vehicle.png";
-import suvWagonImg from "/fleetsImage/campbelltown-suv-wagon.png";
-import carnivalImg from "/fleetsImage/campbelltown-kia-carnival-img.png";
+import sedanCarImg from "/campbelltown-easy-sedan-img.png";
+import luxuryVehicleImg from "/campbelltown-luxury-vehicle.png";
+import suvWagonImg from "/campbelltown-suv-wagon.png";
+import carnivalImg from "/campbelltown-kia-carnival-img.png";
 
 const Hero = () => {
   return (
@@ -15,11 +15,14 @@ const Hero = () => {
           <div className="text-center text-white">
             <div className="py-30">
               <h1 className="text-2xl md:text-5xl font-semibold font-playfair">
-               Campbelltown Taxi Cabs - Luxury Taxi Service Campbelltown NSW
-
+                Campbelltown Taxi Cabs - Luxury Taxi Service Campbelltown NSW
               </h1>
               <p className="md:text-lg my-6">
-                Welcome to Campbelltown Taxi Cabs,  the trusted choice for reliable and affordable taxi service in Campbelltown, NSW. Whether you're heading to the airport, attending an event, or need a comfortable ride around Sydney, we guarantee safe, punctual, and enjoyable rides.
+                Welcome to Campbelltown Taxi Cabs, the trusted choice for
+                reliable and affordable taxi service in Campbelltown, NSW.
+                Whether you're heading to the airport, attending an event, or
+                need a comfortable ride around Sydney, we guarantee safe,
+                punctual, and enjoyable rides.
               </p>
               <div className="flex justify-center gap-4">
                 <a
@@ -43,7 +46,12 @@ const Hero = () => {
                 Comfortable and Affordable Taxi And Maxi Service for Large
                 Groups
               </h2>
-              <p className="text-base md:hidden my-4">With professional drivers, affordable rates, and 24/7 availability, we provide trustworthy and hassle-free transportation every time. Book your Campbelltown maxi taxi today for a reliable and affordable transportation option!</p>
+              <p className="text-base md:hidden my-4">
+                With professional drivers, affordable rates, and 24/7
+                availability, we provide trustworthy and hassle-free
+                transportation every time. Book your Campbelltown maxi taxi
+                today for a reliable and affordable transportation option!
+              </p>
               <p className="hidden md:block md:text-lg my-6">
                 As the leading maxi and taxi cabs service provider in
                 Campbelltown, we’re committed to safety and punctuality in every
@@ -60,19 +68,31 @@ const Hero = () => {
               {/* for tablet and laptop device */}
               <div className="grid-cols-4 pb-30 hidden md:grid">
                 <div className="flex flex-col justify-end">
-                  <img src={sedanCarImg} alt="Easy Sedan Car Campbelltown Taxi Cabs" />
+                  <img
+                    src={sedanCarImg}
+                    alt="Easy Sedan Car Campbelltown Taxi Cabs"
+                  />
                   <p className="text-xl lg:2xl">Easy Sedan</p>
                 </div>
                 <div className="flex flex-col justify-end">
-                  <img src={luxuryVehicleImg} alt="Luxury Taxi Vehicle Campbelltown Taxi Cabs" />
+                  <img
+                    src={luxuryVehicleImg}
+                    alt="Luxury Taxi Vehicle Campbelltown Taxi Cabs"
+                  />
                   <p className="text-xl lg:2xl">Luxury Vehicle</p>
                 </div>
                 <div className="flex flex-col justify-end">
-                  <img src={suvWagonImg} alt="Suv or Wagon Car Campbelltown Taxi Cabs" />
+                  <img
+                    src={suvWagonImg}
+                    alt="Suv or Wagon Car Campbelltown Taxi Cabs"
+                  />
                   <p className="text-xl lg:2xl">Suv or Wagon</p>
                 </div>
                 <div className="flex flex-col justify-end">
-                  <img src={carnivalImg} alt="Kia Carnival Car Campbelltown Taxi Cabs" />
+                  <img
+                    src={carnivalImg}
+                    alt="Kia Carnival Car Campbelltown Taxi Cabs"
+                  />
                   <p className="text-xl lg:2xl">Kia Carnival</p>
                 </div>
               </div>

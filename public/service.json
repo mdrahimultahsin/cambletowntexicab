@@ -3,63 +3,63 @@
     "service_id": "S001",
     "title": "Wedding Transfer",
     "description": "Make your wedding day even more special with our luxury transfer service. Campbelltown Taxi Cabs provides elegant, on-time transportation for the bride, groom, and guests. Reserve your wedding transfer today for a smooth, stylish ride.",
-    "image": "/icons/car.png",
+    "image": "/car.png",
     "pathname": "/services/wedding-transfer"
   },
   {
     "service_id": "S002",
     "title": "Luxury Transfer",
     "description": "For VIP travel, choose Campbelltown Taxi Cabs. Our luxury taxis Campbelltown offer premium comfort and style for special events, corporate travel, or simply a first-class ride. Book your luxury transfer today for an unforgettable journey.",
-    "image": "/icons/vehicle.png",
+    "image": "/vehicle.png",
     "pathname": "/services/luxury-transfer"
   },
   {
     "service_id": "S003",
     "title": "Baby Seat Taxi Sydney",
     "description": "Ensure your child's safety with our baby seat taxi service in Sydney. We provide certified baby seats and booster seats in all our Campbelltown taxis, offering secure, comfortable rides for your little ones. Contact us today and travel with peace of mind.",
-    "image": "/icons/baby-seat.png",
+    "image": "/baby-seat.png",
     "pathname": "/services/baby-seat-taxi-sydney"
   },
   {
     "service_id": "S004",
     "title": "Corporate Transport Services",
     "description": "Need professional, reliable transport for business? Our corporate transport services offer luxury taxi Campbelltown rides for meetings, events, and more. Trust our Campbelltown taxi cabs for punctual, comfortable, and discreet travel. Contact us for your next corporate trip.",
-    "image": "/icons/corporate.png",
+    "image": "/corporate.png",
     "pathname": "/services/corporate-transport-services"
   },
   {
     "service_id": "S005",
     "title": "Cruise Terminal Transfer",
     "description": "Arrive on time for your cruise with our taxi from Campbelltown, NSW, to Sydney cruise terminals. Our drivers ensure a smooth, timely transfer, so you can begin your vacation without stress. Book now for a reliable and affordable ride!",
-    "image": "/icons/ship.png",
+    "image": "/ship.png",
     "pathname": "/services/cruise-terminal-transfer"
   },
   {
     "service_id": "S006",
     "title": "Event Transfer",
     "description": "Whether it's a concert, party, or corporate event, trust Campbelltown Taxi Cabs for reliable event transfer services. Our professional drivers ensure timely arrivals and departures. Get a quote today and travel in comfort to your next big event!",
-    "image": "/icons/event.png",
+    "image": "/event.png",
     "pathname": "/services/event-transfer"
   },
   {
     "service_id": "S007",
     "title": "Maxi Taxi Service",
     "description": "Our Maxi Taxi Campbelltown service is perfect for large groups or families. With space for up to 11 passengers and luggage, you'll travel comfortably and affordably. Book a maxi taxi today for your group travel needs.",
-    "image": "/icons/users.png",
+    "image": "/users.png",
     "pathname": "/services/airport-shuttle"
   },
   {
     "service_id": "S008",
     "title": "Taxi Sydney Service",
     "description": "Reliable, affordable, and fast, Campbelltown Taxi Cabs connects you to all of Sydney. Whether you're commuting locally or need an airport transfer, trust our taxi service Campbelltown for a seamless experience. Book now for a hassle-free ride.",
-    "image": "/icons/car.png",
+    "image": "/car.png",
     "pathname": "/services/taxi-sydney-service"
   },
   {
     "service_id": "S009",
     "title": "Corporate Trips",
     "description": "For business travel, Campbelltown Taxi Cabs offers professional, punctual service. Whether you need a ride for meetings, client visits, or long-distance corporate trips, our taxi service Campbelltown ensures a comfortable, productive experience. Book now for corporate travel that works for you.",
-    "image": "/icons/briefcase.png",
+    "image": "/briefcase.png",
     "pathname": "/services/corporate-tips"
   }
 ]
