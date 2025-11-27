@@ -111,8 +111,8 @@ Flight No: ${formData.flightNo || ""}
             flightNo: "",
           });
         },
-        (error) => {
-          console.error("FAILED...", error);
+        () => {
+         
           setLoading(false);
         }
       );

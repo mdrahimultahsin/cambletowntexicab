@@ -58,8 +58,8 @@ const GetInTouchForm = () => {
             message: "",
           });
         },
-        (error) => {
-          console.error("FAILED...", error);
+        () => {
+          ;
           setLoading(false);
         }
       );

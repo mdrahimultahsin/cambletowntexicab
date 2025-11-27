@@ -9,14 +9,14 @@ const PlacesInput = ({value, onChange, placeholder}) => {
     try {
       const results = await geocodeByAddress(address);
       if (!results || !results[0] || !results[0].geometry) {
-        console.error("No results found for this address");
+       
         return;
       }
       
 
      
     } catch (err) {
-      console.error(err);
+      console.log("Geo Error",err);
     }
   };
 

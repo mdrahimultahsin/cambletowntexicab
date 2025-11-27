@@ -33,9 +33,7 @@ const Reviews = () => {
         (place, status) => {
           if (status === window.google.maps.places.PlacesServiceStatus.OK) {
             setReviews(place.reviews || []);
-          } else {
-            console.error("Google Places error:", status);
-          }
+          } 
         }
       );
     };
