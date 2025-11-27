@@ -291,7 +291,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                   <ul className="bg-gray-100 text-black w-full shadow-inner">
                     {navlink.dropdowns.map((item) => (
                       <li key={item.id}>
-                        <Link
+                        <NavLink
                           to={item.pathname}
                           onClick={() => {
                             setIsMenuOpen(!isMenuOpen);
@@ -300,7 +300,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                           className="block px-6 py-2 hover:bg-primary hover:text-white border-b border-gray-300"
                         >
                           {item.label}
-                        </Link>
+                        </NavLink>
                       </li>
                     ))}
                   </ul>
