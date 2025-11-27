@@ -13,33 +13,25 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   const swiperRef = useRef();
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${
-      import.meta.env.VITE_maps_api_key
-    }&libraries=places`;
-    script.async = true;
-    script.defer = true;
+  if (!window.google) return; // make sure API is loaded
 
-    script.onload = () => {
-      const service = new window.google.maps.places.PlacesService(
-        document.createElement("div")
-      );
+  const service = new window.google.maps.places.PlacesService(
+    document.createElement("div")
+  );
 
-      service.getDetails(
-        {
-          placeId: import.meta.env.VITE_maps_placeId,
-          fields: ["name", "rating", "reviews"],
-        },
-        (place, status) => {
-          if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-            setReviews(place.reviews || []);
-          } 
-        }
-      );
-    };
+  service.getDetails(
+    {
+      placeId: import.meta.env.VITE_maps_placeId,
+      fields: ["name", "rating", "reviews"],
+    },
+    (place, status) => {
+      if (status === window.google.maps.places.PlacesServiceStatus.OK) {
+        setReviews(place.reviews || []);
+      }
+    }
+  );
+}, []);
 
-    document.body.appendChild(script);
-  }, []);
 
   // Helper function to render stars
   const renderStars = (rating) => {
