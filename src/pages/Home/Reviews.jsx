@@ -13,7 +13,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   const swiperRef = useRef();
   useEffect(() => {
-  if (!window.google) return; // make sure API is loaded
+  if (!window.google) return;
 
   const service = new window.google.maps.places.PlacesService(
     document.createElement("div")

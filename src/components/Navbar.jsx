@@ -1,4 +1,4 @@
-import {NavLink} from "react-router";
+import {Link, NavLink} from "react-router";
 import Container from "../shared/Container";
 import {
   FaChevronDown,
@@ -251,13 +251,14 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
           className={`absolute right-0 w-1/2 bg-white text-black shadow z-999 transition-all duration-300 ease-in-out ${
             isMenuOpen ? "top-16" : "-top-300"
           }`}
+          ref={menuRef}
         >
           <ul className="flex flex-col z-999 bg-white md:hidden gap-1 text-left">
             {navlinks.map((navlink) => (
               <li key={navlink.id} className="relative">
                 <div
                   className="flex items-center justify-between py-3 pl-4 pr-4 cursor-pointer"
-                  ref={menuRef}
+                  
                   onClick={() =>
                     navlink.dropdowns?.length > 0
                       ? handleDropdownToggle(navlink.id)
@@ -294,6 +295,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                           to={item.pathname}
                           onClick={() => {
                             setIsMenuOpen(!isMenuOpen);
+                            setOpenDropdown(!openDropdown)
                           }}
                           className="block px-6 py-2 hover:bg-primary hover:text-white border-b border-gray-300"
                         >
