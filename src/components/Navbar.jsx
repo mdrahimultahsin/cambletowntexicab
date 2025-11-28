@@ -264,7 +264,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
         <div
           className={`absolute right-0 w-1/2 bg-white text-black shadow z-999 transition-all duration-300 ease-in-out ${
             isMenuOpen ? "top-16" : "-top-300"
-          }`}
+          } max-h-[80vh] overflow-y-auto`}
           ref={menuRef}
         >
           <ul className="flex flex-col z-999 bg-white md:hidden gap-1 text-left">

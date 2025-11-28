@@ -1,4 +1,4 @@
-import { FaPlane, FaCar, FaCalendarAlt, FaTaxi } from "react-icons/fa";
+import { FaPlane,  FaCalendarAlt, FaTaxi, FaGift } from "react-icons/fa";
 import Container from "../../shared/Container";
 
 const FeatureCards = () => {
@@ -17,8 +17,8 @@ const FeatureCards = () => {
           {/* Car Service */}
           <div className="flex flex-col items-center text-center py-6 
             border-b-2 border-white md:border-b-0 md:border-r-2">
-            <FaCar className="text-4xl mb-3" />
-            <p className="text-lg">Car Service</p>
+            <FaGift  className="text-4xl mb-3" />
+            <p className="text-lg">Wedding Transfer</p>
           </div>
 
           {/* Events */}
