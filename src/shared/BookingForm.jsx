@@ -28,6 +28,7 @@ const BookingForm = ({className, params}) => {
     airportDropoffLocation: "",
     airportPickupDate: "",
     airportPickupTime: "",
+    flightNo: "",
   });
 
   const handleInputChange = (e) => {
@@ -112,7 +113,6 @@ Flight No: ${formData.flightNo || ""}
           });
         },
         () => {
-         
           setLoading(false);
         }
       );
@@ -213,7 +213,7 @@ Flight No: ${formData.flightNo || ""}
                       onChange={(val) =>
                         setFormData((prev) => ({...prev, dropoffAddress: val}))
                       }
-                      placeholder="Pickup Address (Street No., Street Name, Suburb)"
+                      placeholder="Dropoff Address (Street No., Street Name, Suburb)"
                     />
                   </div>
                 </div>
@@ -284,7 +284,7 @@ Flight No: ${formData.flightNo || ""}
                         className="text-gray-600 font-bold"
                         value="maxi-taxi"
                       >
-                       Maxi Taxi
+                        Maxi Taxi
                       </option>
                       <option
                         className="text-gray-600 font-bold"
@@ -294,7 +294,7 @@ Flight No: ${formData.flightNo || ""}
                       </option>
                       <option
                         className="text-gray-600 font-bold"
-                        value="kia-carnival"
+                        value="wheelchair-taxi-service"
                       >
                         Wheelchair Taxi Service
                       </option>
@@ -513,6 +513,11 @@ Flight No: ${formData.flightNo || ""}
                   <option value="luxury-vehicle">Luxury Vehicle</option>
                   <option value="suv-wagon">SUV or Wagon</option>
                   <option value="kia-carnival">Kia Carnival</option>
+                  <option value="maxi-taxi">Maxi Taxi</option>
+                  <option value="wheelchair-taxi-service">
+                    
+                    Wheelchair Taxi Service
+                  </option>
                 </select>
 
                 {/* Payment Mode */}

@@ -12,12 +12,7 @@ createRoot(document.getElementById("root")).render(
       libraries={["places"]}
       loadingElement={<Loading />}
     >
-
-
-          
-          <RouterProvider router={router} />
-    
-   
+      <RouterProvider router={router} />
     </LoadScript>
   </StrictMode>
 );
