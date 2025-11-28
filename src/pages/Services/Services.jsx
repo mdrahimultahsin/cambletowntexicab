@@ -10,7 +10,7 @@ import Faq from "../../shared/Faq";
 import serviceBgImage from "../../assets/serviceBg.jpg";
 import {serviceDetails} from "./ServiceDetailsSection";
 import {FaLocationDot} from "react-icons/fa6";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 const features = [
   "Safe and dependable taxi service with baby & child car seats.",
   "Equipped with up to four baby and child seats for children from birth to age seven.",
@@ -72,11 +72,10 @@ const Services = () => {
   const navigate = useNavigate()
   const servicetype = params.servicetype.toLowerCase();
   const selectedService = serviceDetails[servicetype];
+  usePageTitle(`${params.servicetype.split("-").join(" ").toLocaleUpperCase()}`)
   return (
     <div>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Services</title>
-      </Helmet>
+   
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">

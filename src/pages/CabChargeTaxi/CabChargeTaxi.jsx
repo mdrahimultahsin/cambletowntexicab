@@ -1,4 +1,3 @@
-import {Helmet} from "react-helmet-async";
 import titleImg from "../../assets/fleet-header-img.png";
 import Container from "../../shared/Container";
 import ButtonSecondary from "../../shared/ButtonSecondary";
@@ -10,13 +9,12 @@ import cabChargePayImg from "../../assets/cabcharge-taxi-service-campbelltown.pn
 import cabChargePayImg2 from "../../assets/cabcharge-taxi-service-img2-campbelltown.png";
 import FeatureFleet from "../Home/FeatureFleet";
 import CabChargeFaq from "./CabChargeFaq";
+import usePageTitle from "../../hooks/usePageTitle";
 const CabChargeTaxi = () => {
   const navigate = useNavigate();
+  usePageTitle("CabCharge Taxi Service");
   return (
     <>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - CabCharge Taxi</title>
-      </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -129,7 +127,10 @@ const CabChargeTaxi = () => {
               </p>
 
               <ul className="list-disc list-inside space-y-1">
-                <li>Customers can pay by <b>Cabcharge Card</b>, paper card, digital card.</li>
+                <li>
+                  Customers can pay by <b>Cabcharge Card</b>, paper card,
+                  digital card.
+                </li>
                 <li>Widely accepted across Australia, including Sydney</li>
                 <li>Fast and secure electronic transactions</li>
                 <li>Perfect for business, corporate, and government travel</li>

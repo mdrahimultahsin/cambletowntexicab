@@ -15,14 +15,13 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import BookingForm from "../../shared/BookingForm";
 import Faq from "../../shared/Faq";
 import FeatureFleet from "../Home/FeatureFleet";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const BookATaxi = () => {
+  usePageTitle("Book A Taxi")
   return (
     <div>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Book A Taxi</title>
-      </Helmet>
+      
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">

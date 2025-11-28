@@ -1,17 +1,16 @@
-import React from "react";
-import { Helmet } from "react-helmet-async";
 import Container from "../../shared/Container";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import { Link } from "react-router";
-import { FaHandPointer } from "react-icons/fa";
-import { IoCallSharp } from "react-icons/io5";
+import {Link} from "react-router";
+import {FaHandPointer} from "react-icons/fa";
+import {IoCallSharp} from "react-icons/io5";
 import titleImg from "../../assets/fleet-header-img.png";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const refundData = [
-  { time: "Up to 3 hours", charge: "100% of fare", refund: "0% of fare" },
-  { time: "Up to 6 hours", charge: "75% of fare", refund: "25% of fare" },
-  { time: "Up to 12 hours", charge: "50% of fare", refund: "50% of fare" },
-  { time: "Up to 24 hours", charge: "25% of fare", refund: "75% of fare" },
+  {time: "Up to 3 hours", charge: "100% of fare", refund: "0% of fare"},
+  {time: "Up to 6 hours", charge: "75% of fare", refund: "25% of fare"},
+  {time: "Up to 12 hours", charge: "50% of fare", refund: "50% of fare"},
+  {time: "Up to 24 hours", charge: "25% of fare", refund: "75% of fare"},
   {
     time: "More than 24 hours",
     charge: "$30 fee",
@@ -20,11 +19,9 @@ const refundData = [
 ];
 
 const CancellationAndRefunds = () => {
+  usePageTitle("Refund Policy");
   return (
     <section className="pb-20">
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Refund Policy</title>
-      </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -64,9 +61,7 @@ const CancellationAndRefunds = () => {
       </div>
 
       <Container>
-        
         <div className="py-10 md:py-20">
-         
           <h2 className="font-semibold mb-4 font-playfair text-primary text-2xl md:text-4xl">
             Refund Policy
           </h2>
@@ -94,17 +89,29 @@ const CancellationAndRefunds = () => {
               <table className="w-full text-left">
                 <thead className="bg-gray-100">
                   <tr>
-                    <th className="px-4 py-4 border-b border-gray-300">Time before journey</th>
-                    <th className="px-4 py-4 border-b border-gray-300">Cancellation charge</th>
-                    <th className="px-4 py-4 border-b border-gray-300">Refund amount</th>
+                    <th className="px-4 py-4 border-b border-gray-300">
+                      Time before journey
+                    </th>
+                    <th className="px-4 py-4 border-b border-gray-300">
+                      Cancellation charge
+                    </th>
+                    <th className="px-4 py-4 border-b border-gray-300">
+                      Refund amount
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   {refundData.map((item, index) => (
                     <tr key={index} className="hover:bg-gray-50">
-                      <td className="px-4 py-4 border-b border-gray-300">{item.time}</td>
-                      <td className="px-4 py-4 border-b border-gray-300">{item.charge}</td>
-                      <td className="px-4 py-4 border-b border-gray-300">{item.refund}</td>
+                      <td className="px-4 py-4 border-b border-gray-300">
+                        {item.time}
+                      </td>
+                      <td className="px-4 py-4 border-b border-gray-300">
+                        {item.charge}
+                      </td>
+                      <td className="px-4 py-4 border-b border-gray-300">
+                        {item.refund}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -130,7 +137,9 @@ const CancellationAndRefunds = () => {
             <h2 className="font-semibold mb-4 font-playfair text-primary text-2xl md:text-4xl">
               Exceptions
             </h2>
-            <p className="text-xs md:text-lg text-accent">Refunds will not be given if:</p>
+            <p className="text-xs md:text-lg text-accent">
+              Refunds will not be given if:
+            </p>
             <ul className="text-xs md:text-lg text-accent">
               <li>You cancel less than 3 hours before the trip.</li>
               <li>

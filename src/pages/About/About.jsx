@@ -8,13 +8,12 @@ import {Link} from "react-router";
 import {IoCallSharp} from "react-icons/io5";
 import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 const About = () => {
+  usePageTitle("About");
   return (
     <>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - About Us</title>
-      </Helmet>
+      
 
       <div className="pb-15">
         {/* hero section */}

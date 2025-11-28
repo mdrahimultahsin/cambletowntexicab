@@ -6,16 +6,13 @@ import titleImg from "../../assets/fleet-header-img.png";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const OurFleet = () => {
   const fleetData = useLoaderData() || [];
-
+  usePageTitle("Fleets");
   return (
     <section className="pb-30">
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Our Fleet</title>
-      </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-4 md:gap-6">
@@ -24,12 +21,12 @@ const OurFleet = () => {
                 Fleet
               </span>
               <p className="mt-8 text-sm md:text-base">
-                At Campbelltown Taxi Cabs, we take pride in offering a diverse and modern
-                fleet to cater to all your transportation needs in Sydney. Our
-                vehicles are meticulously maintained, ensuring a safe,
-                comfortable, and reliable ride every time you travel with us.
-                Whether you’re traveling solo, with family, or a larger group,
-                we have the perfect vehicle to suit your requirements.
+                At Campbelltown Taxi Cabs, we take pride in offering a diverse
+                and modern fleet to cater to all your transportation needs in
+                Sydney. Our vehicles are meticulously maintained, ensuring a
+                safe, comfortable, and reliable ride every time you travel with
+                us. Whether you’re traveling solo, with family, or a larger
+                group, we have the perfect vehicle to suit your requirements.
               </p>
               <div className="flex py-4 gap-4 justify-center md:justify-start">
                 <Link to="/book-a-taxi" className=" ">
@@ -76,7 +73,11 @@ const OurFleet = () => {
                 <p>{singleData.bagsCapacity} Bags</p>
               </div>
               <p className="text-accent">{singleData.description}</p>
-              <img className="mt-4" src={singleData.image} alt={singleData.name+"Campbelltown Taxi Cabs"} />
+              <img
+                className="mt-4"
+                src={singleData.image}
+                alt={singleData.name + "Campbelltown Taxi Cabs"}
+              />
               <div className="w-full text-center md:text-left">
                 <Link to={`/book-a-taxi`}>
                   <ButtonPrimary className="text-base md:text-xl py-2 md:py-4 px-5 md:px-8">

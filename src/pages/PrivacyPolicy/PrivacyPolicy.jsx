@@ -1,18 +1,16 @@
-import React from "react";
-import {Helmet} from "react-helmet-async";
 import Container from "../../shared/Container";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
 import titleImg from "../../assets/fleet-header-img.png";
 import {Link} from "react-router";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const PrivacyPolicy = () => {
+  usePageTitle("Privacy Policy");
   return (
     <div className=" pb-10">
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Privacy Policy</title>
-      </Helmet>
+      
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -63,7 +61,12 @@ const PrivacyPolicy = () => {
             </h3>{" "}
             <p className="text-sm  md:text-base">Last Updated: 29/11/2025</p>
             <p className="mt-2 text-sm md:text-base text-accent">
-             These Privacy Policy terms (“Policy”) explain how Campbelltown Taxi Cabs (“the Company”, “we”, “our”, or “us”) collects, uses, stores, and protects your personal information. By accessing our website, submitting a booking, or using our services, you (“you”, “your”, or “the Customer”) acknowledge and agree to the practices described in this Policy.
+              These Privacy Policy terms (“Policy”) explain how Campbelltown
+              Taxi Cabs (“the Company”, “we”, “our”, or “us”) collects, uses,
+              stores, and protects your personal information. By accessing our
+              website, submitting a booking, or using our services, you (“you”,
+              “your”, or “the Customer”) acknowledge and agree to the practices
+              described in this Policy.
             </p>
           </div>
 

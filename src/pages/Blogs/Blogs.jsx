@@ -1,17 +1,11 @@
 import titleImg from "../../assets/fleet-header-img.png";
 import Container from "../../shared/Container";
-import {
-  FaCarSide,
-  FaUserAlt,
-  FaRegCalendarAlt,
-  FaRegClock,
-  FaHandPointer,
-} from "react-icons/fa";
+import {FaCarSide, FaHandPointer} from "react-icons/fa";
 import {Link, useLocation} from "react-router";
 import {IoCallSharp} from "react-icons/io5";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import {Helmet} from "react-helmet-async";
 import {useEffect, useState} from "react";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const Blogs = () => {
   const [blogsData, setBlogsData] = useState([]);
@@ -22,13 +16,9 @@ const Blogs = () => {
       .then((data) => setBlogsData(data));
   }, []);
   const location = useLocation();
-
+  usePageTitle("Blogs");
   return (
     <div>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Blogs</title>
-      </Helmet>
-
       {location.pathname === "/blogs" && (
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
@@ -38,13 +28,13 @@ const Blogs = () => {
                   Blogs
                 </span>
                 <p className="mt-8 text-sm md:text-base">
-                  Campbelltown Taxi Cabs is a Sydney based maxi cab service established in
-                  2010. We provide affordable, reliable, and safe transport for
-                  families, groups, and business travelers. Our fleet includes
-                  sedans, SUVs, maxi vans, luxury cars, and wheelchair
-                  accessible taxis. We operate 24/7 across all Sydney suburbs
-                  and offer airport transfers, cruise transfers, corporate
-                  trips, and baby seat taxis.
+                  Campbelltown Taxi Cabs is a Sydney based maxi cab service
+                  established in 2010. We provide affordable, reliable, and safe
+                  transport for families, groups, and business travelers. Our
+                  fleet includes sedans, SUVs, maxi vans, luxury cars, and
+                  wheelchair accessible taxis. We operate 24/7 across all Sydney
+                  suburbs and offer airport transfers, cruise transfers,
+                  corporate trips, and baby seat taxis.
                 </p>
                 <div className="flex py-4 gap-4 justify-center md:justify-start">
                   <Link to="/book-a-taxi" className=" ">

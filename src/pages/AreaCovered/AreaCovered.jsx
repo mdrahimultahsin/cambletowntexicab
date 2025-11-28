@@ -11,10 +11,11 @@ import titleImg from "../../assets/fleet-header-img.png";
 import QuickLinks from "./QuickLinks";
 import {Link, useNavigate} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const AreaCovered = () => {
   const navigate = useNavigate();
+  usePageTitle("Area We Covered")
   const serviceAreas = [
     "Campbelltown",
     "Ambarvale",
@@ -94,9 +95,7 @@ const AreaCovered = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Area we Cover</title>
-      </Helmet>
+       
       <div className="pb-15">
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>

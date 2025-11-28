@@ -4,10 +4,11 @@ import {useLoaderData, Link} from "react-router";
 import Container from "../../shared/Container";
 import {FaCarSide, FaArrowLeft} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const BlogDetails = () => {
   const blog = useLoaderData();
-
+  usePageTitle(`${blog.title}`);
   if (!blog) {
     return <p className="text-center py-20 text-accent">Blog not found.</p>;
   }
@@ -22,13 +23,13 @@ const BlogDetails = () => {
                 Blog Details
               </span>
               <p className="mt-8 text-sm md:text-base">
-                Campbelltown Taxi Cabs is a Sydney based maxi cab service established in
-                2010. We provide affordable, reliable, and safe transport for
-                families, groups, and business travelers. Our fleet includes
-                sedans, SUVs, maxi vans, luxury cars, and wheelchair accessible
-                taxis. We operate 24/7 across all Sydney suburbs and offer
-                airport transfers, cruise transfers, corporate trips, and baby
-                seat taxis.
+                Campbelltown Taxi Cabs is a Sydney based maxi cab service
+                established in 2010. We provide affordable, reliable, and safe
+                transport for families, groups, and business travelers. Our
+                fleet includes sedans, SUVs, maxi vans, luxury cars, and
+                wheelchair accessible taxis. We operate 24/7 across all Sydney
+                suburbs and offer airport transfers, cruise transfers, corporate
+                trips, and baby seat taxis.
               </p>
               <Link to="/book-a-taxi" className="mt-4 inline-block">
                 <ButtonSecondary>Book A Taxi Cab</ButtonSecondary>
@@ -63,8 +64,6 @@ const BlogDetails = () => {
                   <p className="text-sm md:text-xl text-accent mb-8 leading-relaxed">
                     {blog.description}
                   </p>
-
-                
                 </div>
               </div>
 

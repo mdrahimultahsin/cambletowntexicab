@@ -7,14 +7,14 @@ import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
 import {Link} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
+
 
 const Contact = () => {
+  usePageTitle("Contact")
   return (
     <section>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Contact</title>
-      </Helmet>
+      
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">

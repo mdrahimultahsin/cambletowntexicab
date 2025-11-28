@@ -5,14 +5,12 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import {FaHandPointer} from "react-icons/fa";
 import titleImg from "../../assets/fleet-header-img.png";
 import {IoCallSharp} from "react-icons/io5";
-import {Helmet} from "react-helmet-async";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const TermsAndCondition = () => {
+  usePageTitle("Terms & Conditions");
   return (
     <div className=" pb-10">
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Terms & Conditions</title>
-      </Helmet>
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -57,13 +55,13 @@ const TermsAndCondition = () => {
       <Container className="mt-20">
         <div>
           <div>
-            <h2 className="font-semibold mb-4 font-playfair text-primary text-2xl md:text-4xl">Campbelltown Taxi Cabs</h2>
+            <h2 className="font-semibold mb-4 font-playfair text-primary text-2xl md:text-4xl">
+              Campbelltown Taxi Cabs
+            </h2>
             <h3 className="mt-2">
               <span className="font-bold">ABN:</span> 69 442 367 843
             </h3>{" "}
-            <p className="text-sm  md:text-base">
-              Last Updated: 29/11/2025
-            </p>
+            <p className="text-sm  md:text-base">Last Updated: 29/11/2025</p>
             <p className="mt-2 text-sm md:text-base text-accent">
               These Terms and Conditions (“Terms”) set out the legal rights,
               obligations, and responsibilities of Campbelltown Taxi Cabs (“the

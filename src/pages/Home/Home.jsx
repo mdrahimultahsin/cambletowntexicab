@@ -8,16 +8,15 @@ import Hero from "./Hero";
 import Reviews from "./Reviews";
 import WhyChooseUs from "./WhyChooseUs";
 import ServicesSection from "./ServicesSection";
-import {Helmet} from "react-helmet-async";
 import Blogs from "../Blogs/Blogs";
 import StatsSection from "./StatsSection";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const Home = () => {
+  usePageTitle("Home");
   return (
     <div>
-      <Helmet>
-        <title>Campbelltown Taxi Cabs - Home</title>
-      </Helmet>
+      
       <Hero />
       <BookingForm />
       <FeatureCards />
