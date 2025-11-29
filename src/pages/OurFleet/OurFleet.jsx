@@ -2,7 +2,7 @@ import {Link, useLoaderData} from "react-router";
 import Container from "../../shared/Container";
 import {IoCallSharp, IoPeopleSharp} from "react-icons/io5";
 import {GiConcreteBag} from "react-icons/gi";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
@@ -15,7 +15,7 @@ const OurFleet = () => {
     <section className="pb-30">
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
-          <div className="flex flex-col md:flex-row text-white gap-4 md:gap-6">
+          <div className="flex flex-col md:flex-row text-white md:gap-6">
             <div className="pt-10 pb-5 md:py-20  flex-1 text-center md:text-left ">
               <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                 Fleet
@@ -43,7 +43,7 @@ const OurFleet = () => {
               </div>
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
-              <img src={titleImg} alt="Campbelltown Taxi Cabs title Img" />
+              <img className="w-full" src={titleImg} alt="Campbelltown Taxi Cabs title Img" />
             </div>
           </div>
         </Container>

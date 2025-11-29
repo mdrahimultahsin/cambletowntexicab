@@ -7,7 +7,7 @@ import {
   FaHandPointer,
 } from "react-icons/fa";
 import {IoCallSharp, IoCarSport, IoTime} from "react-icons/io5";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import QuickLinks from "./QuickLinks";
 import {Link, useNavigate} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
@@ -99,7 +99,7 @@ const AreaCovered = () => {
       <div className="pb-15">
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
-            <div className="flex flex-col md:flex-row text-white gap-6">
+            <div className="flex flex-col md:flex-row text-white md:gap-6">
               <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
                 <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                   Covered Area
@@ -129,7 +129,7 @@ const AreaCovered = () => {
                 </div>
               </div>
               <div className="flex flex-1 items-center pb-10 md:pb-0">
-                <img src={titleImg} alt="Campbelltown Taxi Cabs" />
+                <img className="w-full" src={titleImg} alt="Campbelltown Taxi Cabs" />
               </div>
             </div>
           </Container>
