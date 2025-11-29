@@ -29,7 +29,7 @@ const TopHeader = () => {
             <FaInbox />{" "} 
             <a
               href="mailto:silvercabscampbelltown@gmail.com"
-              className="hover:underline"
+              className="hover:underline font-bold"
             >
               silvercabscampbelltown@gmail.com
             </a>
@@ -44,7 +44,7 @@ const TopHeader = () => {
           {/* Phone */}
 
           <a
-            className="flex items-center gap-2 cursor-pointer"
+            className="font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
             href="tel:+611300450428"
           >
             <FaPhoneAlt /> 1300 450 428

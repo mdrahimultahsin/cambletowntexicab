@@ -87,7 +87,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
               }}
               className={"text-sm! md:text-base"}
             >
-              Book Online!
+              Book Online
             </ButtonSecondary>
             <button className="md:hidden border border-gray-500 bg-primary text-white px-2 py-1 rounded">
               {isMenuOpen ? (

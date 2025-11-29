@@ -2,19 +2,28 @@ import Container from "../../shared/Container";
 import {Link} from "react-router";
 import {FaPhoneVolume} from "react-icons/fa";
 import Carousel from "../../components/Carousel";
-
+import heroBg from "../../assets/campbelltown-taxi-cab-herobg.jpg";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/src/assets/campbelltown-taxi-cab-herobg.jpg')] w-full bg-no-repeat bg-cover bg-fixed bg-top">
+    <section
+      className="w-full bg-no-repeat bg-cover bg-top md:bg-fixed"
+      style={{backgroundImage: `url(${heroBg})`}}
+    >
       <div className="w-full h-full bg-black/60">
         <Container>
           <div className="text-center text-white">
-            <div className="pt-30 pb-20">
-              <h1 className="text-2xl md:text-5xl font-semibold font-playfair">
-                Campbelltown Taxi Cabs - Luxury Taxi Service Campbelltown NSW
-              </h1>
-              <p className="md:text-lg my-6">
+            <div className="pt-20 md:pt-25 pb-10 md:pb-20 ">
+              <h1 className="font-playfair font-black text-2xl sm:text-3xl md:text-6xl leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
+  <span className="block text-primary">
+    Campbelltown Taxi Cabs
+  </span>
+  <span className="block font-medium text-lg md:text-3xl text-white mt-2 drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)]">
+    Luxury Taxi Service Campbelltown NSW
+  </span>
+</h1>
+
+              <p className="md:max-w-7xl md:mx-auto text-center text-sm md:text-lg my-4 md:my-6">
                 Welcome to Campbelltown Taxi Cabs, the trusted choice for
                 reliable and affordable taxi service in Campbelltown, NSW.
                 Whether you're heading to the airport, attending an event, or
@@ -39,17 +48,17 @@ const Hero = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl md:text-4xl font-semibold font-playfair">
+              <h2 className="block font-medium text-lg md:text-3xl text-white ">
                 Comfortable and Affordable Taxi And Maxi Service for Large
                 Groups
               </h2>
-              <p className="text-base md:hidden my-4">
+              <p className="md:max-w-7xl md:mx-auto text-center text-sm md:text-lg my-4">
                 With professional drivers, affordable rates, and 24/7
                 availability, we provide trustworthy and hassle-free
                 transportation every time. Book your Campbelltown maxi taxi
                 today for a reliable and affordable transportation option!
               </p>
-              <p className="hidden md:block md:text-lg my-6">
+              <p className="md:max-w-7xl md:mx-auto text-center text-sm md:text-lg my-2 ">
                 As the leading maxi and taxi cabs service provider in
                 Campbelltown, we’re committed to safety and punctuality in every
                 ride. Our Maxi and Taxi Campbelltown service is designed to
@@ -62,7 +71,6 @@ const Hero = () => {
                 today for a reliable and affordable transportation option!
               </p>
 
-             
               {/* for mobile device only */}
               <div className="mt-10 md:mt-20  pb-30">
                 <Carousel />
