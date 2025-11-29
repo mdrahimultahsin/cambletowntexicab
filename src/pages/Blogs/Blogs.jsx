@@ -1,4 +1,4 @@
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import Container from "../../shared/Container";
 import {FaCarSide, FaHandPointer} from "react-icons/fa";
 import {Link, useLocation} from "react-router";
@@ -22,7 +22,7 @@ const Blogs = () => {
       {location.pathname === "/blogs" && (
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
-            <div className="flex flex-col md:flex-row text-white gap-6">
+            <div className="flex flex-col md:flex-row text-white  md:gap-6">
               <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
                 <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                   Blogs
@@ -51,7 +51,11 @@ const Blogs = () => {
                 </div>
               </div>
               <div className="flex flex-1 items-center pb-10 md:pb-0">
-                <img src={titleImg} alt="Campbelltown Taxi Cabs title img" />
+                <img
+                  className="w-full"
+                  src={titleImg}
+                  alt="Campbelltown Taxi Cabs title img"
+                />
               </div>
             </div>
           </Container>

@@ -1,5 +1,5 @@
 import BookingForm from "../../shared/BookingForm";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/services/campbelltown-service-hero-img.png";
 import Container from "../../shared/Container";
 import {Link, useNavigate, useParams} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
@@ -78,7 +78,7 @@ const Services = () => {
    
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
-          <div className="flex flex-col md:flex-row text-white gap-6">
+          <div className="flex flex-col md:flex-row text-white md:gap-6">
             <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
               <span className="text-lg md:text-2xl lg:text-3xl font-bold capitalize py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
                 {params.servicetype.split("-").join(" ")}
@@ -107,6 +107,7 @@ const Services = () => {
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
               <img
+              className="w-full"
                 src={titleImg}
                 alt={
                   params.servicetype.split("-").join(" ") +
