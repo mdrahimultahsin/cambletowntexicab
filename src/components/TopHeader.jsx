@@ -44,8 +44,8 @@ const TopHeader = () => {
           {/* Phone */}
 
           <a
-            className="text-lg font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
-            href="tel:+1300450428"
+            className="text-2xl md:text-lg  font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
+            href="tel:1300450428"
           >
             <FaPhoneAlt /> 1300 450 428
           </a>

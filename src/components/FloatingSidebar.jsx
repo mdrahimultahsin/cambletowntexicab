@@ -19,7 +19,7 @@ const FloatingSidebar = () => {
 
       {/* Phone */}
       <a
-        href="tel:+1300450428"
+        href="tel:1300450428"
         className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white text-black hover:bg-secondary hover:text-white cursor-pointer transition-all duration-300 hover:w-16 hover:rounded-r-md"
       >
         <FaPhoneVolume size={20} />

@@ -32,7 +32,7 @@ const Hero = () => {
               </p>
               <div className="flex justify-center gap-2 sm:gap-4 md:gap-6">
                 <a
-                  href="tel:+1300450428"
+                  href="tel:1300450428"
                   className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm  md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
                 >
                   <FaPhoneVolume className="animate-bounce text-red-500 rotate-360" />{" "}

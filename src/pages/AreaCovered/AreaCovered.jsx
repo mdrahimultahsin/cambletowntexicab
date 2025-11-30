@@ -120,7 +120,7 @@ const AreaCovered = () => {
                       Book Online
                     </ButtonSecondary>
                   </Link>
-                  <a href="tel:+1300450428" className="">
+                  <a href="tel:1300450428" className="">
                     <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                       <IoCallSharp className="" /> 1300 450 428
                     </ButtonSecondary>
@@ -284,7 +284,7 @@ const AreaCovered = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a
-                    href="tel:+1300450428"
+                    href="tel:1300450428"
                     className="bg-secondary text-white px-4 md:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-xs md:text-base"
                   >
                     <FaPhoneAlt className="text-sm md:text-lg" />

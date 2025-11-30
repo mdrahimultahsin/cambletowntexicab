@@ -1,4 +1,3 @@
-
 import Container from "../../shared/Container";
 import {Link} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
@@ -36,7 +35,7 @@ const TermsAndCondition = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a href="tel:+1300450428" className="">
+                <a href="tel:1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                     <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
