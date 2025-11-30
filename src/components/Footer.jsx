@@ -2,9 +2,8 @@ import {Link} from "react-router";
 import Container from "../shared/Container";
 import {
   FaAngleDoubleRight,
-  FaBuilding,
   FaCar,
-  FaHandshake,
+
   FaPhone,
   FaUserFriends,
 } from "react-icons/fa";

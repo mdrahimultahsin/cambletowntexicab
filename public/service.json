@@ -46,7 +46,7 @@
     "title": "Maxi Taxi Service",
     "description": "Our Maxi Taxi Campbelltown service is perfect for large groups or families. With space for up to 11 passengers and luggage, you'll travel comfortably and affordably. Book a maxi taxi today for your group travel needs.",
     "image": "/users.png",
-    "pathname": "/services/airport-shuttle"
+    "pathname": "/services/maxi-taxi-service"
   },
   {
     "service_id": "S008",
