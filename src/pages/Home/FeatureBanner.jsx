@@ -27,8 +27,8 @@ const FeatureBanner = () => {
               Sydney Airport on time, in comfort, and with peace of mind.
             </p>
             <div className="mt-4">
-              <Link to={`/book-a-text`}>
-                <ButtonPrimary>Book Now!</ButtonPrimary>
+              <Link to={`/book-a-taxi`}>
+                <ButtonPrimary>Book Now</ButtonPrimary>
               </Link>
             </div>
           </div>

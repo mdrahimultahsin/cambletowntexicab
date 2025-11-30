@@ -13,8 +13,6 @@ const About = () => {
   usePageTitle("About");
   return (
     <>
-      
-
       <div className="pb-15">
         {/* hero section */}
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
@@ -25,13 +23,13 @@ const About = () => {
                   About Us
                 </span>
                 <p className="mt-8 text-sm md:text-base">
-                  Campbelltown Taxi Cabs is a Sydney based maxi cab service established in
-                  2010. We provide affordable, reliable, and safe transport for
-                  families, groups, and business travelers. Our fleet includes
-                  sedans, SUVs, maxi vans, luxury cars, and wheelchair
-                  accessible taxis. We operate 24/7 across all Sydney suburbs
-                  and offer airport transfers, cruise transfers, corporate
-                  trips, and baby seat taxis.
+                  Campbelltown Taxi Cabs is a Sydney based maxi cab service
+                  established in 2010. We provide affordable, reliable, and safe
+                  transport for families, groups, and business travelers. Our
+                  fleet includes sedans, SUVs, maxi vans, luxury cars, and
+                  wheelchair accessible taxis. We operate 24/7 across all Sydney
+                  suburbs and offer airport transfers, cruise transfers,
+                  corporate trips, and baby seat taxis.
                 </p>
                 <div className="flex py-4 gap-4 justify-center md:justify-start">
                   <Link to="/book-a-taxi" className=" ">
@@ -40,7 +38,7 @@ const About = () => {
                       Book Online
                     </ButtonSecondary>
                   </Link>
-                  <a href="tel:+611300450428" className="">
+                  <a href="tel:+1300450428" className="">
                     <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                       <IoCallSharp className="" /> 1300 450 428
                     </ButtonSecondary>
@@ -48,7 +46,11 @@ const About = () => {
                 </div>
               </div>
               <div className="flex flex-1 items-center pb-10 md:pb-0">
-                <img className="w-full" src={titleImg} alt="Campbelltown Taxi Cabs About title" />
+                <img
+                  className="w-full"
+                  src={titleImg}
+                  alt="Campbelltown Taxi Cabs About title"
+                />
               </div>
             </div>
           </Container>

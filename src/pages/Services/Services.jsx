@@ -69,13 +69,14 @@ const serviceAreas = [
 ];
 const Services = () => {
   const params = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const servicetype = params.servicetype.toLowerCase();
   const selectedService = serviceDetails[servicetype];
-  usePageTitle(`${params.servicetype.split("-").join(" ").toLocaleUpperCase()}`)
+  usePageTitle(
+    `${params.servicetype.split("-").join(" ").toLocaleUpperCase()}`
+  );
   return (
     <div>
-   
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white md:gap-6">
@@ -98,7 +99,7 @@ const Services = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a href="tel:+611300450428" className="">
+                <a href="tel:+1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                     <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
@@ -107,7 +108,7 @@ const Services = () => {
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
               <img
-              className="w-full"
+                className="w-full"
                 src={titleImg}
                 alt={
                   params.servicetype.split("-").join(" ") +
@@ -211,19 +212,20 @@ const Services = () => {
             <p className="mt-2 text-sm md:text-base">
               Booking a taxi with a baby seat through Campbelltown Taxi Cab is
               simple and stress-free. All you have to do is call Campbelltown
-              Taxi Cab at +61 1300 450 428 or book online using our website. When
-              you make your request, simply specify that you need a car seat for
-              your child. Our maxi cab with baby car seat provides a safe and
-              secure ride with our pre-booking services. Whether it's a trip to
-              Sydney airport, a special event, or a family outing in Sydney, you
-              can now ensure a stress-free journey by reserving a maxi cab
-              equipped with a baby seat in advance. With our pre-booking option,
-              you have the peace of mind of knowing that your transport needs
-              for your little ones are taken care of. Simply let us know your
-              schedule, and we'll have a maxi cab with a baby seat ready and
-              waiting for your specified time and destination. No last-minute
-              rushes or worries about availability - just a convenient and
-              secure way to ensure a safe and comfortable ride for your family.
+              Taxi Cab at +61 1300 450 428 or book online using our website.
+              When you make your request, simply specify that you need a car
+              seat for your child. Our maxi cab with baby car seat provides a
+              safe and secure ride with our pre-booking services. Whether it's a
+              trip to Sydney airport, a special event, or a family outing in
+              Sydney, you can now ensure a stress-free journey by reserving a
+              maxi cab equipped with a baby seat in advance. With our
+              pre-booking option, you have the peace of mind of knowing that
+              your transport needs for your little ones are taken care of.
+              Simply let us know your schedule, and we'll have a maxi cab with a
+              baby seat ready and waiting for your specified time and
+              destination. No last-minute rushes or worries about availability -
+              just a convenient and secure way to ensure a safe and comfortable
+              ride for your family.
             </p>
           </div>
         </Container>
@@ -344,13 +346,16 @@ const Services = () => {
                 <FaPhoneAlt className="text-sm md:text-lg" />
                 Call: 1300 123 456
               </button>
-              <button onClick={()=>navigate("/book-a-taxi")} className="border-2 border-white text-white px-3 md:px-8 py-1 md:py-3 text-sm md:text-base rounded-full font-semibold hover:bg-secondary/80 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+              <button
+                onClick={() => navigate("/book-a-taxi")}
+                className="border-2 border-white text-white px-3 md:px-8 py-1 md:py-3 text-sm md:text-base rounded-full font-semibold hover:bg-secondary/80 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              >
                 <IoCarSport className="text-sm md:text-lg" />
                 Book Online Now
               </button>
             </div>
             <p className="text-sm mt-4 text-white">
-              Average wait time: 8 minutes •  Transparent Pricing
+              Average wait time: 8 minutes • Transparent Pricing
             </p>
           </div>
         </Container>

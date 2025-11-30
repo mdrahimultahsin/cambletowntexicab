@@ -236,7 +236,7 @@ const Commitment = () => {
             <button className="bg-secondary text-white px-4 md:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-xs md:text-base">
               <a
                 className="flex items-center gap-2 cursor-pointer"
-                href="tel:+611300450428"
+                href="tel:+1300450428"
               >
                 <FaPhoneAlt className="text-sm md:text-lg" />
                 Call: 1300 123 456

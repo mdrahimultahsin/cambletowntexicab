@@ -1,5 +1,5 @@
 import React from "react";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import {useLoaderData, Link} from "react-router";
 import Container from "../../shared/Container";
 import {FaCarSide, FaArrowLeft} from "react-icons/fa";

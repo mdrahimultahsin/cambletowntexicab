@@ -2,7 +2,7 @@ import Container from "../../shared/Container";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import {Link} from "react-router";
 import usePageTitle from "../../hooks/usePageTitle";
 
@@ -10,7 +10,6 @@ const PrivacyPolicy = () => {
   usePageTitle("Privacy Policy");
   return (
     <div className=" pb-10">
-      
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white gap-6">
@@ -37,7 +36,7 @@ const PrivacyPolicy = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a href="tel:+611300450428" className="">
+                <a href="tel:+1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                     <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>

@@ -23,7 +23,7 @@ const contactInfo = [
     id: 3,
     label: "1300 450 428",
     Icon: IoCallSharp,
-    href: "tel:+611300450428",
+    href: "tel:+1300450428",
   },
   {
     id: 4,

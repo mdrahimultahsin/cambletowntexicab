@@ -26,7 +26,7 @@ const TopHeader = () => {
         <div className="flex flex-col items-center md:flex-row justify-between gap-2 md:gap-0">
           {/* Email */}
           <p className="flex items-center gap-2">
-            <FaInbox />{" "} 
+            <FaInbox />{" "}
             <a
               href="mailto:silvercabscampbelltown@gmail.com"
               className="hover:underline font-bold"
@@ -44,8 +44,8 @@ const TopHeader = () => {
           {/* Phone */}
 
           <a
-            className="font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
-            href="tel:+611300450428"
+            className="text-lg font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
+            href="tel:+1300450428"
           >
             <FaPhoneAlt /> 1300 450 428
           </a>

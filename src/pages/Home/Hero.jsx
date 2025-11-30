@@ -15,13 +15,13 @@ const Hero = () => {
           <div className="text-center text-white">
             <div className="pt-20 md:pt-25 pb-10 md:pb-20 ">
               <h1 className="font-playfair font-black text-2xl sm:text-3xl md:text-6xl leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
-  <span className="block text-primary">
-    Campbelltown Taxi Cabs
-  </span>
-  <span className="block font-medium text-lg md:text-3xl text-white mt-2 drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)]">
-    Luxury Taxi Service Campbelltown NSW
-  </span>
-</h1>
+                <span className="block text-primary">
+                  Campbelltown Taxi Cabs
+                </span>
+                <span className="block font-medium text-lg md:text-3xl text-white mt-2 drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)]">
+                  Luxury Taxi Service Campbelltown NSW
+                </span>
+              </h1>
 
               <p className="md:max-w-7xl md:mx-auto text-center text-sm md:text-lg my-4 md:my-6">
                 Welcome to Campbelltown Taxi Cabs, the trusted choice for
@@ -32,7 +32,7 @@ const Hero = () => {
               </p>
               <div className="flex justify-center gap-2 sm:gap-4 md:gap-6">
                 <a
-                  href="tel:+611300450428"
+                  href="tel:+1300450428"
                   className="px-6 py-3 bg-primary  text-white rounded-md font-semibold text-sm  md:text-xl hover:bg-primary/80 hover:scale-105 hover:transition-all flex items-center gap-2"
                 >
                   <FaPhoneVolume className="animate-bounce text-red-500 rotate-360" />{" "}

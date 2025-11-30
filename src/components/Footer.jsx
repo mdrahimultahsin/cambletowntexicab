@@ -1,6 +1,13 @@
 import {Link} from "react-router";
 import Container from "../shared/Container";
-import {FaAngleDoubleRight, FaBuilding, FaCar, FaHandshake, FaPhone, FaUserFriends} from "react-icons/fa";
+import {
+  FaAngleDoubleRight,
+  FaBuilding,
+  FaCar,
+  FaHandshake,
+  FaPhone,
+  FaUserFriends,
+} from "react-icons/fa";
 import {MdOutlineMailOutline, MdOutlineMessage} from "react-icons/md";
 import {useEffect, useState} from "react";
 import {IoLogoWhatsapp} from "react-icons/io5";
@@ -71,12 +78,12 @@ const Footer = () => {
               />
             </Link>
             <h3 className="font-bold font-playfair flex gap-2 items-center uppercase text-xl mt-4 mb-3">
-              <FaUserFriends /> 
+              <FaUserFriends />
               About Us
             </h3>
             <p className="mt-2 ">
-              Our fleet of professional drivers provides Taxi Cab services
-              in Sydney, Sydney Airport transfers, Taxi Cabs with car seats, and
+              Our fleet of professional drivers provides Taxi Cab services in
+              Sydney, Sydney Airport transfers, Taxi Cabs with car seats, and
               Maxi Cabs equipped with wheelchair access.
             </p>
           </div>
@@ -91,9 +98,9 @@ const Footer = () => {
                 ) : (
                   services
                     .map((singleService) => (
-                      <Link to={`${singleService.pathname}`}
+                      <Link
+                        to={`${singleService.pathname}`}
                         key={singleService.service_id}
-                        
                         className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2"
                       >
                         <FaAngleDoubleRight
@@ -116,7 +123,11 @@ const Footer = () => {
             </h2>
             <div className="grid grid-cols-2 gap-1">
               {serviceAreas.slice(0, 16).map((area, index) => (
-                <Link to="/area-covered" key={index} className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2">
+                <Link
+                  to="/area-covered"
+                  key={index}
+                  className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2"
+                >
                   <FaAngleDoubleRight className="text-primary" />
                   <span className="text-sm md:text-base">{area}</span>
                 </Link>
@@ -132,7 +143,8 @@ const Footer = () => {
             <div>
               <ul className="mt-5 space-y-3">
                 <li className="flex items-center gap-2">
-              <FaLocationDot className="text-primary" size={20}/> 1 Hurley St, Campbelltown, Australia
+                  <FaLocationDot className="text-primary" size={20} /> 1 Hurley
+                  St, Campbelltown, Australia
                 </li>
                 <li className="flex items-center gap-2">
                   <a
@@ -144,7 +156,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+611300450428" className="flex items-center gap-2">
+                  <a href="tel:+1300450428" className="flex items-center gap-2">
                     <FaPhone className="text-primary" size={20} /> 1300 450 428
                   </a>
                 </li>
@@ -154,7 +166,8 @@ const Footer = () => {
                     className="flex items-center gap-2"
                     target="blank"
                   >
-                    <IoLogoWhatsapp className="text-primary" size={20} /> +61 423 963 380
+                    <IoLogoWhatsapp className="text-primary" size={20} /> +61
+                    423 963 380
                   </a>
                 </li>
                 <li>
@@ -163,11 +176,11 @@ const Footer = () => {
                     className="flex items-center gap-2"
                     target="blank"
                   >
-                    <MdOutlineMessage  className="text-primary" size={20} /> Send Message
+                    <MdOutlineMessage className="text-primary" size={20} /> Send
+                    Message
                   </a>
                 </li>
               </ul>
-              
             </div>
           </div>
         </div>
@@ -181,8 +194,8 @@ const Footer = () => {
             "Maxi Taxi" owned by Cabcharge Australia Limited or 13cabs
             Australia. To ensure timely service for our customers, we may
             utilize vehicles from authorized taxi companies such as 13cabs Maxi
-            Taxi, Premier Maxi Taxi, Campbelltown Top Maxi Taxi, GM Cabs, or other
-            approved local taxi operators.
+            Taxi, Premier Maxi Taxi, Campbelltown Top Maxi Taxi, GM Cabs, or
+            other approved local taxi operators.
           </p>
         </div>
         <div className="flex flex-col-reverse  md:flex-row md:justify-between md:items-center mt-5">
@@ -190,13 +203,17 @@ const Footer = () => {
             © 2025 Campbelltown Taxi Cabs. All Rights Reserved.
           </p>
           <div className="text-center">
-            <Link to={`/terms-and-condition`} className="text-primary">Terms And Conditions</Link>
+            <Link to={`/terms-and-condition`} className="text-primary">
+              Terms And Conditions
+            </Link>
             <span> | </span>
             <Link to={`privacy-policy`} className="text-primary">
               Privacy Policy
             </Link>
             <span> | </span>
-            <Link to={`cancellation-and-refunds`} className="text-primary">Cancellation And Refunds</Link>
+            <Link to={`cancellation-and-refunds`} className="text-primary">
+              Cancellation And Refunds
+            </Link>
           </div>
         </div>
       </Container>

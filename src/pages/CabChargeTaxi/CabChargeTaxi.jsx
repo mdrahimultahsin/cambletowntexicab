@@ -38,7 +38,7 @@ const CabChargeTaxi = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a href="tel:+611300450428" className="">
+                <a href="tel:+1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                     <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
@@ -46,7 +46,11 @@ const CabChargeTaxi = () => {
               </div>
             </div>
             <div className="flex flex-1 items-center pb-10 md:pb-0">
-              <img className="w-full" src={titleImg} alt="Campbelltown Taxi Cabs" />
+              <img
+                className="w-full"
+                src={titleImg}
+                alt="Campbelltown Taxi Cabs"
+              />
             </div>
           </div>
         </Container>
@@ -174,7 +178,7 @@ const CabChargeTaxi = () => {
                 <button className="bg-secondary text-white px-4 md:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-xs md:text-base">
                   <a
                     className="flex items-center gap-2 cursor-pointer"
-                    href="tel:+611300450428"
+                    href="tel:+1300450428"
                   >
                     <FaPhoneAlt className="text-sm md:text-lg" />
                     Call: 1300 123 456

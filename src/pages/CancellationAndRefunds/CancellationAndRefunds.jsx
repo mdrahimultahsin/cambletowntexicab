@@ -3,7 +3,7 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import {Link} from "react-router";
 import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
-import titleImg from "../../assets/fleet-header-img.png";
+import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import usePageTitle from "../../hooks/usePageTitle";
 
 const refundData = [
@@ -46,7 +46,7 @@ const CancellationAndRefunds = () => {
                     Book Online
                   </ButtonSecondary>
                 </Link>
-                <a href="tel:+611300450428" className="">
+                <a href="tel:+1300450428" className="">
                   <ButtonSecondary className="flex gap-2 items-center bg-transparent! border-2 hover:bg-secondary!">
                     <IoCallSharp className="" /> 1300 450 428
                   </ButtonSecondary>
