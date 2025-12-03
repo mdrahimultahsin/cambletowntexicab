@@ -15,7 +15,8 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import weddingImg from "../../../assets/services/campbelltown-events-transfers.jpg";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
   {
     question: "Do You Handle Early-Morning Or Late-Night Wedding Transfers?",
@@ -347,13 +348,14 @@ const WeddingTransfer = () => {
         <Container>
           <div className="text-center mb-8">
             <h2 className="section-title">
-             Wedding Transfer Service Areas Across Campbelltown & Sydney
-
+              Wedding Transfer Service Areas Across Campbelltown & Sydney
             </h2>
 
             <p className="text-gray-600 md:text-lg md:max-w-6xl mx-auto">
-             We cover every major Campbelltown and Sydney suburb to ensure seamless wedding travel. You will be amazed to have a reliable and super safest tranportation, no matter from where you are starting and your destination would be. 
-
+              We cover every major Campbelltown and Sydney suburb to ensure
+              seamless wedding travel. You will be amazed to have a reliable and
+              super safest tranportation, no matter from where you are starting
+              and your destination would be.
             </p>
           </div>
 
@@ -403,8 +405,8 @@ const WeddingTransfer = () => {
               Need Wedding Transfers Right Now?
             </h3>
             <p className="text-sm md:text-lg mb-6 md:font-semibold">
-              Instant booking | 24/7 availability | Fixed prices for wedding transfers Campbelltown
-
+              Instant booking | 24/7 availability | Fixed prices for wedding
+              transfers Campbelltown
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="bg-secondary text-white px-4 md:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-xs md:text-base">

@@ -15,58 +15,68 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import luxuryImg from "../../../assets/services/campbelltown-luxury-service.jpg";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
-   {
-    question: "What Makes Luxury Transfers Sydney Different From Regular Taxi Services?",
+  {
+    question:
+      "What Makes Luxury Transfers Sydney Different From Regular Taxi Services?",
     answer:
-      "Luxury transfers Sydney feature executive vehicles, formally attired chauffeurs, and white-glove service standards. We provide complimentary amenities, red carpet treatment, and guaranteed vehicle exclusivity. Regular taxis offer basic transportation without premium service enhancements."
+      "Luxury transfers Sydney feature executive vehicles, formally attired chauffeurs, and white-glove service standards. We provide complimentary amenities, red carpet treatment, and guaranteed vehicle exclusivity. Regular taxis offer basic transportation without premium service enhancements.",
   },
   {
-    question: "How Much Does A Luxury Airport Transfer Sydney Cost From Campbelltown?",
+    question:
+      "How Much Does A Luxury Airport Transfer Sydney Cost From Campbelltown?",
     answer:
-      "Rates start at $180 from Campbelltown to Sydney Airport, including amenities, gratuity, and tolls. Pricing varies by vehicle selection and service requests. Contact us for personalized quotes matching requirements."
+      "Rates start at $180 from Campbelltown to Sydney Airport, including amenities, gratuity, and tolls. Pricing varies by vehicle selection and service requests. Contact us for personalized quotes matching requirements.",
   },
   {
-    question: "Can I Request Specific Vehicle Types For Luxury Transfer Bookings?",
+    question:
+      "Can I Request Specific Vehicle Types For Luxury Transfer Bookings?",
     answer:
-      "Yes, you can request a specific vehicle type for your luxury transfer. Our fleet includes premium sedans and high-comfort vehicles suitable for corporate and VIP travel. Simply mention your preference during booking, and we’ll allocate the most suitable luxury vehicle available. Booking early helps secure your preferred option."
+      "Yes, you can request a specific vehicle type for your luxury transfer. Our fleet includes premium sedans and high-comfort vehicles suitable for corporate and VIP travel. Simply mention your preference during booking, and we’ll allocate the most suitable luxury vehicle available. Booking early helps secure your preferred option.",
   },
   {
     question: "Do Luxury Transfers Sydney Include Amenities Like Refreshments?",
     answer:
-      "Yes, all luxury transfers Sydney include complimentary premium bottled water, mints, and current magazines. Champagne service is available for international arrivals. Special dietary refreshments are accommodated upon advance request. Fresh floral arrangements are provided for special occasions."
+      "Yes, all luxury transfers Sydney include complimentary premium bottled water, mints, and current magazines. Champagne service is available for international arrivals. Special dietary refreshments are accommodated upon advance request. Fresh floral arrangements are provided for special occasions.",
   },
   {
-    question: "How Far In Advance Should I Book A Luxury Airport Transfer Sydney?",
+    question:
+      "How Far In Advance Should I Book A Luxury Airport Transfer Sydney?",
     answer:
-      "We recommend booking a luxury airport transfer Sydney minimum 72 hours before departure for vehicle guarantee. Same-day bookings accepted subject to availability. Corporate accounts receive priority allocation. Peak periods require one-week advance reservations."
+      "We recommend booking a luxury airport transfer Sydney minimum 72 hours before departure for vehicle guarantee. Same-day bookings accepted subject to availability. Corporate accounts receive priority allocation. Peak periods require one-week advance reservations.",
   },
   {
-    question: "Are Chauffeurs Trained For Corporate Executive Transport Protocols?",
+    question:
+      "Are Chauffeurs Trained For Corporate Executive Transport Protocols?",
     answer:
-      "Yes, our chauffeurs complete corporate etiquette training and confidentiality agreements. They understand discretion requirements for high-profile passengers. Communication training emphasizes professional boundaries, respecting privacy. Background checks include employment verification and reference validation processes."
+      "Yes, our chauffeurs complete corporate etiquette training and confidentiality agreements. They understand discretion requirements for high-profile passengers. Communication training emphasizes professional boundaries, respecting privacy. Background checks include employment verification and reference validation processes.",
   },
   {
-    question: "Can Luxury Transfer Services Accommodate Special Event Requirements?",
+    question:
+      "Can Luxury Transfer Services Accommodate Special Event Requirements?",
     answer:
-      "Absolutely. We coordinate with wedding planners, event coordinators, and personal assistants. Services include red carpet arrivals, photography assistance, and timing synchronization. Gift delivery and restaurant confirmations arranged. Customized itineraries created for anniversary celebrations."
+      "Absolutely. We coordinate with wedding planners, event coordinators, and personal assistants. Services include red carpet arrivals, photography assistance, and timing synchronization. Gift delivery and restaurant confirmations arranged. Customized itineraries created for anniversary celebrations.",
   },
   {
-    question: "What Payment Methods Do You Accept For Luxury Transfers In Sydney?",
+    question:
+      "What Payment Methods Do You Accept For Luxury Transfers In Sydney?",
     answer:
-      "We accept premium credit cards, bank transfers, and corporate invoicing. Platinum members receive monthly consolidated billing. Payment authorization occurs before service commencement. Gratuities are included in the quoted rates, eliminating additional tipping requirements."
+      "We accept premium credit cards, bank transfers, and corporate invoicing. Platinum members receive monthly consolidated billing. Payment authorization occurs before service commencement. Gratuities are included in the quoted rates, eliminating additional tipping requirements.",
   },
   {
-    question: "Do You Provide Luxury Transfer Services For Multi-Day Corporate Events?",
+    question:
+      "Do You Provide Luxury Transfer Services For Multi-Day Corporate Events?",
     answer:
-      "Yes, we arrange dedicated vehicles for multi-day conferences, roadshows, and business delegations. Daily rates are available with assigned chauffeurs throughout the event duration. Coordination includes multiple pickup locations and schedule adjustments. Volume discounts apply."
+      "Yes, we arrange dedicated vehicles for multi-day conferences, roadshows, and business delegations. Daily rates are available with assigned chauffeurs throughout the event duration. Coordination includes multiple pickup locations and schedule adjustments. Volume discounts apply.",
   },
   {
-    question: "Are Bilingual Chauffeurs Available For International Business Visitors?",
+    question:
+      "Are Bilingual Chauffeurs Available For International Business Visitors?",
     answer:
-      "Yes, bilingual chauffeurs are available in Mandarin, Japanese, French, and Arabic languages. Request language preferences during booking for guaranteed assignment. Cultural awareness training ensures appropriate service etiquette. Ideal for hosting international corporate delegations comfortably."
-  }
+      "Yes, bilingual chauffeurs are available in Mandarin, Japanese, French, and Arabic languages. Request language preferences during booking for guaranteed assignment. Cultural awareness training ensures appropriate service etiquette. Ideal for hosting international corporate delegations comfortably.",
+  },
 ];
 const features = [
   "Partnerships with Swissotel, Sofitel, and InterContinental Hotels Sydney.",

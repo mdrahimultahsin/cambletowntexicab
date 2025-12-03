@@ -15,7 +15,8 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import wheelchairImg from "../../../assets/services/campbelltown-wheelchair-accessible-taxi.png";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
   {
     question: "How Do I Book A Wheelchair Taxi in Sydney For Same-Day Travel?",
@@ -58,8 +59,7 @@ const faqs = [
       "Call dispatch when finished, and we will send your return wheelchair taxi Sydney immediately. No penalties apply. Consider our wait-and-return service for short appointments at lower cost.",
   },
   {
-    question:
-      "Can I book wheelchair taxi Campbelltown for airport transfers?",
+    question: "Can I book wheelchair taxi Campbelltown for airport transfers?",
     answer:
       "Yes, we provide wheelchair accessible taxi Sydney Airport transfers with meet-and-greet at all terminals. Our drivers assist with luggage navigation. You can book 72 hours ahead for coordination.",
   },
@@ -450,7 +450,9 @@ const WheelChairTaxi = () => {
       </section>
 
       <FeatureFleet
-        fleetSectionTitle={"Comfortable Vehicle Choices for Safe Wheelchair Transport"}
+        fleetSectionTitle={
+          "Comfortable Vehicle Choices for Safe Wheelchair Transport"
+        }
       />
       <Faq faqs={faqs} />
     </div>

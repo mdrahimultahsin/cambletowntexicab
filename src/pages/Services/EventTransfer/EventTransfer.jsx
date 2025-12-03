@@ -15,7 +15,8 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import eventImg from "../../../assets/services/campbelltown-events-transfers.jpg";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
   {
     question: "Do You Handle Early-Morning Or Late-Night Wedding Transfers?",
@@ -349,13 +350,14 @@ const EventTransfer = () => {
         <Container>
           <div className="text-center mb-8">
             <h2 className="section-title">
-             Event Transfer Service Areas Across Campbelltown and Sydney
-
+              Event Transfer Service Areas Across Campbelltown and Sydney
             </h2>
 
             <p className="text-gray-600 md:text-lg md:max-w-6xl mx-auto">
-             We support event transfers across Campbelltown, Greater Sydney, and NSW. Our coverage includes major venues, stadiums, arenas, theatres, parks, and festival grounds. We ensure safe, steady travel across key suburbs used for event-day transport.
-
+              We support event transfers across Campbelltown, Greater Sydney,
+              and NSW. Our coverage includes major venues, stadiums, arenas,
+              theatres, parks, and festival grounds. We ensure safe, steady
+              travel across key suburbs used for event-day transport.
             </p>
           </div>
 
@@ -405,8 +407,8 @@ const EventTransfer = () => {
               Need Event Transfers Right Now?
             </h3>
             <p className="text-sm md:text-lg mb-6 md:font-semibold">
-              Instant booking | 24/7 availability | Fixed prices for event transfers Campbelltown
-
+              Instant booking | 24/7 availability | Fixed prices for event
+              transfers Campbelltown
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="bg-secondary text-white px-4 md:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-xs md:text-base">

@@ -15,7 +15,8 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import taxiImg from "../../../assets/services/campbelltown-luxury-service.jpg";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
   {
     question: "How Quickly Can I Book A Taxi Sydney For Immediate Pickup?",
@@ -45,8 +46,7 @@ const faqs = [
       "We accept cash, all major credit cards, debit cards, Apple Pay, Google Pay, and Samsung Pay. Corporate accounts receive monthly invoicing with detailed trip reports. Payment occurs after journey completion unless an advance payment is requested for airport bookings.",
   },
   {
-    question:
-      "How Do I Find My Taxi Sydney Driver At Pickup Locations?",
+    question: "How Do I Find My Taxi Sydney Driver At Pickup Locations?",
     answer:
       "You receive an SMS with the driver's name, vehicle details, and registration. Track approach via mobile app in real-time. Drivers display Campbelltown Taxi Cabs signage and contact you upon arrival.",
   },
@@ -69,7 +69,8 @@ const faqs = [
       "Book 24 hours ahead for guaranteed availability. Same-day bookings accepted up to one hour before pickup. Early morning flights benefit from advance booking, ensuring overnight driver assignment.",
   },
   {
-    question: "Does The Taxi Service In Sydney Operate During Public Holidays And Late Nights?",
+    question:
+      "Does The Taxi Service In Sydney Operate During Public Holidays And Late Nights?",
     answer:
       "Yes, our taxi service in Sydney operates 24/7, including Christmas, New Year, Easter, and Australia Day. No holiday surcharges. Late-night services maintain the same response times across Campbelltown continuously.",
   },

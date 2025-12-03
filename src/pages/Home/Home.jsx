@@ -1,5 +1,5 @@
-import {Suspense} from "react";
-import BookingForm from "../../shared/BookingForm";
+import React, {Suspense} from "react";
+const BookingForm = React.lazy(() => import("../../shared/BookingForm"));
 import Faq from "../../shared/Faq";
 import FeatureBanner from "./FeatureBanner";
 import FeatureCards from "./FeatureCards";

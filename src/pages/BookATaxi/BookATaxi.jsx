@@ -12,11 +12,12 @@ import {IoCallSharp} from "react-icons/io5";
 import {Link} from "react-router";
 import Container from "../../shared/Container";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import BookingForm from "../../shared/BookingForm";
+
 import Faq from "../../shared/Faq";
 import FeatureFleet from "../Home/FeatureFleet";
 import useSEO from "../../hooks/useSEO";
-
+import React from "react";
+const BookingForm = React.lazy(() => import("../../shared/BookingForm"));
 const BookATaxi = () => {
   const faqs = [
     {

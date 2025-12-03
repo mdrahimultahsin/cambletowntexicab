@@ -15,7 +15,8 @@ import serviceBgImage from "../../../assets/serviceBg.jpg";
 import {FaLocationDot} from "react-icons/fa6";
 import useSEO from "../../../hooks/useSEO";
 import shuttleImg from "../../../assets/services/book-taxi-sydney-airport.png";
-import BookingForm from "../../../shared/BookingForm";
+import React from "react";
+const BookingForm = React.lazy(() => import("../../../shared/BookingForm"));
 const faqs = [
   {
     question: "How Does The Shared Airport Shuttle Sydney Pricing Work?",

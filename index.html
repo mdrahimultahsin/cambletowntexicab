@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/campbelltown-favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <meta property="og:image" content="link-to-image.jpg" />
+ <head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/campbelltown-favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="link-to-image.jpg" />
+  <title>Campbelltown Taxi Cabs</title>
 
-    <title>Campbelltown Taxi Cabs</title>
-  </head>
-  <body>
-    <div id="root"></div>
+  <!-- Preconnect to Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Non-blocking Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </noscript>
+
+  <!-- Preload main Vite CSS -->
+  <link rel="preload" href="/assets/index-BrwufQLV.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/assets/index-BrwufQLV.css">
+  </noscript>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx" defer></script>
+</body>
 </html>

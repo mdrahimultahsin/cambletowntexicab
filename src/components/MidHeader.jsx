@@ -89,7 +89,7 @@ const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
             >
               Book Online
             </ButtonSecondary>
-            <button className="md:hidden border border-gray-500 bg-primary text-white px-2 py-1 rounded">
+            <button aria-label="Menu Button" className="md:hidden border border-gray-500 bg-primary text-white px-2 py-1 rounded">
               {isMenuOpen ? (
                 <FaXmark
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
