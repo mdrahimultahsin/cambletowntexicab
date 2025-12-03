@@ -52,4 +52,10 @@ body {
   overflow-y: visible;
   scroll-behavior: smooth;
 }
+.section-hero-title{
+  @apply text-base sm:text-xl md:text-2xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair inline-block leading-normal md:leading-10
+}
 
+.section-title {
+  @apply text-lg sm:text-xl md:text-4xl font-playfair font-bold  text-primary mb-6 text-center
+}

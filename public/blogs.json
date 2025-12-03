@@ -3,7 +3,7 @@
     "id": 1,
     "title": "The Future of Electric Vehicles in 2024",
     "description": "Exploring the latest advancements in EV technology and what to expect in the coming year.",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "image": "/campbelltown-blog1.avif",
     "category": "Electric Vehicles",
     "featured": true,
     "tags": ["EV", "Sustainability", "Automotive"],
@@ -13,9 +13,9 @@
     "id": 2,
     "title": "Top 10 Car Maintenance Tips for Winter",
     "description": "Essential maintenance practices to keep your vehicle running smoothly during cold months.",
-    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "image": "/campbelltown-blog2.avif",
     "category": "Maintenance",
-   
+
     "featured": false,
     "tags": ["Winter", "Car Care", "Tips"],
     "content": "Winter weather can be harsh on vehicles. To ensure your car runs safely, start by checking the battery, tires, and antifreeze levels. Use winter tires for better traction on icy roads and keep your windshield washer fluid full. Inspect brakes and wipers, and make sure all lights are functioning properly. Warm up your vehicle for a few minutes before driving in extremely cold conditions. Regularly clean the undercarriage to remove road salt that can cause rust. Following these simple tips helps prevent breakdowns, ensures your safety, and extends the life of your car during the cold season."
@@ -24,44 +24,11 @@
     "id": 3,
     "title": "Understanding Hybrid Technology: How It Works",
     "description": "A deep dive into hybrid vehicle systems and their benefits for modern drivers.",
-    "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "image": "campbelltown-blog3.avif",
     "category": "Technology",
-   
+
     "featured": false,
     "tags": ["Hybrid", "Technology", "Sustainability"],
     "content": "Hybrid vehicles combine a conventional internal combustion engine with an electric motor, resulting in better fuel efficiency and reduced emissions. The electric motor assists the engine during acceleration, allowing the engine to operate at lower RPMs and consume less fuel. Regenerative braking captures energy that would otherwise be lost, charging the battery while driving. Hybrids offer a smooth and quiet driving experience, especially in stop-and-go traffic, and can significantly reduce environmental impact. Understanding how hybrids work helps drivers appreciate the technology and optimize performance for cost-effective driving."
-  },
-  {
-    "id": 4,
-    "title": "Luxury Car Features That Are Worth The Investment",
-    "description": "Exploring premium features that enhance comfort, safety, and driving experience.",
-    "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    "category": "Luxury",
-  
-    "featured": false,
-    "tags": ["Luxury", "Comfort", "Technology"],
-    "content": "Luxury cars come with advanced features that greatly improve driving comfort and safety. High-end vehicles often include adaptive cruise control, lane-keeping assist, premium audio systems, heated and ventilated seats, and advanced infotainment. Many luxury cars offer state-of-the-art suspension and noise reduction technologies, making long journeys more comfortable. Investing in a luxury vehicle may seem expensive initially, but the enhanced safety, comfort, and resale value often justify the cost. Understanding these features helps buyers choose the models that provide the best balance of luxury and value."
-  },
-  {
-    "id": 5,
-    "title": "Off-Road Adventures: Preparing Your Vehicle",
-    "description": "Essential modifications and preparations for taking your vehicle off the beaten path.",
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    "category": "Adventure",
-  
-    "featured": false,
-    "tags": ["Off-Road", "Adventure", "Preparation"],
-    "content": "Off-road driving requires special preparation. Check tire pressure and use all-terrain tires for better traction. Make sure your vehicle has a proper lift and skid plates for undercarriage protection. Carry essential gear such as recovery straps, a jack, and a first aid kit. Before heading into remote areas, plan your route and notify someone of your travel plans. Off-road adventures are exciting, but preparation ensures safety, prevents vehicle damage, and makes the experience enjoyable for everyone involved."
-  },
-  {
-    "id": 6,
-    "title": "The Rise of Autonomous Driving Technology",
-    "description": "How self-driving cars are evolving and what it means for the future of transportation.",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    "category": "Innovation",
-  
-    "featured": false,
-    "tags": ["Autonomous", "Technology", "Innovation"],
-    "content": "Autonomous vehicles are rapidly advancing with the integration of AI, sensors, and machine learning. Self-driving technology aims to reduce traffic accidents, improve efficiency, and provide mobility solutions for those unable to drive. Companies are testing fully autonomous cars, while many vehicles today include driver-assist features like lane centering, adaptive cruise control, and automatic braking. Understanding autonomous driving technology is crucial for anticipating the future of transportation and how it will reshape urban planning, traffic management, and personal mobility."
   }
 ]

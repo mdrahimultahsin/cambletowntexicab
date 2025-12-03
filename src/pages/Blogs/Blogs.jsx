@@ -5,7 +5,6 @@ import {Link, useLocation} from "react-router";
 import {IoCallSharp} from "react-icons/io5";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import {useEffect, useState} from "react";
-import usePageTitle from "../../hooks/usePageTitle";
 
 const Blogs = () => {
   const [blogsData, setBlogsData] = useState([]);
@@ -16,17 +15,17 @@ const Blogs = () => {
       .then((data) => setBlogsData(data));
   }, []);
   const location = useLocation();
-  usePageTitle("Blogs");
   return (
     <div>
+   
       {location.pathname === "/blogs" && (
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
             <div className="flex flex-col md:flex-row text-white  md:gap-6">
               <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-                <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
+                <h2 className="section-hero-title">
                   Blogs
-                </span>
+                </h2>
                 <p className="mt-8 text-sm md:text-base">
                   Campbelltown Taxi Cabs is a Sydney based maxi cab service
                   established in 2010. We provide affordable, reliable, and safe
@@ -67,7 +66,7 @@ const Blogs = () => {
         <Container>
           {/* Section Header */}
           <div className="text-center mb-5 md:mb-10">
-            <h2 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center">
+            <h2 className="section-title text-center">
               Latest Blog and Articles
             </h2>
             <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">

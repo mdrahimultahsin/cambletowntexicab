@@ -11,11 +11,10 @@ import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import QuickLinks from "./QuickLinks";
 import {Link, useNavigate} from "react-router";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import usePageTitle from "../../hooks/usePageTitle";
+import useSEO from "../../hooks/useSEO";
 
 const AreaCovered = () => {
   const navigate = useNavigate();
-  usePageTitle("Area We Covered");
   const serviceAreas = [
     "Campbelltown",
     "Ambarvale",
@@ -95,23 +94,29 @@ const AreaCovered = () => {
 
   return (
     <>
+      {useSEO({
+        title: "Area Covered | Campbelltown Taxi Cabs",
+        description:
+          "Premium Taxi Service in Campbelltown NSW for comfortable, fast, and affordable rides. Book your ride today with Campbelltown Taxi Cabs!",
+        keywords:
+          "campbelltown taxi cabs, taxi campbelltown,taxi campbelltown nsw, campbelltown taxi,campbelltown taxis,taxi service campbelltown nsw,taxis campbelltown,luxury taxi campbelltown,taxi service campbelltown",
+        canonical: "https://campbelltowntaxicabs.com.au/area-covered",
+      })}
       <div className="pb-15">
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
             <div className="flex flex-col md:flex-row text-white md:gap-6">
               <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-                <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
-                  Covered Area
-                </span>
+                <h2 className="section-hero-title">Service Areas We Cover</h2>
 
                 <p className="mt-8 text-sm md:text-base">
-                  Campbelltown Taxi Cabs is a Sydney based maxi cab service
-                  established in 2010. We provide affordable, reliable, and safe
-                  transport for families, groups, and business travelers. Our
-                  fleet includes sedans, SUVs, maxi vans, luxury cars, and
-                  wheelchair accessible taxis. We operate 24/7 across all Sydney
-                  suburbs and offer airport transfers, cruise transfers,
-                  corporate trips, and baby seat taxis.
+                  Campbelltown Taxi Cabs provides safe and reliable transport
+                  across Sydney and the Macarthur region. We support families,
+                  groups, and business travellers with clean vehicles and
+                  trained drivers. Our fleet includes sedans, SUVs, maxi cabs,
+                  luxury cars, and wheelchair-accessible taxis. We operate 24/7
+                  and cover airport transfers, corporate trips, cruise pickups,
+                  and daily travel needs.
                 </p>
                 <div className="flex py-4 gap-4 justify-center md:justify-start">
                   <Link to="/book-a-taxi" className=" ">
@@ -142,14 +147,15 @@ const AreaCovered = () => {
           <div className="mx-auto pt-15">
             {/* Header Section */}
             <div className="text-center mb-5 md:mb-10">
-              <h2 className="font-playfair text-primary font-semibold text-3xl md:text-5xl text-center">
-                Serving Macarthur Region
+              <h2 className="section-title">
+                Proudly Serving the Campbelltown and Macarthur Community
               </h2>
               <p className="leading-relaxed text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
-                Your trusted taxi service connecting{" "}
-                <span className="text-primary font-semibold">
-                  {serviceAreas.length}+ locations
-                </span>{" "}
+                We connect travellers across{" "}
+                <span className="text-primary font-semibold">44+ suburbs</span>{" "}
+                with safe, fast, and comfortable taxi services. Our team
+                supports local trips, airport transfers, and daily travel with
+                reliable drivers and well-maintained vehicles you can trust.
                 across Greater Sydney with reliable, affordable, and comfortable
                 transportation solutions.
               </p>
@@ -188,7 +194,8 @@ const AreaCovered = () => {
                       All Service Areas
                     </h2>
                     <p className="text-accent text-xs md:text-base">
-                      Complete coverage across the region
+                      Complete taxi coverage across Campbelltown, Macarthur, and
+                      surrounding Sydney suburbs.
                     </p>
                   </div>
                 </div>
@@ -277,10 +284,11 @@ const AreaCovered = () => {
             <div className="text-center">
               <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60] text-white rounded-xl p-3 md:p-6 shadow-md">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">
-                  Need a Ride Right Now?
+                  Need a Taxi Without the Wait?
                 </h3>
                 <p className="text-sm md:text-lg mb-6 md:font-semibold">
-                  Instant booking | 24/7 availability | No Hidden Fees
+                  Get fast pickup, round-the-clock service, and clear pricing
+                  every time you book.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a

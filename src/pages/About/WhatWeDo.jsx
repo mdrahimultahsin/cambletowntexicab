@@ -85,7 +85,7 @@ const WhatWeDo = () => {
       <Container>
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="font-playfair text-primary font-bold text-4xl md:text-5xl">
+          <h2 className="section-title">
             What We Do
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-sm md:text-lg">

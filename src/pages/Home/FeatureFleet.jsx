@@ -6,7 +6,7 @@ import {GiConcreteBag} from "react-icons/gi";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import Loading from "../../shared/Loading";
 
-const FeatureFleet = () => {
+const FeatureFleet = ({fleetSectionTitle}) => {
   const [fleets, setFleets] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -31,8 +31,10 @@ const FeatureFleet = () => {
   return (
     <section className="mt-30">
       <Container>
-        <h2 className="text-center text-primary text-2xl md:text-4xl font-playfair font-bold">
-          Our Premium Fleet: Travel in Comfort and Style
+        <h2 className="section-title">
+          {fleetSectionTitle
+            ? fleetSectionTitle
+            : "Our Premium Fleet: Travel in Comfort and Style"}
         </h2>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {loading ? (

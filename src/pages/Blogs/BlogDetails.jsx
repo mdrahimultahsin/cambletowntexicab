@@ -4,11 +4,9 @@ import {useLoaderData, Link} from "react-router";
 import Container from "../../shared/Container";
 import {FaCarSide, FaArrowLeft} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import usePageTitle from "../../hooks/usePageTitle";
 
 const BlogDetails = () => {
   const blog = useLoaderData();
-  usePageTitle(`${blog.title}`);
   if (!blog) {
     return <p className="text-center py-20 text-accent">Blog not found.</p>;
   }

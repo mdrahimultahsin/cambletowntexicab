@@ -42,8 +42,8 @@ const contactInfo = [
 const ConnectWithUs = () => {
   return (
     <div>
-      <h3 className="text-2xl md:text-4xl font-playfair font-bold  text-primary mb-6">
-        Connect With Us
+      <h3 className="section-title text-left!">
+        Contact Our Campbelltown Taxi Cabs Sydney
       </h3>
       <div className="mt-5">
         {contactInfo.map((info) => (

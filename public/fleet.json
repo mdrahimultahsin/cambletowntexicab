@@ -4,7 +4,7 @@
     "name": "Easy Sedan",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "Ideal for quick trips and business travel, the Easy Sedan offers smooth handling, a quiet cabin, and a fuel-efficient ride. Perfect for airport pickups, city tours, or errands, it's an affordable way to experience luxury at its finest.",
+    "description": "The Easy Sedan suits airport transfers, business travel, and short local trips. It offers smooth handling, a quiet cabin, and dependable comfort on every route. This car fits small groups seeking a clean, reliable, and affordable taxi across Campbelltown and Sydney.",
     "image": "/campbelltown-easy-sedan.png"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Luxury Vehicle",
     "passengerCapacity": 4,
     "bagsCapacity": 2,
-    "description": "For those who demand premium service, our Luxury Vehicle is the epitome of elegance and comfort. Featuring plush leather seating, top-tier climate control, and state-of-the-art technology, it’s ideal for corporate clients or VIP transfers. Experience first-class service at an affordable price.",
+    "description": "Our Luxury Vehicle delivers a refined travel experience for VIPs and corporate clients. Enjoy soft leather seating, smooth climate control, and quiet cabin comfort. This car suits airport transfers, events, and premium travel across Campbelltown and Sydney.",
     "image": "/campbelltown-luxury-vehicle.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Suv or Wagon",
     "passengerCapacity": 7,
     "bagsCapacity": 5,
-    "description": "Traveling with family or a group? Our spacious SUV or Wagon offers ample room for passengers and luggage, ensuring comfort and convenience. With luxury interiors and modern safety features, this vehicle is perfect for long trips, family vacations, or airport transfers.",
+    "description": "Our SUV or Wagon suits families and groups needing comfort and space. It offers wide seating, strong luggage room, and modern safety features. This vehicle works well for long trips, holidays, and airport runs. It supports our Sydney taxi fleet services for smooth, reliable travel.",
     "image": "/campbelltown-suv-wagon.png"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Kia Carnival",
     "passengerCapacity": 7,
     "bagsCapacity": 8,
-    "description": "The Kia Carnival is designed for larger groups, offering seating for up to seven passengers with plenty of luggage space. Whether you’re heading to an event or going on a family vacation, this affordable, reliable van ensures a smooth, comfortable ride for all.",
+    "description": "The Kia Carnival supports larger groups who want comfort and steady space. It handles events, holidays, and airport transfers with ease. This van forms part of our Campbelltown airport transfer fleet, delivering stable rides and generous luggage capacity for every trip.",
     "image": "/campbelltown-kia-carnival.png"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Maxi Taxi",
     "passengerCapacity": 11,
     "bagsCapacity": 8,
-    "description": "11 seater maxi cabs, perfect for larger group travel in Sydney. Our vehicles provide ample room for extra luggage and are equipped with baby seats to ensure a safe and comfortable ride for all passengers. Whether you're heading to a corporate event, a family outing, or the airport, trust Campbelltown Taxi Cabs for reliable and convenient transportation.",
+    "description": "Our maxi taxi suits big groups needing room and comfort. It carries eleven passengers with ease and supports baby seats on request. This vehicle is a key part of our Maxi cab fleet Sydney, offering reliable service for events, airports, and group travel across the region.",
     "image": "/campbelltown-maxi-taxi.png"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Wheelchair Taxi Service ",
     "passengerCapacity": 7,
     "bagsCapacity": 8,
-    "description": "Campbelltown Taxi Cabs offers reliable wheelchair-accessible taxi services for passengers who need safe and comfortable transportation. Our fleet includes wheelchair taxis, disabled taxis, maxi cabs, and spacious vans designed for easy access and smooth travel.",
+    "description": "Our wheelchair taxi service supports safe, accessible travel for all passengers. Vehicles include ramps, secure anchor points, and trained drivers. This option strengthens our Sydney airport transfer fleet by offering smooth, respectful transport for medical visits, events, and daily trips.",
     "image": "/campbelltown-maxi-taxi.png"
   }
 ]

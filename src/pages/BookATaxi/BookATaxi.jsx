@@ -15,28 +15,86 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import BookingForm from "../../shared/BookingForm";
 import Faq from "../../shared/Faq";
 import FeatureFleet from "../Home/FeatureFleet";
-import usePageTitle from "../../hooks/usePageTitle";
+import useSEO from "../../hooks/useSEO";
 
 const BookATaxi = () => {
-  usePageTitle("Book A Taxi");
+  const faqs = [
+    {
+      question: "How Early Can I Book a Campbelltown Taxi?",
+      answer:
+        "You can schedule a taxi at any time. Our Campbelltown taxi cabs operate 24/7 and respond quickly to all bookings. Early reservations help us secure the ideal vehicle and ensure a smooth pickup experience.",
+    },
+    {
+      question: " Do You Track Flight Arrivals for Sydney Airport Pickups?",
+      answer:
+        " Yes. We monitor all Sydney Airport arrivals in real time to ensure timely pickups. Your driver adjusts their schedule if your flight is delayed or lands early, giving you a stress-free airport transfer.",
+    },
+    {
+      question: " Can I Book a Campbelltown Maxi Taxi for a Group?",
+      answer:
+        "Yes. Our Campbelltown maxi taxi service carries up to eleven passengers with ample luggage space. It is perfect for airport runs, family trips, business groups, and event transport.",
+    },
+    {
+      question: "Do You Provide Baby Seats With Online Bookings?",
+      answer:
+        "Yes. We supply baby seats and boosters on request to ensure safe travel for your child. Simply mention your child’s age during booking, and we will prepare the correct seat before pickup.",
+    },
+    {
+      question: " Do You Offer Fixed Fares for Long-Distance Travel?",
+      answer:
+        " Yes. We provide clear, upfront pricing for long-distance trips across Sydney and nearby regions. Our fixed fares ensure full transparency with no hidden charges or unexpected fees.",
+    },
+    {
+      question: "Can I Pay With Card or Cabcharge During My Ride?",
+      answer:
+        "Yes. All our Campbelltown taxi cabs accept debit cards, credit cards, Cabcharge, and cash. Payments are processed securely, giving you a smooth and convenient end to your journey.",
+    },
+    {
+      question: " Do You Have Wheelchair-Accessible Taxis in Campbelltown?",
+      answer:
+        "Yes. We operate wheelchair-accessible taxis with ramps, secure anchor points, and trained drivers. Our service supports medical visits, airport transfers, and everyday travel with safety and dignity.",
+    },
+    {
+      question: "Can I Book a Return Trip at the Same Time?",
+      answer:
+        " Yes. You can pre-book a return trip when scheduling your taxi. This ensures timely pickup for your return and allows our team to plan your travel with complete reliability.",
+    },
+    {
+      question: "Do You Serve Suburbs Outside Campbelltown?",
+      answer:
+        " Yes. We cover Macarthur, Ingleburn, Glenfield, Camden, Oran Park, Gregory Hills, and surrounding areas. Our Sydney taxi cabs provide reliable transport across all nearby suburbs.",
+    },
+    {
+      question: "Will I Receive Confirmation After Booking Online?",
+      answer:
+        "Yes. You will receive a call or message once our team reviews your booking. We confirm your pickup details, assign a vehicle, and keep you updated before your driver arrives.",
+    },
+  ];
   return (
     <div>
+      {useSEO({
+        title: "Best Sydney Taxi Cabs | Fast Campbelltown Bookings 24/7",
+        description:
+          "Sydney taxi cabs from Campbelltown with fast pickup times, GPS-tracked rides and 24/7 phone and online booking for airport, city and local trips. Call now.",
+        keywords: "sydney taxi cabs,campbelltown taxi cabs",
+        canonical: "https://campbelltowntaxicabs.com.au/book-a-taxi",
+      })}
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white md:gap-6">
             <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-              <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
-                Book A Taxi
-              </span>
+              <h2 className="section-hero-title">
+                Fast and Easy Taxi Booking in Campbelltown
+              </h2>
 
               <p className="mt-8 text-sm md:text-base">
-                Campbelltown Taxi Cabs is a Sydney based maxi cab service
-                established in 2010. We provide affordable, reliable, and safe
-                transport for families, groups, and business travelers. Our
-                fleet includes sedans, SUVs, maxi vans, luxury cars, and
-                wheelchair accessible taxis. We operate 24/7 across all Sydney
-                suburbs and offer airport transfers, cruise transfers, corporate
-                trips, and baby seat taxis.
+                Campbelltown Taxi Cabs offers safe and reliable travel across
+                Sydney. Our service supports families, groups, and business
+                travellers with clean cars and trained drivers. Choose from
+                sedans, SUVs, luxury cars, maxi cabs, and wheelchair-accessible
+                taxis. We operate 24/7 and cover airport transfers, cruise
+                trips, events, and corporate travel. Book your ride now and
+                enjoy smooth, stress-free transport.
               </p>
               <div className="flex py-4 gap-4 justify-center md:justify-start">
                 <Link to="/book-a-taxi" className=" ">
@@ -56,13 +114,16 @@ const BookATaxi = () => {
               <img
                 className="w-full"
                 src={titleImg}
-                alt="Campbelltown Taxi Cabs"
+                alt="Sydney taxi cabs serving Campbelltown passengers for local trips, airport journeys, city commutes and late-night returns home."
               />
             </div>
           </div>
         </Container>
       </div>
-      <BookingForm className="mt-20!" />
+      <BookingForm
+        formTitle={"Book Your Campbelltown Taxi Fast and Easy"}
+        className="mt-20!"
+      />
       <section className="w-full bg-light py-16 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-5">
@@ -74,13 +135,13 @@ const BookATaxi = () => {
           <div className="">
             {/* Header */}
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 font-playfair text-primary">
+              <h2 className="section-title">
                 Book Campbelltown Taxi Cabs in Simple Steps
-              </h1>
+              </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Making your taxi booking with us is simple and convenient. Use
-                our online taxi booking system or call our customer service team
-                to schedule your ride.
+                Schedule your taxi in seconds using our secure booking form.
+                Share your trip details, choose your vehicle, and confirm your
+                ride with our friendly team.
               </p>
             </div>
 
@@ -89,11 +150,11 @@ const BookATaxi = () => {
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    Whether you need a quick local trip around Campbelltown, a
-                    long-distance journey, or Sydney airport transfer pickup or
-                    drop off, we ensure a hassle-free booking process,
-                    competitive rates, and a reliable service to meet your
-                    travel needs.
+                    Whether you need a fast trip in Campbelltown or a long ride
+                    across Sydney, our team is ready to help. Our Campbelltown
+                    taxi cabs handle airport pickups, local visits, events, and
+                    daily travel. We keep the booking process smooth, the
+                    pricing clear, and the service reliable.
                   </p>
 
                   <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6">
@@ -103,7 +164,7 @@ const BookATaxi = () => {
                     </h3>
                     <p className="text-gray-700">
                       Campbelltown Taxi Cabs offers Reliable Taxi Cabs, Maxi
-                      Cabs and Airport Taxi Cabs at affordable rates. Book your
+                      Cabs, and Airport Taxi Cabs at affordable rates. Book your
                       Taxi Cab today.
                     </p>
                   </div>
@@ -111,12 +172,14 @@ const BookATaxi = () => {
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
                       <FaCheck className="text-green-500" />
-                      Book Taxi Online
+                      Book Your Ride Online
                     </h3>
                     <p className="text-gray-700">
-                      We make the taxi booking process as simple as possible and
-                      give you all the booking options you need. Simply fill the
-                      taxi booking form and follow the confirmation process.
+                      Our online booking form lets you confirm your trip in
+                      minutes. Add your pickup details, select your taxi, and
+                      send your request. Our team reviews it fast and assigns
+                      the right driver for your schedule. You get clear updates
+                      before every pickup.
                     </p>
                   </div>
                 </div>
@@ -127,7 +190,7 @@ const BookATaxi = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
                   <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
                     <FaStar className="text-yellow-500" />
-                    Key Features of Campbelltown Taxi Booking
+                    Why Our Campbelltown Taxi Booking Stands Out
                   </h3>
 
                   <div className="space-y-4">
@@ -137,11 +200,11 @@ const BookATaxi = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-1">
-                          Multiple Vehicle Options
+                          Wide Range of Vehicles
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          Book A Taxi Cab, Maxi Cab or A Premium Ride to suit
-                          your needs
+                          Choose a sedan, SUV, maxi cab, or luxury car for your
+                          trip needs.
                         </p>
                       </div>
                     </div>
@@ -152,11 +215,11 @@ const BookATaxi = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-1">
-                          Flexible Timing
+                          Easy Trip Scheduling
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          Find a Taxi Cab if you are Ready Now or Book Taxi for
-                          Later Time
+                          Book a taxi for now or reserve a planned pickup for
+                          later.
                         </p>
                       </div>
                     </div>
@@ -167,11 +230,10 @@ const BookATaxi = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-1">
-                          Multiple Payment Options
+                          Simple Payment Choices
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          Pay the Taxi Driver directly with Debit/Credit Card,
-                          Cabcharge or Cash
+                          Pay with card, Cabcharge, or cash when your ride ends.
                         </p>
                       </div>
                     </div>
@@ -182,11 +244,10 @@ const BookATaxi = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-1">
-                          Return Trip Option
+                          Convenient Return Booking
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          Choose Return Trip if you are planning to return back
-                          with us
+                          Add a return pickup if you plan to come back with us.
                         </p>
                       </div>
                     </div>
@@ -216,9 +277,11 @@ const BookATaxi = () => {
         </Container>
       </section>
 
-      <FeatureFleet />
+      <FeatureFleet
+        fleetSectionTitle={"Reliable Taxi Vehicles Ready for Your Trip"}
+      />
 
-      <Faq />
+      <Faq faqs={faqs} />
     </div>
   );
 };

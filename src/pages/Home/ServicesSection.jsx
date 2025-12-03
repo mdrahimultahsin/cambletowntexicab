@@ -7,7 +7,7 @@ const ServicesSection = () => {
     <section className="pt-30 mb-30">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl md:text-5xl font-semibold font-playfair text-primary">
+          <h2 className="section-title">
             Our Taxi and Maxi Services in Campbelltown
           </h2>
           <p className="mt-4 text-base text-accent md:text-xl text-center max-w-6xl mx-auto leading-relaxed">
