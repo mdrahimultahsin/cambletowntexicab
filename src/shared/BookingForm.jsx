@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import {useNavigate} from "react-router";
-const BookingForm = ({className, params}) => {
+const BookingForm = ({className, params, formTitle}) => {
   const [loading, setLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState({
@@ -123,9 +123,13 @@ Flight No: ${formData.flightNo || ""}
       <Container>
         <div className="bg-gray-color text-black pt-10 pb-6 rounded-md">
           <h1 className="section-title">
-            {params ? params : "Taxi Booking Services in CampbellTown"}
+            {params
+              ? params
+              : formTitle
+              ? formTitle
+              : "Taxi Booking Services in CampbellTown"}
           </h1>
-          <form onSubmit={handleSubmit} className=" px-8 pt-6">
+          <form onSubmit={handleSubmit} className=" px-8 pt-0">
             {/* Pickup Options */}
             <div className="flex flex-col md:flex-row md:justify-center gap-3 md:gap-8 mb-4">
               {["anywhere", "airport"].map((type) => (
@@ -222,6 +226,7 @@ Flight No: ${formData.flightNo || ""}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <select
+                      aria-label="Passengers"
                       name="passengers"
                       value={formData.passengers}
                       onChange={handleInputChange}
@@ -253,6 +258,7 @@ Flight No: ${formData.flightNo || ""}
                   </div>
                   <div>
                     <select
+                      aria-label="Vehicle Type"
                       name="vehicleType"
                       value={formData.vehicleType}
                       onChange={handleInputChange}
@@ -303,9 +309,9 @@ Flight No: ${formData.flightNo || ""}
                 </div>
                 {/* Date and Time */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <h4 className="text-center col-span-full font-bold text-accent">
+                  <h2 className="text-center col-span-full font-bold text-accent">
                     Pickup Date & Time
-                  </h4>
+                  </h2>
                   <input
                     name="pickupDate"
                     type="date"
@@ -369,6 +375,7 @@ Flight No: ${formData.flightNo || ""}
                 {/* Payment Mode */}
                 <div className="mb-6">
                   <select
+                    aria-label="Payment Option"
                     name="paymentMode"
                     value={formData.paymentMode}
                     onChange={handleInputChange}
@@ -431,6 +438,7 @@ Flight No: ${formData.flightNo || ""}
 
                 {/* Terminal Dropdown */}
                 <select
+                  aria-label="Pickup Terminal"
                   name="airportPickupLocation"
                   value={formData.airportPickupLocation}
                   onChange={handleInputChange}
@@ -502,6 +510,7 @@ Flight No: ${formData.flightNo || ""}
 
                 {/* Vehicle Type */}
                 <select
+                  aria-label="Vehicle Type"
                   name="vehicleType"
                   value={formData.vehicleType}
                   onChange={handleInputChange}
@@ -515,13 +524,13 @@ Flight No: ${formData.flightNo || ""}
                   <option value="kia-carnival">Kia Carnival</option>
                   <option value="maxi-taxi">Maxi Taxi</option>
                   <option value="wheelchair-taxi-service">
-                    
                     Wheelchair Taxi Service
                   </option>
                 </select>
 
                 {/* Payment Mode */}
                 <select
+                  aria-label="Payment Mode"
                   name="paymentMode"
                   value={formData.paymentMode}
                   onChange={handleInputChange}

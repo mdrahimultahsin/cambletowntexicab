@@ -1,5 +1,3 @@
-import React from "react";
-
 import bookTaxiImg from "../../assets/services/book-taxi-sydney-airport.png";
 import babySeatImg from "../../assets/services/campbelltown-baby-seat.jpg";
 import wheelchairImg from "../../assets/services/campbelltown-wheelchair-accessible-taxi.png";
@@ -100,12 +98,20 @@ export const serviceDetails = {
   },
 
   "corporate-tips": {
-    title: "Corporate Trips",
+    heroTitle: "Premium Corporate Taxi Services Sydney",
+    heroDes:
+      "Campbelltown Taxi Cab delivers reliable corporate taxi services Sydney for businesses requiring professional employee transportation. Our corporate taxi services Campbelltown fleet operates 24/7, serving Macarthur region companies with guaranteed punctuality. We provide executive rides, team transport, and client entertainment transfers across NSW metropolitan areas. ",
+    formTitle: "Book Corporate Taxi Services Sydney Instantly",
+    serviceDetailsSectionTitle:
+      "Reliable Corporate Taxi Services Across Campbelltown, Sydney & More Areas",
     image: corporateTripsImg,
     description:
       "Campbelltown Taxi Cab provides long-distance corporate trips with professional drivers and premium vehicles. Enjoy efficient, safe, and comfortable transportation for business travel, meetings, or executive events anywhere in Sydney and beyond.",
+    seoTitle: "Corporate Taxi Services Sydney | 24/7 Taxi Service",
+    canonical: "https://campbelltowntaxicabs.com.au/services/corporate-tips",
+    metaDes:
+      "Book luxury airport transfers with Campbelltown Taxi Cabs. Enjoy a hassle-free airport taxi service. Call ☎️ 1300 450 428 to book your airport taxi transfer now!",
+    keywords:
+      "Corporate Taxi Services Sydney, corporate taxi services campbelltown",
   },
 };
-
-
-

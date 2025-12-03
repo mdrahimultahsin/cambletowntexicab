@@ -4,7 +4,6 @@ import {Link} from "react-router";
 import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
 import titleImg from "../../assets/campbelltown-pages-hero-img.png";
-import usePageTitle from "../../hooks/usePageTitle";
 
 const refundData = [
   {time: "Up to 3 hours", charge: "100% of fare", refund: "0% of fare"},
@@ -19,7 +18,6 @@ const refundData = [
 ];
 
 const CancellationAndRefunds = () => {
-  usePageTitle("Refund Policy");
   return (
     <section className="pb-20">
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">

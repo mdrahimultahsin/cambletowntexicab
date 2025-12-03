@@ -5,6 +5,7 @@ import {RouterProvider} from "react-router";
 import router from "./routes/router.jsx";
 import {LoadScript} from "@react-google-maps/api";
 import Loading from "./shared/Loading.jsx";
+import { HelmetProvider } from "@dr.pogodin/react-helmet";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LoadScript
@@ -12,7 +13,9 @@ createRoot(document.getElementById("root")).render(
       libraries={["places"]}
       loadingElement={<Loading />}
     >
-      <RouterProvider router={router} />
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
     </LoadScript>
   </StrictMode>
 );

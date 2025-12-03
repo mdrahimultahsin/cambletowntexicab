@@ -4,10 +4,8 @@ import {FaHandPointer} from "react-icons/fa";
 import {IoCallSharp} from "react-icons/io5";
 import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import {Link} from "react-router";
-import usePageTitle from "../../hooks/usePageTitle";
 
 const PrivacyPolicy = () => {
-  usePageTitle("Privacy Policy");
   return (
     <div className=" pb-10">
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">

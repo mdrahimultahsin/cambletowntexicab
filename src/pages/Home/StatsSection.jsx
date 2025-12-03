@@ -47,7 +47,7 @@ const StatsSection = () => {
       <Container>
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary font-playfair ">
+          <h2 className="section-title">
             Our Achievement
           </h2>
           <p className="text-accent mt-2 ">

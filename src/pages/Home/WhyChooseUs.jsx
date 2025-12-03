@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
 
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 font-playfair text-primary">
+          <h2 className="section-title">
             Why Choose Campbelltown Taxi Cabs?
           </h2>
           <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">

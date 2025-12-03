@@ -4,10 +4,8 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import {FaHandPointer} from "react-icons/fa";
 import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import {IoCallSharp} from "react-icons/io5";
-import usePageTitle from "../../hooks/usePageTitle";
 
 const TermsAndCondition = () => {
-  usePageTitle("Terms & Conditions");
   return (
     <div className=" pb-10">
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">

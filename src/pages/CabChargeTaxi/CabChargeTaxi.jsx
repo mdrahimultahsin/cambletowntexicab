@@ -9,19 +9,26 @@ import cabChargePayImg from "../../assets/cabcharge-taxi-service-campbelltown.pn
 import cabChargePayImg2 from "../../assets/cabcharge-taxi-service-img2-campbelltown.png";
 import FeatureFleet from "../Home/FeatureFleet";
 import CabChargeFaq from "./CabChargeFaq";
-import usePageTitle from "../../hooks/usePageTitle";
+import useSEO from "../../hooks/useSEO";
+
 const CabChargeTaxi = () => {
   const navigate = useNavigate();
-  usePageTitle("CabCharge Taxi Service");
   return (
     <>
+    {useSEO({
+        title: "CabCharge Taxi Service - Campbelltown Taxi Cabs",
+        description:
+          "CabCharge Taxi Service in Campbelltown offers reliable, convenient, and affordable taxi rides with easy payment options for a seamless travel experience.",
+        keywords: "Cabcharge taxi Campbelltown",
+        canonical: "https://campbelltowntaxicabs.com.au/cabcharge-taxi",
+      })}
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white md:gap-6">
             <div className="py-15 md:py-20  flex-1 text-center md:text-left ">
-              <span className="text-sm text-center block sm:text-xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
+              <h2 className="section-hero-title">
                 CabCharge Taxi Campbelltown
-              </span>
+              </h2>
 
               <p className="mt-8 text-sm md:text-base">
                 The Cabcharge Taxi Service by Campbelltown Taxi Cabs offers a
@@ -58,7 +65,7 @@ const CabChargeTaxi = () => {
       <section className="py-16 bg-light">
         <Container>
           {/* Section 1: Content Left, Image Right */}
-          <h2 className="text-2xl text-center md:text-4xl font-playfair font-bold text-primary">
+          <h2 className="section-title">
             CabCharge Payments - Secure And Hassle-Free
           </h2>
           <p className="mt-4 text-gray-600 text-sm md:text-base lg:text-lg max-w-5xl text-center mx-auto leading-relaxed">

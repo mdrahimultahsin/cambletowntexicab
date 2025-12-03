@@ -75,7 +75,8 @@ const GetInTouchForm = () => {
         </div>
       )}
 
-      <h2 className="text-2xl md:text-4xl font-playfair font-bold  text-primary mb-6">Get in Touch</h2>
+      <h2 className="section-title text-left!">Reach Out to Campbelltown Taxi Cabs
+</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 

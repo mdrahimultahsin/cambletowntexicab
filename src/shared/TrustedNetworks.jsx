@@ -31,7 +31,7 @@ const TrustedNetworks = () => {
     <section className="mt-2">
       <Container>
         <h2 className="text-primary text-2xl font-bold mb-6">
-          OUR TRUSTED NETWORKS
+          Verified on Leading Networks
         </h2>
         <div className="flex items-center gap-6">
           {networks.map((network) => (

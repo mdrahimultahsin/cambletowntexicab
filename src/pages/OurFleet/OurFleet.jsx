@@ -6,27 +6,33 @@ import titleImg from "../../assets/campbelltown-pages-hero-img.png";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import usePageTitle from "../../hooks/usePageTitle";
+import useSEO from "../../hooks/useSEO";
 
 const OurFleet = () => {
   const fleetData = useLoaderData() || [];
-  usePageTitle("Fleets");
   return (
     <section className="pb-30">
+      {useSEO({
+        title: "Campbelltown Transfer Fleet | Taxis & Maxi Cabs",
+        description:
+          "The campbelltown airport transfer fleet includes sedans, SUVs and maxi cabs with pro drivers for on-time Sydney Airport trips from Campbelltown. Call now.",
+        keywords:
+          "Sydney airport transfer fleet,campbelltown airport transfer fleet,Maxi cab fleet Sydney,Sydney taxi fleet services",
+        canonical: "https://campbelltowntaxicabs.com.au/fleet",
+      })}
       <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
         <Container>
           <div className="flex flex-col md:flex-row text-white md:gap-6">
             <div className="pt-10 pb-5 md:py-20  flex-1 text-center md:text-left ">
-              <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
-                Fleet
-              </span>
+              <h2 className="section-hero-title">
+                Campbelltown Taxi Cabs Premium Fleet for Every Trip
+              </h2>
               <p className="mt-8 text-sm md:text-base">
-                At Campbelltown Taxi Cabs, we take pride in offering a diverse
-                and modern fleet to cater to all your transportation needs in
-                Sydney. Our vehicles are meticulously maintained, ensuring a
-                safe, comfortable, and reliable ride every time you travel with
-                us. Whether you’re traveling solo, with family, or a larger
-                group, we have the perfect vehicle to suit your requirements.
+                Campbelltown Taxi Cabs offers a modern fleet designed for safe
+                and comfortable travel across Sydney. Each vehicle is maintained
+                with care to ensure a smooth ride every time you book with us.
+                Whether you travel alone, with family, or in a group, we provide
+                the right car to suit your trip.
               </p>
               <div className="flex py-4 gap-4 justify-center md:justify-start">
                 <Link to="/book-a-taxi" className=" ">
@@ -46,7 +52,7 @@ const OurFleet = () => {
               <img
                 className="w-full"
                 src={titleImg}
-                alt="Campbelltown Taxi Cabs title Img"
+                alt="Campbelltown airport transfer fleet of sedans, wagons, SUVs and maxi taxis transporting travellers to Sydney Airport daily."
               />
             </div>
           </div>
@@ -54,10 +60,8 @@ const OurFleet = () => {
       </div>
       <Container>
         {/* our fleet cards */}
-        <div>
-          <h2 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center mt-8 md:mt-10 ">
-            Our Fleet
-          </h2>
+        <div className="mt-20">
+          <h2 className="section-title">Our Luxury Campbelltown Taxi Fleet</h2>
         </div>
         <div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           {fleetData.map((singleData) => (

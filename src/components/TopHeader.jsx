@@ -29,7 +29,7 @@ const TopHeader = () => {
             <FaInbox />{" "}
             <a
               href="mailto:silvercabscampbelltown@gmail.com"
-              className="hover:underline font-bold"
+              className="hover:underline font-bold "
             >
               silvercabscampbelltown@gmail.com
             </a>

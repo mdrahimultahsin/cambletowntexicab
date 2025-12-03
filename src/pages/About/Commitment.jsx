@@ -18,9 +18,7 @@ const Commitment = () => {
     <div className="mt-30">
       {/* Main Commitment */}
       <div className="text-center md:mb-10">
-        <h1 className="font-playfair text-primary font-semibold text-4xl md:text-5xl text-center">
-          Our Commitment
-        </h1>
+        <h2 className="section-title">Our Commitment</h2>
         <p className="text-accent max-w-3xl mx-auto mt-5 text-sm md:text-lg">
           Campbelltown Taxi Cabs is committed to reliability and affordability.
           We aim to make every trip smooth from booking to drop off.

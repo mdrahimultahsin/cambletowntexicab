@@ -3,7 +3,6 @@ import Container from "../shared/Container";
 import {
   FaAngleDoubleRight,
   FaCar,
-
   FaPhone,
   FaUserFriends,
 } from "react-icons/fa";
@@ -97,17 +96,18 @@ const Footer = () => {
                 ) : (
                   services
                     .map((singleService) => (
-                      <Link
-                        to={`${singleService.pathname}`}
-                        key={singleService.service_id}
-                        className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2"
-                      >
-                        <FaAngleDoubleRight
-                          className="text-primary"
-                          size={20}
-                        />
-                        {singleService.title}
-                      </Link>
+                      <li key={singleService.service_id}>
+                        <Link
+                          to={`${singleService.pathname}`}
+                          className="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-2"
+                        >
+                          <FaAngleDoubleRight
+                            className="text-primary"
+                            size={20}
+                          />
+                          {singleService.title}
+                        </Link>
+                      </li>
                     ))
                     .slice(0, 7)
                 )}

@@ -8,20 +8,27 @@ import {Link} from "react-router";
 import {IoCallSharp} from "react-icons/io5";
 import {FaHandPointer} from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import usePageTitle from "../../hooks/usePageTitle";
+import useSEO from "../../hooks/useSEO";
+
 const About = () => {
-  usePageTitle("About");
   return (
     <>
+    {useSEO({
+        title: "Campbelltown Taxi Cabs - Reliable Taxi Service",
+        description:
+          "Premium Taxi Service in Campbelltown NSW for comfortable, fast, and affordable rides. Book your ride today with Campbelltown Taxi Cabs!",
+        keywords: "campbelltown taxi cabs, taxi campbelltown,taxi campbelltown nsw, campbelltown taxi,campbelltown taxis,taxi service campbelltown nsw,taxis campbelltown,luxury taxi campbelltown,taxi service campbelltown",
+        canonical: "https://campbelltowntaxicabs.com.au/about",
+      })}
       <div className="pb-15">
         {/* hero section */}
         <div className="bg-linear-to-r from-[#04A9E9] to-[#003E60]">
           <Container>
             <div className="flex flex-col md:flex-row text-white md:gap-6">
               <div className="py-10 md:py-20  flex-1 text-center md:text-left ">
-                <span className="text-2xl md:text-4xl font-bold py-3 px-8 bg-black/50 text-white rounded-xl font-playfair">
+                <h2 className="section-hero-title">
                   About Us
-                </span>
+                </h2>
                 <p className="mt-8 text-sm md:text-base">
                   Campbelltown Taxi Cabs is a Sydney based maxi cab service
                   established in 2010. We provide affordable, reliable, and safe
