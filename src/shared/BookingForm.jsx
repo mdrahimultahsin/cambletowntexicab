@@ -304,6 +304,12 @@ Flight No: ${formData.flightNo || ""}
                       >
                         Wheelchair Taxi Service
                       </option>
+                      <option
+                        className="text-gray-600 font-bold"
+                        value="baby-seat-taxi"
+                      >
+                        Baby Seat Taxi
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -525,6 +531,9 @@ Flight No: ${formData.flightNo || ""}
                   <option value="maxi-taxi">Maxi Taxi</option>
                   <option value="wheelchair-taxi-service">
                     Wheelchair Taxi Service
+                  </option>
+                  <option value="baby-seat-taxi">
+                    Baby Seat Taxi
                   </option>
                 </select>
 
